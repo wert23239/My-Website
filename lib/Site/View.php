@@ -23,7 +23,7 @@ class View
 <meta charset='utf-8'>
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="../style/styles.css">
+<link rel="stylesheet" href="style/styles.css">
 <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
 <script src="script.js"></script>
 <title>$Title</title>
@@ -43,7 +43,7 @@ HTML;
          <li class='has-sub'><a href='#'><span>C++</span><div class='rank'>6/10</div></a>
             <ul>
                <li><a href='#'><span>Visual Tree</span></a></li>
-               <li><a href='Code/VisualCity.php'><span>Visual City</span></a></li>
+               <li><a href='VisualCity.php'><span>Visual City</span></a></li>
                <li><a href='#'><span>Virtual Evolution Markov</span></a></li>
                <li class='last'><a href='#'><span>HackerRank</span></a></li>
             </ul>

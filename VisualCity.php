@@ -1,5 +1,5 @@
 <?php
-require '../lib/Site/View.php';
+require 'lib/Site/View.php';
 $view= new Site\View();
 ?>
 <!DOCTYPE html>
