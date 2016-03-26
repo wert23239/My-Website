@@ -2,7 +2,7 @@
 
 namespace Site;
 
-class SiteView
+class View
 {
     /** Constructor
      */
@@ -11,8 +11,14 @@ class SiteView
 
     }
 
+    public function headadditional(){
+        return "";
+    }
+
     public function presenthead($Title){
-        $html=<<<HTML
+        $html="";
+        $html.=$this->headadditional();
+        $html.=<<<HTML
 <head>
 <meta charset='utf-8'>
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
