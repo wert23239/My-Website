@@ -11,13 +11,12 @@ class View
 
     }
 
-    public function headadditional(){
+    public function headeradditional(){
         return "";
     }
 
     public function presenthead($Title){
         $html="";
-        $html.=$this->headadditional();
         $html.=<<<HTML
 <head>
 <meta charset='utf-8'>
@@ -37,8 +36,8 @@ HTML;
 <header>
 <div id='cssmenu'>
 <ul>
-   <li><a href='#'><span>Home</span></a></li>
-   <li class='active has-sub'><a href='#'><span>Programming</span></a>
+   <li><a href='index.php'><span>Home</span></a></li>
+   <li class='active has-sub'><a href=''><span>Programming</span></a>
       <ul>
          <li class='has-sub'><a href='#'><span>C++</span><div class='rank'>6/10</div></a>
             <ul>
@@ -119,6 +118,7 @@ HTML;
 </div>
 </header>
 HTML;
+        $html.=$this->headeradditional();
     return $html;
     }
 

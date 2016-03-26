@@ -11,7 +11,7 @@ namespace Site;
 
 class CodeView extends View
 {
-    public function headadditional(){
+    public function headeradditional(){
         $html=<<<HTML
 <p><a href="" download="filename">Download link</a></p>
 <p><a href="github.com">Github</a></p>

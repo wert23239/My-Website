@@ -1,5 +1,5 @@
 <?php
-//require __DIR__ . "/../vendor/autoload.php";
+require __DIR__ . "/../vendor/autoload.php";
 //
 //// Start the PHP session system
 //session_start();

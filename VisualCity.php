@@ -1,6 +1,6 @@
 <?php
-require 'lib/Site/View.php';
-$view= new Site\View();
+require 'lib/game.inc.php';
+$view= new Site\CodeView();
 ?>
 <!DOCTYPE html>
 <html lang="en">
