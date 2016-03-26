@@ -1,6 +1,6 @@
 <?php
 require 'lib/Site/View.php';
-$view= new Site\SiteView();
+$view= new Site\View();
 ?>
 
 <!doctype html>
