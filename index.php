@@ -5,7 +5,7 @@ $view= new Site\SiteView();
 
 <!doctype html>
 <html lang='en'>
-<?php echo $view->presenthead() ?>
+<?php echo $view->presenthead("Home") ?>
 <body>
 <?php echo $view->presentheader() ?>
 <h1>Hi I'm Alex,</h1>

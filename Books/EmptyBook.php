@@ -10,7 +10,7 @@ $view= new Site\SiteView();
 ?>
 <!DOCTYPE html>
 <html lang="en">
-<?php echo $view->presenthead("Code") ?>
+<?php echo $view->presenthead("Book") ?>
 <body>
 <?php echo $view->presentheader() ?>
 

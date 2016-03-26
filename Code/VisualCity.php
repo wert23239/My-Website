@@ -1,10 +1,12 @@
+<?php
+require '../lib/Site/View.php';
+$view= new Site\SiteView();
+?>
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Visual City</title>
-</head>
+<?php echo $view->presenthead("Visual City") ?>
 <body>
+<?php echo $view->presentheader() ?>
 <p>Download Executable</p>
 <p>Github Link</p>
 <h1>Visual City</h1>
