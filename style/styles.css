@@ -1,5 +1,22 @@
 @import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700);
 
+@font-face{
+  font-family: CabinSketch-Regularimport;
+  src:url("CabinSketch-Regular.otf");
+}
+
+body{
+  font-family: CabinSketch-Regularimport;
+}
+
+h1{
+  font-size:5em;
+  text-align: center;
+}
+h2{
+  text-align: center;
+}
+
 .rank{
   font-weight: bold;
   float: right;
