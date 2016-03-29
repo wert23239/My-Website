@@ -29,7 +29,7 @@ $view= new Site\View();
     <input type="radio" name="radio-set" id="st-control-5"/>
     <a href="#st-panel-5">Passion</a>
 
-    
+
 
 </div><!-- // st-container -->
 <footer>
