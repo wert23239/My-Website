@@ -12,6 +12,9 @@ class View
     }
 
     public function headeradditional(){
+    return "";
+}
+    public function headadditional(){
         return "";
     }
 
@@ -19,15 +22,16 @@ class View
         $html="";
         $html.=<<<HTML
 <head>
-<meta charset='utf-8'>
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset='UTF-8'>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="style/styles.css">
 <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
 <script src="script.js"></script>
 <title>$Title</title>
 </head>
 HTML;
+        $html.=$this->headadditional();
         return $html;
     }
 
@@ -41,7 +45,7 @@ HTML;
       <ul>
          <li class='has-sub'><a href='#'><span>C++</span><div class='rank'>6/10</div></a>
             <ul>
-               <li><a href='#'><span>Visual Tree</span></a></li>
+               <li><a href='VisualTree.php'><span>Visual Tree</span></a></li>
                <li><a href='VisualCity.php'><span>Visual City</span></a></li>
                <li><a href='#'><span>Virtual Evolution Markov</span></a></li>
                <li class='last'><a href='#'><span>HackerRank</span></a></li>
@@ -114,11 +118,19 @@ HTML;
    </li>
    <li class='last'><a href='#'><span>Contact</span></a></li>
    <li class='last'><a href='#'><span>Resume</span></a></li>
+HTML;
+$html.=$this->headeradditional();
+
+        $html.=<<<HTML
+</header>
 </ul>
 </div>
-</header>
 HTML;
-        $html.=$this->headeradditional();
+
+
+
+
+
     return $html;
     }
 

@@ -1,6 +1,5 @@
 <?php
 require 'lib/game.inc.php';
-require 'lib/Site/View.php';
 $view= new Site\View();
 ?>
 
@@ -8,6 +7,7 @@ $view= new Site\View();
 <html lang='en'>
 <?php echo $view->presenthead("Home") ?>
 <body>
+<p class="neg">.</p>
 <?php echo $view->presentheader() ?>
 <div class="hvr-float-shadow">
    <h1>Hi I'm Alex,</h1>
@@ -17,19 +17,6 @@ $view= new Site\View();
 <p>Born in Michigan. Senior at Michigan State University Studying Computer Science with a Cognitive in Psychology. </p>
 <p>I'm been doing Research for <a href="#">Arends Hintze Lab</a> and work for <a href="#">Sparrow Health Insurance</a> in the IT Department.</p>
 <div class="st-container">
-
-    <input type="radio" name="radio-set" checked="checked" id="st-control-1"/>
-    <a href="#st-panel-1">Serendipity</a>
-    <input type="radio" name="radio-set" id="st-control-2"/>
-    <a href="#st-panel-2">Happiness</a>
-    <input type="radio" name="radio-set" id="st-control-3"/>
-    <a href="#st-panel-3">Tranquillity</a>
-    <input type="radio" name="radio-set" id="st-control-4"/>
-    <a href="#st-panel-4">Positivity</a>
-    <input type="radio" name="radio-set" id="st-control-5"/>
-    <a href="#st-panel-5">Passion</a>
-
-
 
 </div><!-- // st-container -->
 <footer>

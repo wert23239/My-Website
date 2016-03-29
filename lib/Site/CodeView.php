@@ -13,10 +13,20 @@ class CodeView extends View
 {
     public function headeradditional(){
         $html=<<<HTML
-<p><a href="" download="filename">Download link</a></p>
-<p><a href="github.com">Github</a></p>
+<li class='last'><a href="" download="filename"><span>See Working Program</span></a></li>
+<li class='last'><a href="github.com" download="filename"><span>See Source Code</span></a></li>
+HTML;
+        return $html;
+    }
+
+public function headadditional(){
+
+    $html=<<<HTML
+<script type="text/javascript" src="js/modernizr.custom.79639.js"></script>
 HTML;
 
         return $html;
     }
+
+
 }
