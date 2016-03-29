@@ -15,7 +15,10 @@ body{
 }
 
 .neg{
- font-size: .1px;
+   font-size: .1px;
+}
+.neg2{
+  font-size: 1em;
 }
 
 footer{
@@ -130,22 +133,16 @@ p{
 }
 
 
-.codebar{
-  background: #6abd45;
-  margin-bottom: 10px -1px 0 0;
-  padding-left: 19.5%;
-  padding-right: 19%;
-  text-align: center;
-  display: inline-block;
-}
+
 header{
   position: fixed;
+  width: 100%;
   z-index: 12;
 }
 #cssmenu {
   background: #4cb6ea;
   margin: 0;
-  width: auto;
+  width: 100%;
   padding: 0;
   line-height: 1;
   height: 100%;

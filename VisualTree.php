@@ -11,7 +11,7 @@ $view= new Site\CodeView();
 
 
     <div class="st-container">
-        <p>Hey</p>
+        <p class="neg2">hey</p>
         <input type="radio" name="radio-set" checked="checked" id="st-control-1"/>
         <a href="#st-panel-1">Prev</a>
         <input type="radio" name="radio-set" id="st-control-2"/>
@@ -28,33 +28,33 @@ $view= new Site\CodeView();
             <!-- Placeholder text from http://hipsteripsum.me/ -->
 
             <section class="st-panel" id="st-panel-1">
-                <div class="st-deco" data-icon="P"></div>
+                <a href="index.php"><div class="st-deco" data-icon="S"></div></a>
                 <h2>Previous</h2>
-                <p>This will be the previous page</p>
+                <p>This will be the previous project</p>
             </section>
 
             <section class="st-panel st-color" id="st-panel-2">
-                <div class="st-deco" data-icon="2"></div>
-                <h2>Instruction</h2>
-                <p>Art party readymade beard labore cosby sweater culpa. Art party whatever incididunt, scenester umami polaroid tofu.</p>
+                <a href="index.php"><div class="st-deco" data-icon="S"></div></a>
+                <h2>Intro</h2>
+                <p>Title then Image then paragraph</p>
             </section>
 
             <section class="st-panel" id="st-panel-3">
-                <div class="st-deco" data-icon="B"></div>
-                <h2>Tranquillity</h2>
-                <p>Sint aute occaecat id vice. Post-ironic fap pork belly next level godard, id fanny pack williamsburg forage truffaut.</p>
+                <div class="st-deco" data-icon="S"></div>
+                <h2>Description</h2>
+                <p>Two Column shindig.</p>
             </section>
 
             <section class="st-panel st-color" id="st-panel-4">
-                <div class="st-deco" data-icon="x"></div>
-                <h2>Positivity</h2>
-                <p>Mixtape fap leggings art party, butcher authentic farm-to-table you probably haven't heard of them do labore cosby sweater.</p>
+                <div class="st-deco" data-icon="S"></div>
+                <h2>Instructions</h2>
+                <p>How to use app.</p>
             </section>
 
             <section class="st-panel" id="st-panel-5">
-                <div class="st-deco" data-icon="Ç"></div>
-                <h2>Passion</h2>
-                <p>Fixie ad odd future polaroid dreamcatcher, nesciunt carles bicycle rights accusamus mcsweeney's mumblecore nulla irony.</p>
+                <div class="st-deco" data-icon="S"></div>
+                <h2>Next</h2>
+                <p>This will be the previous project</p>
             </section>
 
         </div><!-- // st-scroll -->
