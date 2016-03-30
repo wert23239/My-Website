@@ -10,6 +10,23 @@ $view= new Site\CodeView("images/github.png","https://github.com/wert23239/Visua
 <div class="container">
 
 
+<!--    border: none;
+    opacity: 1;
+    position: static;
+    max-height: none;
+    max-width: none;
+    left: auto;
+    top: auto;
+    margin: 0px;
+    padding: 0px;
+    border-radius: 0px;
+    height: auto;
+    width: 1349px;
+    background-image: url("images/VisualCity.jpg");
+    background-size: 100% 100%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;-->
+
     <div class="st-container">
         <p class="neg2">hey</p>
         <input type="radio" name="radio-set" checked="checked" id="st-control-1"/>
