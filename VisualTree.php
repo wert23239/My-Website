@@ -36,8 +36,9 @@ $view= new Site\CodeView("images/github.png","https://github.com/wert23239/Visua
             <section class="st-panel st-color" id="st-panel-2">
                 <a href="index.php"><div class="st-deco" data-icon="S"></div></a>
                 <h2>Intro</h2>
-                <p><img src="images/VisualCity.jpg" alt="HTML5 Icon" width="50%" height="50%" class="scale"></p>
-                <p>Title then Image then paragraph</p>
+                <p><img src="images/VisualCity.jpg" alt="HTML5 Icon" width="50%" height="50%" class=""><br>
+                This is The Visual C++ program called Visual City. It involves some nice XML saving and loading as well
+                as a couple cool features like adding a rotating tiles. The city even includes a game if you click the dice.</p>
             </section>
 
             <section class="st-panel" id="st-panel-3">
