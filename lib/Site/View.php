@@ -19,6 +19,7 @@ class View
     }
 
     public function presenthead($Title){
+        $this->Title=$Title;
         $html="";
         $html.=<<<HTML
 <head>
@@ -133,6 +134,6 @@ HTML;
 
     return $html;
     }
-
+ protected $Title;
 }
 
