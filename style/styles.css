@@ -12,18 +12,35 @@
 
 body{
   font-family: CabinSketch-Regularimport;
+  overflow: hidden;
 }
 
 .neg{
    font-size: .1px;
 }
 .neg2{
-  font-size: 1em;
+  font-size: 1.1em;
 }
 
 footer{
   text-align: right;
 
+}
+
+.image img {
+  -webkit-transition: all 1s ease; /* Safari and Chrome */
+  -moz-transition: all 1s ease; /* Firefox */
+  -ms-transition: all 1s ease; /* IE 9 */
+  -o-transition: all 1s ease; /* Opera */
+  transition: all 1s ease;
+}
+
+.image:hover img {
+  -webkit-transform:scale(1.25); /* Safari and Chrome */
+  -moz-transform:scale(1.25); /* Firefox */
+  -ms-transform:scale(1.25); /* IE 9 */
+  -o-transform:scale(1.25); /* Opera */
+  transform:scale(1.25);
 }
 
 h1{
