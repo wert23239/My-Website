@@ -5,7 +5,10 @@ $view= new Site\CodeView("images/github.png","https://github.com/wert23239/Visua
 <!DOCTYPE html>
 <html lang="en">
 <?php echo $view->presenthead("Visual Tree") ?>
+
 <body>
+
+
 <?php echo $view->presentheader() ?>
 <div class="container">
 
@@ -46,32 +49,33 @@ $view= new Site\CodeView("images/github.png","https://github.com/wert23239/Visua
 
             <section class="st-panel" id="st-panel-1">
                 <a href="index.php"><div class="st-deco" data-icon="S"></div></a>
-                <h2>Previous</h2>
+                <h2 class="element">Previous</h2>
                 <p>This will be the previous project</p>
             </section>
 
             <section class="st-panel st-color" id="st-panel-2">
                 <a href="index.php"><div class="st-deco" data-icon="S"></div></a>
                 <h2>Intro</h2>
+                <p class="element"></p>
                 <p><img src="images/VisualCity.jpg" alt="HTML5 Icon" width="50%" height="50%" class=""><br>
                 This is The Visual C++ program called Visual City. It involves some nice XML saving and loading as well
                 as a couple cool features like adding a rotating tiles. The city even includes a game if you click the dice.</p>
             </section>
 
             <section class="st-panel" id="st-panel-3">
-                <div class="st-deco" data-icon="S"></div>
+                <a href="index.php"><div class="st-deco" data-icon="S"></div></a>
                 <h2>Description</h2>
                 <p>Two Column shindig.</p>
             </section>
 
             <section class="st-panel st-color" id="st-panel-4">
-                <div class="st-deco" data-icon="S"></div>
+                <a href="index.php"><div class="st-deco" data-icon="S"></div></a>
                 <h2>Instructions</h2>
                 <p>How to use app.</p>
             </section>
 
             <section class="st-panel" id="st-panel-5">
-                <div class="st-deco" data-icon="S"></div>
+                <a href="index.php"><div class="st-deco" data-icon="S"></div></a>
                 <h2>Next</h2>
                 <p>This will be the previous project</p>
             </section>
