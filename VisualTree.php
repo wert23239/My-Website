@@ -1,6 +1,6 @@
 <?php
 require 'lib/game.inc.php';
-$view= new Site\CodeView();
+$view= new Site\CodeView("images/github.png","https://github.com/wert23239/Visual-City-Game");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -36,6 +36,7 @@ $view= new Site\CodeView();
             <section class="st-panel st-color" id="st-panel-2">
                 <a href="index.php"><div class="st-deco" data-icon="S"></div></a>
                 <h2>Intro</h2>
+                <p><img src="images/VisualCity.jpg" alt="HTML5 Icon" width="50%" height="50%" class="scale"></p>
                 <p>Title then Image then paragraph</p>
             </section>
 
