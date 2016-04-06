@@ -47,7 +47,7 @@ HTML;
          <li class='has-sub'><a href='#'><span>C++</span><div class='rank'>6/10</div></a>
             <ul>
                <li><a href='VisualTree.php'><span>Visual Tree</span></a></li>
-               <li><a href='VisualCity.php'><span>Visual City</span></a></li>
+               <li><a href='VisualCity.php#st-panel-2'><span>Visual City</span></a></li>
                <li><a href='#'><span>Virtual Evolution Markov</span></a></li>
                <li class='last'><a href='#'><span>HackerRank</span></a></li>
             </ul>

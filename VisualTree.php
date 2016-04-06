@@ -37,11 +37,7 @@ $view= new Site\CodeView("images/github.png","https://github.com/wert23239/Visua
         <input type="radio" name="radio-set" id="st-control-2"/>
         <a href="#st-panel-2">Intro</a>
         <input type="radio" name="radio-set" id="st-control-3"/>
-        <a href="#st-panel-3">Description</a>
-        <input type="radio" name="radio-set" id="st-control-4"/>
-        <a href="#st-panel-4">Instructions</a>
-        <input type="radio" name="radio-set" id="st-control-5"/>
-        <a href="#st-panel-5">Next</a>
+        <a href="#st-panel-3">Next</a>
 
         <div class="st-scroll">
 
@@ -50,7 +46,7 @@ $view= new Site\CodeView("images/github.png","https://github.com/wert23239/Visua
             <section class="st-panel" id="st-panel-1">
                 <a href="index.php"><div class="st-deco" data-icon="S"></div></a>
                 <h2 class="element">Previous</h2>
-                <p>This will be the previous project</p>
+                <p>This will be the previous project.</p>
             </section>
 
             <section class="st-panel st-color" id="st-panel-2">
@@ -63,21 +59,10 @@ $view= new Site\CodeView("images/github.png","https://github.com/wert23239/Visua
 
             <section class="st-panel" id="st-panel-3">
                 <a href="index.php"><div class="st-deco" data-icon="S"></div></a>
-                <h2>Description</h2>
-                <p>Two Column shindig.</p>
-            </section>
-
-            <section class="st-panel st-color" id="st-panel-4">
-                <a href="index.php"><div class="st-deco" data-icon="S"></div></a>
-                <h2>Instructions</h2>
-                <p>How to use app.</p>
-            </section>
-
-            <section class="st-panel" id="st-panel-5">
-                <a href="index.php"><div class="st-deco" data-icon="S"></div></a>
                 <h2>Next</h2>
-                <p>This will be the previous project</p>
+                <p>This will be the next project.</p>
             </section>
+
 
         </div><!-- // st-scroll -->
 

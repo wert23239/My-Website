@@ -27,7 +27,7 @@
 .st-container > a {
 	position: fixed;
 	bottom: 0px;
-	width: 33%;
+	width: 34%;
 	cursor: pointer;
 	font-size: 16px;
 	height: 34px;
@@ -64,20 +64,13 @@
 }
 
 #st-control-2, #st-control-2 + a {
-	left: 20%;
+	left: 34%;
 }
 
 #st-control-3, #st-control-3 + a {
-	left: 40%;
+	left: 67%;
 }
 
-#st-control-4, #st-control-4 + a {
-	left: 60%;
-}
-
-#st-control-5, #st-control-5 + a {
-	left: 80%;
-}
 
 .st-container > input:checked + a,
 .st-container > input:checked:hover + a{
