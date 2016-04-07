@@ -13,7 +13,7 @@ class WumpusControllerTest extends \PHPUnit_Framework_TestCase
 		$wumpus = new Wumpus\Wumpus(self::SEED);
 		$controller = new Wumpus\WumpusController($wumpus, array());
 
-		$this->assertInstanceOf('Wumpus\WumpusController', $controller);
+		$this->assertInstanceOf('Site\WumpusController', $controller);
 		$this->assertFalse($controller->isReset());
 		$this->assertEquals('game.php', $controller->getPage());
 	}
@@ -22,7 +22,7 @@ class WumpusControllerTest extends \PHPUnit_Framework_TestCase
 		$wumpus = new Wumpus\Wumpus(self::SEED);
 		$controller = new Wumpus\WumpusController($wumpus, array('n' => ''));
 
-		$this->assertInstanceOf('Wumpus\WumpusController', $controller);
+		$this->assertInstanceOf('Site\WumpusController', $controller);
 		$this->assertTrue($controller->isReset());
 		$this->assertEquals('game.php', $controller->getPage());
 	}

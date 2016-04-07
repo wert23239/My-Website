@@ -1,7 +1,7 @@
 <?php
 require __DIR__ . "/../../vendor/autoload.php";
 /** @file
- * @brief The Test for Wumpus
+ * @brief The Test for Site
  * @cond 
  * @brief Unit tests for the class 
  */
@@ -11,11 +11,11 @@ class WumpusTest extends \PHPUnit_Framework_TestCase
 
 	public function test_construct() {
 		$wumpus = new Wumpus\Wumpus(self::SEED);
-		$this->assertInstanceOf('Wumpus\Wumpus', $wumpus);
+		$this->assertInstanceOf('Site\Site', $wumpus);
 
 		// Ensure we have the 20 rooms
 		for($r=1; $r<=Wumpus\Wumpus::NUM_ROOMS;  $r++) {
-			$this->assertInstanceOf("Wumpus\Room", $wumpus->getRoom($r));
+			$this->assertInstanceOf("Site\Room", $wumpus->getRoom($r));
 		}
 
 		// Ensure rooms are connected correctly
@@ -53,7 +53,7 @@ class WumpusTest extends \PHPUnit_Framework_TestCase
 	public function test_move() {
 		$wumpus = new Wumpus\Wumpus(self::SEED);
 
-		// Move to Wumpus
+		// Move to Site
 		$this->assertEquals(Wumpus\Wumpus::HAPPY, $wumpus->move(9));
 		$this->assertEquals(Wumpus\Wumpus::HAPPY, $wumpus->move(8));
 		$this->assertEquals(Wumpus\Wumpus::HAPPY, $wumpus->move(2));

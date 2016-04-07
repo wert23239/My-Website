@@ -10,7 +10,7 @@ class RoomTest extends \PHPUnit_Framework_TestCase
 	public function test_construct() {
 		$room = new Wumpus\Room(0, 1);
 
-		$this->assertInstanceOf('Wumpus\Room', $room);
+		$this->assertInstanceOf('Site\Room', $room);
 	}
 
 	public function test_getNum() {

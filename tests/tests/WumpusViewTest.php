@@ -13,7 +13,7 @@ class WumpusViewTest extends \PHPUnit_Framework_TestCase
 		$wumpus = new Wumpus\Wumpus(self::SEED);
 		$view = new Wumpus\WumpusView($wumpus);
 
-		$this->assertInstanceOf('Wumpus\WumpusView', $view);
+		$this->assertInstanceOf('Site\WumpusView', $view);
 	}
 
 	public function test_presentArrows() {
