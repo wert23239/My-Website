@@ -12,3 +12,27 @@ $('#cssmenu').prepend('<div id="menu-button">Menu</div>');
 	});
 });
 } )( jQuery );
+
+
+
+$(function() {
+	// Get page title
+	var pageTitle = $("title").text();
+
+	// Change page title on blur
+	$(window).blur(function() {
+		$("title").text(":( come back");
+	});
+
+	// Change page title back on focus
+	$(window).focus(function() {
+		$("title").text(pageTitle);
+	});
+});
+
+$(function(){
+	$(".element").typed({
+		strings: ["Introduction","Visual City"],
+		typeSpeed: 50
+	});
+});
