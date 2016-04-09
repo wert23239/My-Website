@@ -72,11 +72,6 @@ HTML;
                <li class='last'><a href='#'><span>HackerRank</span></a></li>
             </ul>
          </li>
-         <li class='has-sub'><a href='#'><span>Assembly Code</span><div class='rank'>6/10</div></a>
-            <ul>
-               <li class='last'><a href='#'><span>Computer Architecture</span></a></li>
-            </ul>
-         </li>
          <li class='has-sub'><a href='#'><span>WebApp</span><div class='rank'>7/10</div></a>
             <ul>
                <li><a href='#'><span>PHP Steampunked</span></a></li>
@@ -86,7 +81,7 @@ HTML;
          </li>
          <li class='has-sub'><a href='#'><span>GameMaker</span><div class='rank'>8/10</div></a>
             <ul>
-               <li class='last'><a href='#'><span>Virtual Alphabet</span></a></li>
+               <li class='last'><a href='VirtualAlphabet.php#st-panel-2'><span>Virtual Alphabet</span></a></li>
             </ul>
          </li>
          <li class='has-sub'><a href='#'><span>Flex/Bison</span><div class='rank'>5/10</div></a>
