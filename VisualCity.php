@@ -17,9 +17,9 @@ $view= new Site\CodeView("images/github.png","https://github.com/wert23239/Visua
 
     <div class="st-container">
         <p class="neg2">hey</p>
-        <input type="radio" name="radio-set" checked="checked" id="st-control-1"/>
+        <input type="radio" name="radio-set" id="st-control-1"/>
         <a href="#st-panel-1">Prev</a>
-        <input type="radio" name="radio-set" id="st-control-2"/>
+        <input type="radio" name="radio-set" checked="checked" id="st-control-2"/>
         <a href="#st-panel-2">Intro</a>
         <input type="radio" name="radio-set" id="st-control-3"/>
         <a href="#st-panel-3">Next</a>

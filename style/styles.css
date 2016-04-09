@@ -1,13 +1,15 @@
 @import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700);
 @import url('style.css');
+@import url('normalize.css');
+@import url('demo.css');
 @font-face{
   font-family: CabinSketch-Boldimport;
-  src:url("CabinSketch-Regular.otf");
+  src:url("fonts/CabinSketch-Regular.otf");
 
 }
 @font-face{
   font-family: CabinSketch-Regularimport;
-  src:url("CabinSketch-Bold.otf");
+  src:url("fonts/CabinSketch-Bold.otf");
 }
 
 body{
