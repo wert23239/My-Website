@@ -65,8 +65,8 @@ p{
 
 /* Float Shadow */
 .hvr-float-shadow {
-  margin-left: 28em;
-  margin-right: 28em;
+  margin-left: auto;
+  margin-right: auto;
   vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
@@ -86,9 +86,9 @@ p{
   z-index: -1;
   content: '';
   top: 100%;
-  left: 25%;
+  left: 30%;
   height: 10px;
-  width: 50%;
+  width: 40%;
   opacity: 0;
   background: -webkit-radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
   background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
