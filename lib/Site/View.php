@@ -50,7 +50,7 @@ HTML;
          <li class='has-sub'><a href='#'><span>C++</span><div class='rank'>6/10</div></a>
             <ul>
                <li><a href='VisualTree.php'><span>Visual Tree</span></a></li>
-               <li><a href='VisualCity.php#st-panel-2'><span>Visual City</span></a></li>
+               <li><a href='VisualCity.php'><span>Visual City</span></a></li>
                <li><a href='#'><span>Virtual Evolution Markov</span></a></li>
                <li class='last'><a href='#'><span>HackerRank</span></a></li>
             </ul>
@@ -81,7 +81,7 @@ HTML;
          </li>
          <li class='has-sub'><a href='#'><span>GameMaker</span><div class='rank'>8/10</div></a>
             <ul>
-               <li class='last'><a href='VirtualAlphabet.php#st-panel-2'><span>Virtual Alphabet</span></a></li>
+               <li class='last'><a href='VirtualAlphabet.php'><span>Virtual Alphabet</span></a></li>
             </ul>
          </li>
          <li class='has-sub'><a href='#'><span>Flex/Bison</span><div class='rank'>5/10</div></a>
