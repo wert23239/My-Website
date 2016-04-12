@@ -14,7 +14,6 @@ $('#cssmenu').prepend('<div id="menu-button">Menu</div>');
 } )( jQuery );
 
 
-
 $(function() {
 	// Get page title
 	var pageTitle = $("title").text();

@@ -29,6 +29,12 @@ class View
 <link rel="stylesheet" href="style/styles.css">
 <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
 <script src="script.js"></script>
+<script src="konami.js"></script>
+<script>
+    var easter_egg= new Konami('http://webdev.cse.msu.edu/~lambe168/project2/');
+    easter_egg.load('http://webdev.cse.msu.edu/~lambe168/project2/');
+	console.log(easter_egg)
+</script>
 <title>$Title</title>
 </head>
 HTML;
@@ -49,7 +55,7 @@ HTML;
       <ul>
          <li class='has-sub'><a href='#'><span>C++</span><div class='rank'>6/10</div></a>
             <ul>
-               <li><a href='VisualTree.php'><span>Visual Tree</span></a></li>
+               <li><a href='VisualCity.php'><span>Visual Tree</span></a></li>
                <li><a href='VisualCity.php'><span>Visual City</span></a></li>
                <li><a href='#'><span>Virtual Evolution Markov</span></a></li>
                <li class='last'><a href='#'><span>HackerRank</span></a></li>
@@ -91,7 +97,7 @@ HTML;
          </li>
          <li class='has-sub'><a href='#'><span>Java</span><div class='rank'>4/10</div></a>
             <ul>
-               <li class='last'><a href='Code/Processing.html'><span>Processing</span></a></li>
+               <li class='last'><a href='Processing.html'><span>Processing</span></a></li>
             </ul>
          </li>
       </ul>
