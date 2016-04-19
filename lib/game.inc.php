@@ -1,5 +1,7 @@
 <?php
 require __DIR__ . "/../vendor/autoload.php";
+
+
 //
 //// Start the PHP session system
 //session_start();
@@ -12,3 +14,7 @@ require __DIR__ . "/../vendor/autoload.php";
 //}
 //
 //$wumpus = $_SESSION[WUMPUS_SESSION];
+?>
+
+
+
