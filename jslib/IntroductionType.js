@@ -9,7 +9,7 @@ TypeName.prototype.TypeOut = function() {
     var that=this;
     $(function () {
         $(".Typed").typed({
-            strings: ["Introduction", that.Name],
+            strings: [that.Name],
             typeSpeed: 50
         });
     });

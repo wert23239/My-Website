@@ -1,6 +1,6 @@
 <?php
 require 'lib/game.inc.php';
-$view= new Site\CodeView("downloads/CityGame.zip","https://github.com/wert23239/Visual-City-Game",2);
+$view= new Site\CodeView("downloads/CityGame.zip","https://github.com/wert23239/Visual-City-Game",1);
 ?>
 <!DOCTYPE html>
 <html lang="en">
