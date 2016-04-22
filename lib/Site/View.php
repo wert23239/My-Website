@@ -15,7 +15,24 @@ class View
     return "";
 }
     public function headadditional(){
-        return "";
+        $html=<<<HTML
+<script src="jslib/KonamiCode"></script>
+<script src="konami.js"></script>
+<script>
+$(document).ready(function() {
+    var KC=new KonamiComputer();
+    var KP
+});
+</script>
+<script>
+    var easter_egg= new Konami('http://webdev.cse.msu.edu/~lambe168/project2/');
+    easter_egg.load('http://webdev.cse.msu.edu/~lambe168/project2/');
+	console.log(easter_egg)
+</script>
+
+HTML;
+
+        return $html;
     }
 
     public function presenthead($Title){
@@ -28,12 +45,12 @@ class View
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="style/styles.css">
 <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
-<script src="script.js"></script>
-<script src="konami.js"></script>
+<script src="header.js"></script>
+<script src="jslib/KonamiCode"></script>
 <script>
-    var easter_egg= new Konami('http://webdev.cse.msu.edu/~lambe168/project2/');
-    easter_egg.load('http://webdev.cse.msu.edu/~lambe168/project2/');
-	console.log(easter_egg)
+$(document).ready(function() {
+    new MissYou();
+});
 </script>
 <title>$Title</title>
 </head>
@@ -55,8 +72,8 @@ HTML;
       <ul>
          <li class='has-sub'><a href='#'><span>C++</span><div class='rank'>6/10</div></a>
             <ul>
-               <li><a href='VisualCity.php'><span>Visual Tree</span></a></li>
                <li><a href='VisualCity.php'><span>Visual City</span></a></li>
+               <li><a href='VisualTree.php'><span>Visual Tree</span></a></li>
                <li><a href='#'><span>Virtual Evolution Markov</span></a></li>
                <li class='last'><a href='#'><span>HackerRank</span></a></li>
             </ul>
@@ -102,6 +119,11 @@ HTML;
          </li>
       </ul>
    </li>
+   <li class='active has-sub'><a href='#'><span>Games</span></a>
+      <ul>
+         <li class='last'><a href='#'><span>TheScarsofShadows</span></a></li>
+      </ul>
+   </li>
    <li class='active has-sub'><a href='#'><span>Art</span></a>
       <ul>
          <li><a href='#'><span>Ballos</span></a></li>
@@ -110,7 +132,7 @@ HTML;
          <li class='last'><a href='#'><span>Old</span></a></li>
       </ul>
    </li>
-   <li class='active has-sub'><a href='#'><span>Book</span></a>
+   <li class='active has-sub'><a href='#'><span>Books</span></a>
       <ul>
          <li><a href='Books/Book1.html'><span>As Long as The Road Lacks Perspective</span></a></li>
          <li><a href='Books/Book2.html'><span>The Scars of Shadows</span></a></li>

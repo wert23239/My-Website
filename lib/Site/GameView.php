@@ -9,7 +9,7 @@
 namespace Site;
 
 
-class CodeView extends View
+class GameView extends View
 {
     public function __construct($download,$gitlink,$id)
     {
@@ -39,7 +39,7 @@ HTML;
 
     public function headeradditional(){
         $html=<<<HTML
-<li class='last'><a href="$this->download" download><span>See Working Program</span></a></li>
+<li class='last'><a href="$this->download" download><span>See Game</span></a></li>
 <li class='last'><a href=$this->gitlink><span>See Source Code</span></a></li>
 HTML;
         return $html;
