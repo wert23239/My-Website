@@ -4,7 +4,7 @@ $view= new Site\GameView("downloads/TheScarsofShadows.zip","https://github.com/w
 ?>
 <!DOCTYPE html>
 <html lang="en">
-<?php echo $view->presenthead("Scars Game") ?>
+<?php echo $view->presenthead("The Scars of Shadows") ?>
 
 <body>
 

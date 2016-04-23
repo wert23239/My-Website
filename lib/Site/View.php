@@ -107,7 +107,7 @@ HTML;
                <li class='last'><a href='VirtualAlphabet.php'><span>Virtual Alphabet</span></a></li>
             </ul>
          </li>
-         <li class='has-sub'><a href='#'><span>Flex/Bison</span><div class='rank'>5/10</div></a>
+         <li class='has-sub'><a href='#'><span>Lex/Yacc</span><div class='rank'>5/10</div></a>
             <ul>
                <li class='last'><a href='#'><span>C++ Compiler</span></a></li>
             </ul>
@@ -121,7 +121,7 @@ HTML;
    </li>
    <li class='active has-sub'><a href='#'><span>Games</span></a>
       <ul>
-         <li class='last'><a href='#'><span>TheScarsofShadows</span></a></li>
+         <li class='last'><a href='TheScarsofShadowsGame.php'><span>TheScarsofShadows</span></a></li>
       </ul>
    </li>
    <li class='active has-sub'><a href='#'><span>Art</span></a>
