@@ -2,11 +2,6 @@
  * Created by Alex on 4/20/2016.
  */
 function MissYou(){
-    this.ChangeHeader();
-
-}
-
-TypeName.prototype.ChangeHeader = function() {
     $(function() {
         // Get page title
         var pageTitle = $("title").text();
@@ -21,4 +16,4 @@ TypeName.prototype.ChangeHeader = function() {
             $("title").text(pageTitle);
         });
     });
-};
+}

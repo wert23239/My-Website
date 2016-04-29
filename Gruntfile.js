@@ -1,7 +1,7 @@
 module.exports = function(grunt) {
     // Path to our JavaScript source files
     var jssrc = ['jslib/*.js'];
-
+    //grunt.loadNpmTasks('grunt-contrib-watch');
     // Project configuration.
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),

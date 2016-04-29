@@ -1,4 +1,4 @@
-/*! DO NOT EDIT mywebsite 2016-04-28 */
+/*! DO NOT EDIT mywebsite 2016-04-29 */
 ( function( $ ) {
 $( document ).ready(function() {
 $('#cssmenu').prepend('<div id="menu-button">Menu</div>');
@@ -69,11 +69,6 @@ function  KonamiComputer(){
  * Created by Alex on 4/20/2016.
  */
 function MissYou(){
-    this.ChangeHeader();
-
-}
-
-TypeName.prototype.ChangeHeader = function() {
     $(function() {
         // Get page title
         var pageTitle = $("title").text();
@@ -88,4 +83,4 @@ TypeName.prototype.ChangeHeader = function() {
             $("title").text(pageTitle);
         });
     });
-};
+}
