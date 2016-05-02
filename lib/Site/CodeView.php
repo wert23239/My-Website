@@ -16,7 +16,7 @@ class CodeView extends View
         $this->download=$download;
         $this->gitlink=$gitlink;
         $this->id=$id;
-        $this->connections= new SiteManager(SiteManager::CodeType,$id);
+        $this->connections= new SiteManager($id);
     }
     public function headadditional(){
         $check=$this->Title;
@@ -50,7 +50,10 @@ HTML;
     {
         $Prev=$this->connections->getPrevious();
         $Next=$this->connections->getNext();
+        var_dump("hey");
         var_dump($Prev);
+        $NamePre=$Prev->getName();
+        $NameAft=$Next->getName();
         $html=<<<HTML
 <div class="container">
 
@@ -72,7 +75,8 @@ HTML;
 
             <section class="st-panel" id="st-panel-1">
                 <a href="index.php"><div class="st-deco" data-icon="S"></div></a>
-               <a href=$Prev> <h2>Previous</h2></a>
+               <a href=$NamePre <h2>Previous</h2></a>
+               <p></p>
 
             </section>
 
@@ -85,7 +89,7 @@ HTML;
 
             <section class="st-panel" id="st-panel-3">
                 <a href="index.php"><div class="st-deco" data-icon="S"></div></a>
-               <a href=$Next><h2>Next</h2></a>
+               <a href=$NameAft><h2>Next</h2></a>
             </section>
 
 

@@ -24,6 +24,5 @@ $view= new Site\View();
 </div>
 
 
-
 </body>
 </html>

@@ -48,11 +48,12 @@ class SiteManager
 
 
     const TheScarsofShadows="TheScarsofShadows.php";
-    public function __construct($type,$id)
+    public function __construct($id)
     {
-
-        $this->type=$type;
         $this->id=$id;
+        $this->initialize();
+       // var_dump($this->Code);
+        $this->type=$this->Code[$id]->getType();
         $this->find();
     }
 
@@ -62,7 +63,7 @@ class SiteManager
                 $this->previous=$this->Code[$this->id-1];
             }
             else{
-                $this->previous=$this->Code[14];
+                $this->previous=$this->Code[13];
             }
             if($this->id!=14){
                 $this->next=$this->Code[$this->id+1];
@@ -71,6 +72,25 @@ class SiteManager
                 $this->next=$this->Code[0];
             }
         }
+    }
+
+    public function initialize(){
+         $this->Code=array(
+             self::VisualCityNum => new IndividualSite(self::VisualCity,self::VisualCityNum,self::CodeType) ,
+             self::VisualTreeNum => new IndividualSite(self::VisualTree,self::VisualTreeNum,self::CodeType) ,
+             self::MarkovBrainNum => new IndividualSite(self::MarkovBrain,self::MarkovBrainNum,self::CodeType) ,
+             self::HackerRankNum => new IndividualSite(self::HackerRank,self::HackerRankNum,self::CodeType),
+             self::EmitterNum => new IndividualSite(self::Emitter,self::EmitterNum,self::CodeType),
+             self::DeserializerNum => new IndividualSite(self::Deserializer,self::DeserializerNum,self::CodeType),
+             self::VaniaVirtualEvolutionNum=> new IndividualSite(self::VaniaVirtualEvolution,self::VaniaVirtualEvolutionNum,self::CodeType),
+             self::PythonGraphingNum=> new IndividualSite(self::PythonGraphing,self::PythonGraphingNum,self::CodeType),
+             self::SteamPunkedNum=> new IndividualSite(self::SteamPunked,self::SteamPunkedNum,self::CodeType),
+             self::EmployfaiNum=> new IndividualSite(self::Employfai,self::EmployfaiNum,self::CodeType),
+             self::ResumeNum=> new IndividualSite(self::Resume,self::ResumeNum,self::CodeType),
+             self::VirtualAlphaNum=>new IndividualSite(self::VirtualAlpha,self::VirtualAlphaNum,self::CodeType),
+             self::CompilerNum=>new IndividualSite(self::Compiler,self::CompilerNum,self::CodeType),
+             self::ProcessingNum=>new IndividualSite(self::Processing,self::ProcessingNum,self::CodeType),
+         );
     }
 
     /**
@@ -86,11 +106,12 @@ class SiteManager
         return $this->next;
     }
 
+
+
+
     private $id;
     private $type;
     private $next;
     private $previous;
-    private $Code=array(self::VisualCity,self::VisualTree,self::MarkovBrain,self::HackerRank,self::Emitter,
-        self::Deserializer,self::VaniaVirtualEvolution,self::PythonGraphing,self::SteamPunked,self::Employfai,
-        self::Resume,self::VirtualAlpha,self::Compiler,self::Processing);
+    private $Code=array();
 }
