@@ -65,7 +65,7 @@ class SiteManager
             else{
                 $this->previous=$this->Code[13];
             }
-            if($this->id!=14){
+            if($this->id!=13){
                 $this->next=$this->Code[$this->id+1];
             }
             else{

@@ -50,8 +50,8 @@ HTML;
     {
         $Prev=$this->connections->getPrevious();
         $Next=$this->connections->getNext();
-        var_dump("hey");
-        var_dump($Prev);
+        //var_dump("hey");
+        //var_dump($Prev);
         $NamePre=$Prev->getName();
         $NameAft=$Next->getName();
         $html=<<<HTML
@@ -62,12 +62,10 @@ HTML;
 
     <div class="st-container">
         <p class="neg2">hey</p>
-        <input type="radio" name="radio-set" id="st-control-1"/>
-        <a href="#st-panel-1">Prev</a>
+        <a href=$NamePre id="st-control-1">Prev</a>
         <input type="radio" name="radio-set" checked="checked" id="st-control-2"/>
         <a href="#st-panel-2">Intro</a>
-        <input type="radio" name="radio-set" id="st-control-3"/>
-        <a href="#st-panel-3">Next</a>
+        <a href=$NameAft id="st-control-3">Next</a>
 
         <div class="st-scroll">
 
@@ -76,8 +74,7 @@ HTML;
             <section class="st-panel" id="st-panel-1">
                 <a href="index.php"><div class="st-deco" data-icon="S"></div></a>
                <a href=$NamePre <h2>Previous</h2></a>
-               <p></p>
-
+               <!--<p>$NamePre</p>-->
             </section>
 
             <section class="st-panel st-color" id="st-panel-2">

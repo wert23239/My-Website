@@ -1,6 +1,6 @@
 <?php
 require 'lib/game.inc.php';
-$view= new Site\CodeView("downloads/Virtual_Alphabet_final.exe","https://github.com/jfreedman0/Virtual-Alphabet",7);
+$view= new Site\CodeView("downloads/Virtual_Alphabet_final.exe","https://github.com/jfreedman0/Virtual-Alphabet",\Site\SiteManager::VirtualAlphaNum);
 ?>
 <!DOCTYPE html>
 <html lang="en">

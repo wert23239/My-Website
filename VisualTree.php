@@ -1,6 +1,6 @@
 <?php
 require 'lib/game.inc.php';
-$view= new Site\CodeView("downloads/Tree.zip","https://github.com/wert23239/Tree",2);
+$view= new Site\CodeView("downloads/Tree.zip","https://github.com/wert23239/Tree",\Site\SiteManager::VisualTreeNum);
 ?>
 <!DOCTYPE html>
 <html lang="en">
