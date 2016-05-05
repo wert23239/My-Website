@@ -16,6 +16,12 @@ class CodeView extends View
         $this->download=$download;
         $this->gitlink=$gitlink;
         $this->id=$id;
+        if($id%2){
+            $this->color="CodeA";
+        }
+        else{
+            $this->color="CodeB";
+        }
         $this->connections= new SiteManager($id);
     }
     public function headadditional(){
@@ -54,6 +60,7 @@ HTML;
         //var_dump($Prev);
         $NamePre=$Prev->getName();
         $NameAft=$Next->getName();
+        $Second=$this->color."2";
         $html=<<<HTML
 <div class="container">
 
@@ -72,20 +79,20 @@ HTML;
             <!-- Placeholder text from http://hipsteripsum.me/ -->
 
             <section class="st-panel" id="st-panel-1">
-                <a href="index.php"><div class="st-deco" data-icon="S"></div></a>
+                <a href="index.php"><div class="st-deco $this->color" data-icon="S"></div></a>
                <a href=$NamePre <h2>Previous</h2></a>
                <!--<p>$NamePre</p>-->
             </section>
 
-            <section class="st-panel st-color" id="st-panel-2">
-                <a href="index.php"><div class="st-deco" data-icon="S"></div></a>
+            <section class="st-panel $Second" id="st-panel-2">
+                <a href="index.php"><div class="st-deco $this->color" data-icon="S"></div></a>
                  <h2 class="Typed">Intro</h2>
                 <p><img src=$image alt="HTML5 Icon" width="50%" height="50%" class="image"><br>
                     $maintext</p>
             </section>
 
             <section class="st-panel" id="st-panel-3">
-                <a href="index.php"><div class="st-deco" data-icon="S"></div></a>
+                <a href="index.php"><div class="st-deco $this->color" data-icon="S"></div></a>
                <a href=$NameAft><h2>Next</h2></a>
             </section>
 
@@ -104,4 +111,5 @@ private $download="";
     private $gitlink="";
     private $id="";
     private $connections;
+    private $color="";
 }

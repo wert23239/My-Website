@@ -1,4 +1,9 @@
 @import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700);
+
+
+@MainColor: #9966cc;
+@AlternativeColor: white;
+
 @font-face{
   font-family: CabinSketch-Boldimport;
   src:url("fonts/CabinSketch-Regular.otf");
@@ -189,7 +194,7 @@
   top: 0px;
   left: 50%;
   margin-left: -100px;
-  background: #9966cc;
+  background: saturate(@MainColor, 5%);
   -webkit-transform: translateY(-50%) rotate(45deg);
   -moz-transform: translateY(-50%) rotate(45deg);
   -o-transform: translateY(-50%) rotate(45deg);
@@ -398,22 +403,47 @@
 
 /* Colored sections */
 
-.st-color,
-.st-deco{
-  background: #9966cc;
+.CodeA2 h2 {
+  color: #000;
+  text-shadow: 3px 3px #301934;
 }
-.st-color [data-icon]:after {
-  color: #9966cc;
+
+.CodeA2,
+.CodeA{
+  background: #9966cc; //main
 }
-.st-color .st-deco {
+.CodeA2 [data-icon]:after {
+  color: #9966cc; //main
+}
+.CodeA2 .CodeA {
   background: #000;
 }
-.st-color h2 {
+
+.CodeA2 p {
   color: #000;
-  text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+  color: rgba(255,255,255,0.8);
 }
-.st-color p {
-  color: #000;
+
+
+.CodeB2 h2 {
+  color: #9966cc;
+  text-shadow: 2px 2px #C0C0C0;
+}
+
+
+.CodeB2,
+.CodeB{
+  background: #000; //main
+}
+.CodeB2 [data-icon]:after {
+  color: #000; //main
+}
+.CodeB2 .CodeB {
+  background: #9966cc;
+}
+
+.CodeB2 p {
+  color: #9966cc;
   color: rgba(255,255,255,0.8);
 }
 
@@ -452,3 +482,4 @@
     transform: rotate(-45deg) translateY(15%);
   }
 }
+

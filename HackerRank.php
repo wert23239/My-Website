@@ -11,7 +11,7 @@ $view= new Site\CodeView("downloads/CityGame.zip","https://github.com/wert23239/
 
 <?php echo $view->presentheader();
 $image="images/VisualCity.jpg";
-$text="UNDER CONSTRUCTION";
+$text="This is a variety of difficult problems I have finished on HackerRank";
 echo $view->presentDisplay($image,$text);
 ?>
 
