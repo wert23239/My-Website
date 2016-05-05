@@ -1,10 +1,10 @@
 <?php
 require 'lib/game.inc.php';
-$view= new Site\CodeView("downloads/CityGame.zip","https://github.com/wert23239/Visual-City-Game",\Site\SiteManager::VisualCityNum);
+$view= new Site\CodeView("downloads/CityGame.zip",\Site\SiteManager::VisualCityNum);
 ?>
 <!DOCTYPE html>
 <html lang="en">
-<?php echo $view->presenthead("Visual City") ?>
+<?php echo $view->presenthead("") ?>
 
 <body>
 

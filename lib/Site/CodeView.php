@@ -11,10 +11,8 @@ namespace Site;
 
 class CodeView extends View
 {
-    public function __construct($download,$gitlink,$id)
+    public function __construct($download,$id)
     {
-        $this->download=$download;
-        $this->gitlink=$gitlink;
         $this->id=$id;
         if($id%2){
             $this->color="CodeA";
@@ -23,6 +21,10 @@ class CodeView extends View
             $this->color="CodeB";
         }
         $this->connections= new SiteManager($id);
+        $this->current=$this->connections->getCurrent();
+        $this->download=$download;
+        $this->gitlink=$this->current->getLink();
+        $this->title=$this->current->getDisplay();
     }
     public function headadditional(){
         $check=$this->Title;
@@ -38,8 +40,8 @@ $(document).ready(function() {
 });
 $(function(){
     $('.image img').load(function(){
-       var img = $(this);
-       img.attr('width', img.width()).attr('height', img.height());
+        var img = $(this);
+        img.attr('width', img.width()).attr('height', img.height());
     });
 });
 </script>
@@ -56,6 +58,11 @@ HTML;
 <li class='last'><a href=$this->gitlink><span>Source Code</span></a></li>
 HTML;
         return $html;
+    }
+
+    public function presenthead($Title)
+    {
+        return parent::presenthead($this->title);
     }
 
     public function presentDisplay($image,$maintext)
@@ -116,6 +123,8 @@ HTML;
 private $download="";
     private $gitlink="";
     private $id="";
+    private $current="";
+    private $title="";
     private $connections;
     private $color="";
 }

@@ -1,6 +1,6 @@
 <?php
 require 'lib/game.inc.php';
-$view= new Site\CodeView("downloads/CityGame.zip",\Site\SiteManager::EmitterNum);
+$view= new Site\CodeView("downloads/CityGame.zip",\Site\SiteManager::DeserializerNum);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -10,8 +10,8 @@ $view= new Site\CodeView("downloads/CityGame.zip",\Site\SiteManager::EmitterNum)
 
 
 <?php echo $view->presentheader();
-$image="images/VisualCity.jpg";
-$text="UNDER CONSTRUCTION";
+$image="images/HackerRank.png";
+$text="This is a variety of difficult problems I have finished on HackerRank";
 echo $view->presentDisplay($image,$text);
 ?>
 
