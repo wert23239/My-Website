@@ -1,4 +1,4 @@
-/*! DO NOT EDIT mywebsite 2016-04-29 */
+/*! DO NOT EDIT mywebsite 2016-05-04 */
 ( function( $ ) {
 $( document ).ready(function() {
 $('#cssmenu').prepend('<div id="menu-button">Menu</div>');
