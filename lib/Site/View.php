@@ -16,12 +16,11 @@ class View
 }
     public function headadditional(){
         $html=<<<HTML
-<script src="jslib/KonamiCode"></script>
+<script src="site.min.js"></script>
 <script src="konami.js"></script>
 <script>
 $(document).ready(function() {
-    var KC=new KonamiComputer();
-    var KP
+    new KonamiComputer();
 });
 </script>
 <script>

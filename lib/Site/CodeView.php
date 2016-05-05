@@ -30,11 +30,17 @@ class CodeView extends View
 <script type="text/javascript" src="style/js/modernizr.custom.79639.js"></script>
 <script type="text/javascript" src="jquery.js"></script>
 <script src="typed.js"></script>
-<script src="jslib/IntroductionType.js"></script>
 <script>
 $(document).ready(function() {
     var Title='$check';
     new TypeName(Title);
+
+});
+$(function(){
+    $('.image img').load(function(){
+       var img = $(this);
+       img.attr('width', img.width()).attr('height', img.height());
+    });
 });
 </script>
 
@@ -46,8 +52,8 @@ HTML;
 
     public function headeradditional(){
         $html=<<<HTML
-<li class='last'><a href="$this->download" download><span>See Working Program</span></a></li>
-<li class='last'><a href=$this->gitlink><span>See Source Code</span></a></li>
+<li class='last'><a href="$this->download" download><span>Working Program</span></a></li>
+<li class='last'><a href=$this->gitlink><span>Source Code</span></a></li>
 HTML;
         return $html;
     }
@@ -87,7 +93,7 @@ HTML;
             <section class="st-panel $Second" id="st-panel-2">
                 <a href="index.php"><div class="st-deco $this->color" data-icon="S"></div></a>
                  <h2 class="Typed">Intro</h2>
-                <p><img src=$image alt="HTML5 Icon" width="50%" height="50%" class="image"><br>
+                <p><img src=$image alt="HTML5 Icon" id="image" class="image"><br>
                     $maintext</p>
             </section>
 
