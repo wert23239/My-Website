@@ -4,7 +4,7 @@ $view= new Site\CodeView("downloads/CityGame.zip",\Site\SiteManager::HackerRankN
 ?>
 <!DOCTYPE html>
 <html lang="en">
-<?php echo $view->presenthead("Hacker Rank") ?>
+<?php echo $view->presenthead("") ?>
 
 <body>
 

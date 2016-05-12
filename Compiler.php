@@ -4,7 +4,7 @@ $view= new Site\CodeView("downloads/Tree.zip",\Site\SiteManager::CompilerNum);
 ?>
 <!DOCTYPE html>
 <html lang="en">
-<?php echo $view->presenthead("Visual Tree") ?>
+<?php echo $view->presenthead("") ?>
 
 <body>
 
