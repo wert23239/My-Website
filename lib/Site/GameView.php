@@ -21,7 +21,6 @@ class GameView extends View
         $check=$this->Title;
         $html=<<<HTML
 <script type="text/javascript" src="style/js/modernizr.custom.79639.js"></script>
-<script type="text/javascript" src="jquery.js"></script>
 <script src="typed.js"></script>
 <script src="jslib/IntroductionType.js"></script>
 <script>

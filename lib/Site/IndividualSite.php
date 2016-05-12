@@ -11,21 +11,36 @@ namespace Site;
 
 class IndividualSite
 {
-    public function __construct($name,$number,$type)
+    public function __construct($name,$number,$git,$display,$type)
     {
 
         $this->name=$name;
         $this->number = $number;
         $this->type=$type;
+        $this->git=$git;
+        $this->displayname=$display;
     }
     private $name;
     private $number;
     private $type;
     private $visited;
+    private $git;
+    private $link;
+    private $displayname;
 
     /**
      * @return mixed
      */
+    public function getDisplay()
+    {
+        return $this->displayname;
+    }
+
+    public function setDisplay($displayname)
+    {
+        $this->displayname = $displayname;
+    }
+
     public function getName()
     {
         return $this->name;
@@ -37,6 +52,26 @@ class IndividualSite
     public function setName($name)
     {
         $this->name = $name;
+    }
+
+    public function getGit()
+    {
+        return $this->git;
+    }
+
+    public function setGit($git)
+    {
+        $this->git = $git;
+    }
+
+    public function getLink()
+    {
+        return $this->link;
+    }
+
+    public function setLink($link)
+    {
+        $this->link = $link;
     }
 
     /**
@@ -71,6 +106,11 @@ class IndividualSite
         $this->type = $type;
     }
 
+
+    /**
+     *This is for cookies later on
+     *
+     */
     /**
      * @return mixed
      */

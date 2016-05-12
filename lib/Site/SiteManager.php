@@ -22,14 +22,44 @@ class SiteManager
     const HackerRank="HackerRank.php";
     const Emitter="Emitter.php";
     const Deserializer="Deserializer.php";
-    const VaniaVirtualEvolution="Vania.php";
+    const Vania="Vania.php";
     const PythonGraphing="PythonGraphing.php";
     const SteamPunked="SteamPunked.php";
     const Employfai= "Employfai.php";
-    const Resume="Resume.php";
-    const VirtualAlpha="VirtualAlpha.php";
+    const Resume="SassResume.php";
+    const VirtualAlpha="VirtualAlphabet.php";
     const Compiler="Compiler.php";
     const Processing="Processing.php";
+
+    const VisualCityGit="https://github.com/wert23239/Visual-City-Game";
+    const VisualTreeGit="https://github.com/wert23239/Tree";
+    const MarkovBrainGit="NULL";
+    const HackerRankGit="http://www.comingsoon.net/";
+    const EmitterGit="NULL";
+    const DeserializerGit="NULL";
+    const VaniaGit="https://github.com/wert23239/VaniaVirtualEvolution";
+    const PythonGraphingGit="http://www.comingsoon.net/";
+    const SteamPunkedGit="http://www.comingsoon.net/";
+    const EmployfaiGit= "https://github.com/wert23239/Employifai";
+    const ResumeGit="NULL";
+    const VirtualAlphaGit="https://github.com/jfreedman0/Virtual-Alphabet";
+    const CompilerGit="http://www.comingsoon.net/";
+    const ProcessingGit="http://www.comingsoon.net/";
+
+    const VisualCityDisplay="Visual City";
+    const VisualTreeDisplay="Visual Tree";
+    const MarkovBrainDisplay="Markov Brain";
+    const HackerRankDisplay="Hacker Rank";
+    const EmitterDisplay="SQL Emitter";
+    const DeserializerDisplay="XML Deserializer";
+    const VaniaDisplay="Vania Virtual Evolution";
+    const PythonGraphingDisplay="Python Graphing";
+    const SteamPunkedDisplay="Steampunked";
+    const EmployfaiDiplay= "Employifai";
+    const ResumeDisplay="Sass Resume Project";
+    const VirtualAlphaDisplay="Virtual Alphabet";
+    const CompilerDisplay="C++ Compiler";
+    const ProcessingDisplay="Evolutionary Processing Display";
 
     const VisualCityNum=0;
     const VisualTreeNum=1;
@@ -37,7 +67,7 @@ class SiteManager
     const HackerRankNum=3;
     const EmitterNum=4;
     const DeserializerNum=5;
-    const VaniaVirtualEvolutionNum=6;
+    const VaniaNum=6;
     const PythonGraphingNum=7;
     const SteamPunkedNum=8;
     const EmployfaiNum= 9;
@@ -54,6 +84,7 @@ class SiteManager
         $this->initialize();
        // var_dump($this->Code);
         $this->type=$this->Code[$id]->getType();
+        $this->current=$this->Code[$id];
         $this->find();
     }
 
@@ -76,20 +107,20 @@ class SiteManager
 
     public function initialize(){
          $this->Code=array(
-             self::VisualCityNum => new IndividualSite(self::VisualCity,self::VisualCityNum,self::CodeType) ,
-             self::VisualTreeNum => new IndividualSite(self::VisualTree,self::VisualTreeNum,self::CodeType) ,
-             self::MarkovBrainNum => new IndividualSite(self::MarkovBrain,self::MarkovBrainNum,self::CodeType) ,
-             self::HackerRankNum => new IndividualSite(self::HackerRank,self::HackerRankNum,self::CodeType),
-             self::EmitterNum => new IndividualSite(self::Emitter,self::EmitterNum,self::CodeType),
-             self::DeserializerNum => new IndividualSite(self::Deserializer,self::DeserializerNum,self::CodeType),
-             self::VaniaVirtualEvolutionNum=> new IndividualSite(self::VaniaVirtualEvolution,self::VaniaVirtualEvolutionNum,self::CodeType),
-             self::PythonGraphingNum=> new IndividualSite(self::PythonGraphing,self::PythonGraphingNum,self::CodeType),
-             self::SteamPunkedNum=> new IndividualSite(self::SteamPunked,self::SteamPunkedNum,self::CodeType),
-             self::EmployfaiNum=> new IndividualSite(self::Employfai,self::EmployfaiNum,self::CodeType),
-             self::ResumeNum=> new IndividualSite(self::Resume,self::ResumeNum,self::CodeType),
-             self::VirtualAlphaNum=>new IndividualSite(self::VirtualAlpha,self::VirtualAlphaNum,self::CodeType),
-             self::CompilerNum=>new IndividualSite(self::Compiler,self::CompilerNum,self::CodeType),
-             self::ProcessingNum=>new IndividualSite(self::Processing,self::ProcessingNum,self::CodeType),
+             self::VisualCityNum => new IndividualSite(self::VisualCity,self::VisualCityNum,self::VisualCityGit,self::VisualCityDisplay,self::CodeType) ,
+             self::VisualTreeNum => new IndividualSite(self::VisualTree,self::VisualTreeNum,self::VisualTreeGit,self::VisualTreeDisplay,self::CodeType) ,
+             self::MarkovBrainNum => new IndividualSite(self::MarkovBrain,self::MarkovBrainNum,self::MarkovBrainGit,self::MarkovBrainDisplay,self::CodeType) ,
+             self::HackerRankNum => new IndividualSite(self::HackerRank,self::HackerRankNum,self::HackerRankGit,self::HackerRankDisplay,self::CodeType),
+             self::EmitterNum => new IndividualSite(self::Emitter,self::EmitterNum,self::EmitterGit,self::EmitterDisplay,self::CodeType),
+             self::DeserializerNum => new IndividualSite(self::Deserializer,self::DeserializerNum,self::DeserializerGit,self::DeserializerDisplay,self::CodeType),
+             self::VaniaNum=> new IndividualSite(self::Vania,self::VaniaNum,self::VaniaGit,self::VaniaDisplay,self::CodeType),
+             self::PythonGraphingNum=> new IndividualSite(self::PythonGraphing,self::PythonGraphingNum,self::PythonGraphingGit,self::PythonGraphingDisplay,self::CodeType),
+             self::SteamPunkedNum=> new IndividualSite(self::SteamPunked,self::SteamPunkedNum,self::SteamPunkedGit,self::SteamPunkedDisplay,self::CodeType),
+             self::EmployfaiNum=> new IndividualSite(self::Employfai,self::EmployfaiNum,self::EmployfaiGit,self::EmployfaiDiplay,self::CodeType),
+             self::ResumeNum=> new IndividualSite(self::Resume,self::ResumeNum,self::ResumeGit,self::ResumeDisplay,self::CodeType),
+             self::VirtualAlphaNum=>new IndividualSite(self::VirtualAlpha,self::VirtualAlphaNum,self::VirtualAlphaGit,self::VirtualAlphaDisplay,self::CodeType),
+             self::CompilerNum=>new IndividualSite(self::Compiler,self::CompilerNum,self::VisualCityGit,self::VisualCityDisplay,self::CodeType),
+             self::ProcessingNum=>new IndividualSite(self::Processing,self::ProcessingNum,self::VisualCityGit,self::VisualCityDisplay,self::CodeType),
          );
     }
 
@@ -106,12 +137,16 @@ class SiteManager
         return $this->next;
     }
 
-
+    public function getCurrent()
+    {
+        return $this->current;
+    }
 
 
     private $id;
     private $type;
     private $next;
     private $previous;
+    private $current;
     private $Code=array();
 }
