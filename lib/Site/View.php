@@ -42,7 +42,7 @@ HTML;
 <meta charset='UTF-8'>
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="style/styles.less">
+<link rel="stylesheet" href="style/styles.css">
 <script src="node_modules/jquery/dist/jquery.min.js" type="text/javascript"></script>
 <script src="site.min.js"></script>
 <script>
@@ -72,22 +72,22 @@ HTML;
             <ul>
                <li><a href='VisualCity.php'><span>Visual City</span></a></li>
                <li><a href='VisualTree.php'><span>Visual Tree</span></a></li>
-               <li><a href='#'><span>Virtual Evolution Markov</span></a></li>
-               <li class='last'><a href='#'><span>HackerRank</span></a></li>
+               <li><a href='MarkovBrain.php'><span>Virtual Evolution Markov</span></a></li>
+               <li class='last'><a href='HackerRank.php'><span>HackerRank</span></a></li>
             </ul>
          </li>
          <li class='has-sub'><a href='#'><span>C#</span><div class='rank'>6/10</div></a>
             <ul>
-               <li><a href='#'><span>SQL Emitter</span></a></li>
-               <li class='last'><a href='#'><span>Deserializer</span></a></li>
+               <li><a href='Emitter.php'><span>SQL Emitter</span></a></li>
+               <li class='last'><a href='Deserializer.php'><span>Deserializer</span></a></li>
             </ul>
          </li>
          <li class='has-sub'><a href='#'><span>Lua</span><div class='rank'>7/10</div></a>
             <ul>
-               <li class='last'><a href='#'><span>Vania Virtual Evolution</span></a></li>
+               <li class='last'><a href='Vania.php'><span>Vania Virtual Evolution</span></a></li>
             </ul>
          </li>
-         <li class='has-sub'><a href='#'><span>Phython</span><div class='rank'>5/10</div></a>
+         <li class='has-sub'><a href='PythonGraphing.php'><span>Phython</span><div class='rank'>5/10</div></a>
             <ul>
                <li><a href='#'><span>Phython Notebook Mathlib Graphing</span></a></li>
                <li class='last'><a href='#'><span>HackerRank</span></a></li>
@@ -142,7 +142,7 @@ HTML;
       </ul>
    </li>
    <li class='last'><a href='#'><span>Contact</span></a></li>
-   <li class='last'><a href='#'><span>Resume</span></a></li>
+   <li class='last'><a href='ResumeComplete.php'><span>Resume</span></a></li>
 HTML;
 $html.=$this->headeradditional();
 
