@@ -1,11 +1,11 @@
 <?php
 require 'lib/game.inc.php';
-$view= new Site\View();
+$view= new Site\ResumeView();
 ?>
 
 <!doctype html>
 <html lang='en'>
-<?php echo $view->presenthead("Home") ?>
+<?php echo $view->presenthead("Resume") ?>
 <body>
 <?php echo $view->presentheader() ?>
 <div id="example1">
