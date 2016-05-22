@@ -7,6 +7,7 @@ $view= new Site\ResumeView();
 <html lang='en'>
 <?php echo $view->presenthead("Resume") ?>
 <body>
+<p class="neg">.</p>
 <?php echo $view->presentheader() ?>
 <div id="example1">
     <script src="node_modules/PDFViewer/pdfobject.min.js"></script>
