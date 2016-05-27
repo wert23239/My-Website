@@ -30,7 +30,7 @@ $(document).ready(function() {
 </script>
 
 HTML;
-
+$html="";
         return $html;
     }
 
@@ -51,9 +51,9 @@ $(document).ready(function() {
 });
 </script>
 <title>$Title</title>
-</head>
 HTML;
         $html.=$this->headadditional();
+        $html.="</head>";
         return $html;
     }
 
