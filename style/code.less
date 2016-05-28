@@ -4,6 +4,10 @@
 @MainColor: #9966cc;
 @AlternativeColor: white;
 
+
+body{
+  overflow: scroll;
+}
 @font-face{
   font-family: CabinSketch-Boldimport;
   src:url("fonts/CabinSketch-Regular.otf");
@@ -13,8 +17,37 @@
   font-family: CabinSketch-Regularimport;
   src:url("fonts/CabinSketch-Bold.otf");
 }
+@font-face{
+  font-family: Skybird;
+  src:url("fonts/Skybird-Regular.ttf");
 
+}
 
+.CodeA h1{
+  font-family: Skybird,'Myriad Pro', Arial, sans-serif;
+  font-size: 5em;
+}
+
+.CodeA h2{
+  font-family: Skybird,'Myriad Pro', Arial, sans-serif;
+  font-size: 2em;
+}
+@media (max-width:359px)
+{
+  .CodeA h1{
+    font-family: Skybird,'Myriad Pro', Arial, sans-serif;
+    font-size: 3em;
+    color: red;
+  }
+}
+
+.CodeA{
+  border: #360c08 groove ;
+margin-top: 0;
+}
+
+.img{
+}
 
 .st-container {
   position: absolute;
@@ -22,7 +55,6 @@
   height: 100%;
   top: 0;
   left: 0;
-  font-family: 'Josefin Slab', 'Myriad Pro', Arial, sans-serif;
 }
 
 .st-container > input,
@@ -404,7 +436,6 @@
 /* Colored sections */
 
 .CodeA2 h2 {
-  color: #000;
   text-shadow: 3px 3px #301934;
 }
 
@@ -415,14 +446,6 @@
 .CodeA2 [data-icon]:after {
   color: #9966cc; //main
 }
-.CodeA2 .CodeA {
-  background: #000;
-}
-
-.CodeA2 p {
-  color: #000;
-  color: rgba(255,255,255,0.8);
-}
 
 
 .CodeB2 h2 {
@@ -431,13 +454,8 @@
 }
 
 
-.CodeB2,
-.CodeB{
-  background: #000; //main
-}
-.CodeB2 [data-icon]:after {
-  color: #000; //main
-}
+
+
 .CodeB2 .CodeB {
   background: #9966cc;
 }
