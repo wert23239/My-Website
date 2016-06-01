@@ -1,6 +1,6 @@
 <?php
 require 'lib/game.inc.php';
-$view= new Site\CodeView("downloads/CityGame.zip",\Site\SiteManager::VaniaNum);
+$view= new Site\CodeView("downloads/VaniaVirtualEvolution.zip",\Site\SiteManager::VaniaNum);
 ?>
 <!DOCTYPE html>
 <html lang="en">
