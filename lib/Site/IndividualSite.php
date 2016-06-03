@@ -11,7 +11,7 @@ namespace Site;
 
 class IndividualSite
 {
-    public function __construct($name,$number,$git,$display,$type)
+    public function __construct($name,$number,$git,$display,$download,$type)
     {
 
         $this->name=$name;
@@ -19,6 +19,7 @@ class IndividualSite
         $this->type=$type;
         $this->git=$git;
         $this->displayname=$display;
+        $this->download=$download;
     }
     private $name;
     private $number;
@@ -27,6 +28,7 @@ class IndividualSite
     private $git;
     private $link;
     private $displayname;
+    private $download;
 
     /**
      * @return mixed

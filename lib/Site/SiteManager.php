@@ -31,6 +31,21 @@ class SiteManager
     const Compiler="Compiler.php";
     const Processing="Processing.php";
 
+    const VisualCityFile="CityGame.zip";
+    const VisualTreeFile="Tree.zip";
+    const MarkovBrainFile="";
+    const HackerRankFile="";
+    const EmitterFile="";
+    const DeserializerFile="";
+    const VaniaFile="VaniaVirtualEvolution.zip";
+    const PythonGraphingFile="";
+    const SteamPunkedFile="http://webdev.cse.msu.edu/~lambe168/project3/";
+    const EmployfaiFile= "";
+    const ResumeFile="http://www.cse.msu.edu/~lambe168/";
+    const VirtualAlphaFile="VirtualAlphabet.php";
+    const CompilerFile="Compiler.php";
+    const ProcessingFile="Processing.php";
+
     const VisualCityGit="https://github.com/wert23239/Visual-City-Game";
     const VisualTreeGit="https://github.com/wert23239/Tree";
     const MarkovBrainGit="NULL";
@@ -107,11 +122,16 @@ class SiteManager
 
     public function initialize(){
          $this->Code=array(
-             self::VisualCityNum => new IndividualSite(self::VisualCity,self::VisualCityNum,self::VisualCityGit,self::VisualCityDisplay,self::CodeType) ,
-             self::VisualTreeNum => new IndividualSite(self::VisualTree,self::VisualTreeNum,self::VisualTreeGit,self::VisualTreeDisplay,self::CodeType) ,
-             self::MarkovBrainNum => new IndividualSite(self::MarkovBrain,self::MarkovBrainNum,self::MarkovBrainGit,self::MarkovBrainDisplay,self::CodeType) ,
-             self::HackerRankNum => new IndividualSite(self::HackerRank,self::HackerRankNum,self::HackerRankGit,self::HackerRankDisplay,self::CodeType),
-             self::EmitterNum => new IndividualSite(self::Emitter,self::EmitterNum,self::EmitterGit,self::EmitterDisplay,self::CodeType),
+             self::VisualCityNum => new IndividualSite(self::VisualCity,self::VisualCityNum,
+                 self::VisualCityGit, self::VisualCityDisplay,self::VisualCityFile, self::CodeType) ,
+             self::VisualTreeNum => new IndividualSite(self::VisualTree,self::VisualTreeNum,
+                 self::VisualTreeGit,self::VisualTreeDisplay,self::VisualCityFile,self::CodeType) ,
+             self::MarkovBrainNum => new IndividualSite(self::MarkovBrain,self::MarkovBrainNum,
+                 self::MarkovBrainGit,self::MarkovBrainDisplay,self::MarkovBrainFile, self::CodeType) ,
+             self::HackerRankNum => new IndividualSite(self::HackerRank,self::HackerRankNum,
+                 self::HackerRankGit,self::HackerRankDisplay,self::HackerRankFile,self::CodeType),
+             self::EmitterNum => new IndividualSite(self::Emitter,self::EmitterNum,
+                 self::EmitterGit,self::EmitterDisplay,self::EmitterFile,self::CodeType),
              self::DeserializerNum => new IndividualSite(self::Deserializer,self::DeserializerNum,self::DeserializerGit,self::DeserializerDisplay,self::CodeType),
              self::VaniaNum=> new IndividualSite(self::Vania,self::VaniaNum,self::VaniaGit,self::VaniaDisplay,self::CodeType),
              self::PythonGraphingNum=> new IndividualSite(self::PythonGraphing,self::PythonGraphingNum,self::PythonGraphingGit,self::PythonGraphingDisplay,self::CodeType),

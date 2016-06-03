@@ -52,10 +52,17 @@ HTML;
 
 
     public function headeradditional(){
-        $html=<<<HTML
+      $html="";
+        if($this->download!="") {
+            $html .= <<<HTML
 <li class='last'><a href="$this->download" download><span>Working Program</span></a></li>
+HTML;
+        }
+        if($this->gitlink!="") {
+        $html.=<<<HTML
 <li class='last'><a href=$this->gitlink><span>Source Code</span></a></li>
 HTML;
+        }
         return $html;
     }
 
