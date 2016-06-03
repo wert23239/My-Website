@@ -9,7 +9,7 @@
 namespace Site;
 
 
-class CodeView extends View
+class CodeView2 extends View
 {
     public function __construct($download,$id)
     {
@@ -72,21 +72,48 @@ HTML;
         //var_dump($Prev);
         $NamePre=$Prev->getName();
         $NameAft=$Next->getName();
-        $Title=$this->Title;
         $Second=$this->color."2";
         $html=<<<HTML
-<pre>hey</pre>
+<div class="container">
 
-<div class="jumbotron CodeA">
-    <h1 class="CodeB"><strong>$Title</strong></h1>
-    <div class="container">
-    <ul class="pager">
-        <li class="previous"><a href="$NamePre">Previous</a></li>
-        <li class="next"><a href="$NameAft">Next</a></li>
-    </ul>
-    </div>
-    <h2 class="CodeB">$maintext</h2>
-    <p><img src=$image id="image" height="320px" class="img-responsive center-block"></p>
+
+    <!--    ;-->
+
+    <div class="st-container">
+        <p class="neg2">hey</p>
+        <a href=$NamePre id="st-control-1">Prev</a>
+        <input type="radio" name="radio-set" checked="checked" id="st-control-2"/>
+        <a href="#st-panel-2">Intro</a>
+        <a href=$NameAft id="st-control-3">Next</a>
+
+        <div class="st-scroll">
+
+            <!-- Placeholder text from http://hipsteripsum.me/ -->
+
+            <section class="st-panel" id="st-panel-1">
+                <a href="index.php"><div class="st-deco $this->color" data-icon="S"></div></a>
+               <a href=$NamePre <h2>Previous</h2></a>
+               <!--<p>$NamePre</p>-->
+            </section>
+
+            <section class="st-panel $Second" id="st-panel-2">
+                <a href="index.php"><div class="st-deco $this->color" data-icon="S"></div></a>
+                 <h2 class="Typed">Intro</h2>
+                <p><img src=$image alt="HTML5 Icon" id="image" class="image"><br>
+                    $maintext</p>
+            </section>
+
+            <section class="st-panel" id="st-panel-3">
+                <a href="index.php"><div class="st-deco $this->color" data-icon="S"></div></a>
+               <a href=$NameAft><h2>Next</h2></a>
+            </section>
+
+
+        </div><!-- // st-scroll -->
+
+    </div><!-- // st-container -->
+
+</div>
 HTML;
         return $html;
     }
