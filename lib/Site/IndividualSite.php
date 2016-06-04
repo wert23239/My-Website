@@ -14,7 +14,7 @@ class IndividualSite
     const DownloadPath="downloads/";
     const ImagePath="images/";
     const NamePath="ProjectDisplay.php?id=";
-    public function __construct($name,$number,$git,$display,$download,$image,$desc,$type)
+    public function __construct($number,$git,$display,$download,$image,$desc,$type)
     {
         $this->name=self::NamePath;
         $this->name.=$number;

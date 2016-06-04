@@ -16,21 +16,6 @@ class SiteManager
     const GameType="game";
     const ArtType="art";
 
-    const VisualCity="VisualCity.php";
-    const VisualTree="VisualTree.php";
-    const MarkovBrain="MarkovBrain.php";
-    const HackerRank="HackerRank.php";
-    const Emitter="Emitter.php";
-    const Deserializer="Deserializer.php";
-    const Vania="Vania.php";
-    const PythonGraphing="PythonGraphing.php";
-    const SteamPunked="SteamPunked.php";
-    const Employfai= "Employfai.php";
-    const Resume="SassResume.php";
-    const VirtualAlpha="VirtualAlphabet.php";
-    const Compiler="Compiler.php";
-    const Processing="Processing.php";
-
 
     const VisualCityDesc="This is The Visual C++ program called Visual City. It involves some nice XML saving and loading as well
 as a couple cool features like adding a rotating tiles. The city even includes a game if you click the dice.";
@@ -162,34 +147,34 @@ to be played by kids to help they draw the letters the correct way.";
 
     public function initialize(){
          $this->Code=array(
-             self::VisualCityNum => new IndividualSite(self::VisualCity,self::VisualCityNum,
-                 self::VisualCityGit, self::VisualCityDisplay,self::VisualCityFile,self::VisualCityImage,self::VisualCityDesc ,self::CodeType) ,
-             self::VisualTreeNum => new IndividualSite(self::VisualTree,self::VisualTreeNum,
-                 self::VisualTreeGit,self::VisualTreeDisplay,self::VisualTreeFile,self::VisualTreeImage,self::VisualTreeDesc,self::CodeType) ,
-             self::MarkovBrainNum => new IndividualSite(self::MarkovBrain,self::MarkovBrainNum,
-                 self::MarkovBrainGit,self::MarkovBrainDisplay,self::MarkovBrainFile,self::MarkovBrainImage,self::MarkovBrainDesc ,self::CodeType) ,
-             self::HackerRankNum => new IndividualSite(self::HackerRank,self::HackerRankNum,
-                 self::HackerRankGit,self::HackerRankDisplay,self::HackerRankFile,self::HackerRankImage,self::HackerRankDesc,self::CodeType),
-             self::EmitterNum => new IndividualSite(self::Emitter,self::EmitterNum,
-                 self::EmitterGit,self::EmitterDisplay,self::EmitterFile,self::EmitterImage,self::EmitterDesc,self::CodeType),
-             self::DeserializerNum => new IndividualSite(self::Deserializer,self::DeserializerNum,
-                 self::DeserializerGit,self::DeserializerDisplay,self::DeserializerFile,self::DeserializerImage,self::DeserializerDesc,self::CodeType),
-             self::VaniaNum=> new IndividualSite(self::Vania,self::VaniaNum,
-                 self::VaniaGit,self::VaniaDisplay,self::VaniaFile ,self::VaniaImage,self::VaniaDesc,self::CodeType),
-             self::PythonGraphingNum=> new IndividualSite(self::PythonGraphing,self::PythonGraphingNum,
-                 self::PythonGraphingGit,self::PythonGraphingDisplay,self::PythonGraphingFile,self::PythonGraphingImage,self::PythonGraphingDesc,self::CodeType),
-             self::SteamPunkedNum=> new IndividualSite(self::SteamPunked,self::SteamPunkedNum,
-                 self::SteamPunkedGit,self::SteamPunkedDisplay,self::SteamPunkedFile,self::SteamPunkedImage,self::SteamPunkedDesc ,self::CodeType),
-             self::EmployfaiNum=> new IndividualSite(self::Employfai,self::EmployfaiNum,
-                 self::EmployfaiGit,self::EmployfaiDiplay,self::EmployfaiFile,self::EmployfaiImage,self::EmployfaiDesc,self::CodeType),
-             self::ResumeNum=> new IndividualSite(self::Resume,self::ResumeNum,
-                 self::ResumeGit,self::ResumeDisplay,self::ResumeFile,self::ResumeImage,self::ResumeDesc,self::CodeType),
-             self::VirtualAlphaNum=>new IndividualSite(self::VirtualAlpha,self::VirtualAlphaNum,
-                 self::VirtualAlphaGit,self::VirtualAlphaDisplay,self::VirtualAlphaFile,self::VirtualAlphaImage,self::VirtualAlphaDesc,self::CodeType),
-             self::CompilerNum=>new IndividualSite(self::Compiler,self::CompilerNum,
-                 self::CompilerGit,self::CompilerDisplay,self::CompilerFile,self::CompilerImage,self::CompilerDesc,self::CodeType),
-             self::ProcessingNum=>new IndividualSite(self::Processing,self::ProcessingNum,
-                 self::ProcessingGit,self::ProcessingDisplay,self::ProcessingFile,self::ProcessingImage,self::ProcessingDesc,self::CodeType),
+             self::VisualCityNum => new IndividualSite(self::VisualCityNum, self::VisualCityGit, self::VisualCityDisplay,
+                 self::VisualCityFile,self::VisualCityImage,self::VisualCityDesc ,self::CodeType) ,
+             self::VisualTreeNum => new IndividualSite(self::VisualTreeNum,self::VisualTreeGit,self::VisualTreeDisplay,
+                 self::VisualTreeFile,self::VisualTreeImage,self::VisualTreeDesc,self::CodeType) ,
+             self::MarkovBrainNum => new IndividualSite(self::MarkovBrainNum, self::MarkovBrainGit, self::MarkovBrainDisplay,
+                 self::MarkovBrainFile,self::MarkovBrainImage,self::MarkovBrainDesc ,self::CodeType) ,
+             self::HackerRankNum => new IndividualSite(self::HackerRankNum, self::HackerRankGit,self::HackerRankDisplay,
+                 self::HackerRankFile,self::HackerRankImage,self::HackerRankDesc,self::CodeType),
+             self::EmitterNum => new IndividualSite(self::EmitterNum, self::EmitterGit,self::EmitterDisplay,
+                 self::EmitterFile,self::EmitterImage,self::EmitterDesc,self::CodeType),
+             self::DeserializerNum => new IndividualSite(self::DeserializerNum, self::DeserializerGit,self::DeserializerDisplay,
+                 self::DeserializerFile,self::DeserializerImage,self::DeserializerDesc,self::CodeType),
+             self::VaniaNum=> new IndividualSite(self::VaniaNum, self::VaniaGit,self::VaniaDisplay,
+                 self::VaniaFile ,self::VaniaImage,self::VaniaDesc,self::CodeType),
+             self::PythonGraphingNum=> new IndividualSite(self::PythonGraphingNum, self::PythonGraphingGit,self::PythonGraphingDisplay,
+                 self::PythonGraphingFile,self::PythonGraphingImage,self::PythonGraphingDesc,self::CodeType),
+             self::SteamPunkedNum=> new IndividualSite(self::SteamPunkedNum, self::SteamPunkedGit,self::SteamPunkedDisplay,
+                 self::SteamPunkedFile,self::SteamPunkedImage,self::SteamPunkedDesc ,self::CodeType),
+             self::EmployfaiNum=> new IndividualSite(self::EmployfaiNum, self::EmployfaiGit,self::EmployfaiDiplay,
+                 self::EmployfaiFile,self::EmployfaiImage,self::EmployfaiDesc,self::CodeType),
+             self::ResumeNum=> new IndividualSite(self::ResumeNum, self::ResumeGit,self::ResumeDisplay,
+                 self::ResumeFile,self::ResumeImage,self::ResumeDesc,self::CodeType),
+             self::VirtualAlphaNum=>new IndividualSite(self::VirtualAlphaNum, self::VirtualAlphaGit,self::VirtualAlphaDisplay,
+                 self::VirtualAlphaFile,self::VirtualAlphaImage,self::VirtualAlphaDesc,self::CodeType),
+             self::CompilerNum=>new IndividualSite(self::CompilerNum, self::CompilerGit,self::CompilerDisplay,
+                 self::CompilerFile,self::CompilerImage,self::CompilerDesc,self::CodeType),
+             self::ProcessingNum=>new IndividualSite(self::ProcessingNum, self::ProcessingGit,self::ProcessingDisplay,
+                 self::ProcessingFile,self::ProcessingImage,self::ProcessingDesc,self::CodeType),
          );
     }
 
