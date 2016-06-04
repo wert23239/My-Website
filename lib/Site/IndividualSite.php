@@ -11,7 +11,7 @@ namespace Site;
 
 class IndividualSite
 {
-    public function __construct($name,$number,$git,$display,$download,$image,$type)
+    public function __construct($name,$number,$git,$display,$download,$image,$desc,$type)
     {
 
         $this->name=$name;
@@ -25,6 +25,8 @@ class IndividualSite
         }
         $this->image="images/";
         $this->image.=$image;
+        $this->description=$desc;
+
     }
     private $name;
     private $number;
@@ -35,6 +37,7 @@ class IndividualSite
     private $displayname;
     private $download="";
     private $image;
+    private $description;
 
     /**
      * @return mixed
@@ -155,5 +158,15 @@ class IndividualSite
     public function setImage($image)
     {
         $this->image = $image;
+    }
+
+    public function getDescription()
+    {
+        return $this->description;
+    }
+
+    public function setDescription($description)
+    {
+        $this->description = $description;
     }
 }

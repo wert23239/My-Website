@@ -1,18 +1,16 @@
 <?php
 require 'lib/game.inc.php';
-$view= new Site\CodeView("downloads/CityGame.zip",\Site\SiteManager::MarkovBrainNum);
+$view= new Site\CodeView(\Site\SiteManager::MarkovBrainNum);
 ?>
 <!DOCTYPE html>
 <html lang="en">
-<?php echo $view->presenthead("Markov Brain") ?>
+<?php echo $view->presenthead("") ?>
 
 <body>
 
 
 <?php echo $view->presentheader();
-$image="images/VisualCity.jpg";
-$text="UNDER CONSTRUCTION";
-echo $view->presentDisplay($image,$text);
+echo $view->presentDisplay();
 ?>
 
 </body>

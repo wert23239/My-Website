@@ -11,7 +11,7 @@ namespace Site;
 
 class CodeView extends View
 {
-    public function __construct($download,$id)
+    public function __construct($id)
     {
         $this->id=$id;
         if($id%2){
@@ -27,7 +27,7 @@ class CodeView extends View
         $this->gitlink=$this->current->getGit();
         $this->title=$this->current->getDisplay();
         $this->image=$this->current->getImage();
-
+        $this->description=$this->current->getDescription();
     }
     public function headadditional(){
         $check=$this->Title;
@@ -74,7 +74,7 @@ HTML;
         return parent::presenthead($this->title);
     }
 
-    public function presentDisplay($image,$maintext)
+    public function presentDisplay()
     {
         $Prev=$this->connections->getPrevious();
         $Next=$this->connections->getNext();
@@ -95,7 +95,7 @@ HTML;
         <li class="next"><a href="$NameAft">Next</a></li>
     </ul>
     </div>
-    <h2 class="CodeB">$maintext</h2>
+    <h2 class="CodeB">$this->description</h2>
     <p><img src=$this->image id="image" height="320px" class="img-responsive center-block"></p>
 HTML;
         return $html;
@@ -110,4 +110,5 @@ private $download="";
     private $connections;
     private $color="";
     private $image="";
+    private $description="";
 }
