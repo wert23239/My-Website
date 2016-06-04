@@ -77,6 +77,13 @@ HTML;
         return parent::presenthead($this->title);
     }
 
+    public function presentPre()
+    {
+        return <<<HTML
+<pre>hey</pre>;
+HTML;
+    }
+
     public function presentDisplay()
     {
         $Prev=$this->connections->getPrevious();
@@ -88,8 +95,6 @@ HTML;
         $Display=$this->title;
         $Second=$this->color."2";
         $html=<<<HTML
-<pre>hey</pre>
-
 <div class="jumbotron CodeA">
     <h1 class="CodeB"><strong>$Display</strong></h1>
     <div class="container">
