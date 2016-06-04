@@ -1,4 +1,4 @@
-/*! DO NOT EDIT mywebsite 2016-06-03 */
+/*! DO NOT EDIT mywebsite 2016-06-04 */
 ( function( $ ) {
 $( document ).ready(function() {
 $('#cssmenu').prepend('<div id="menu-button">Menu</div>');
@@ -89,112 +89,254 @@ function MissYou(){
     });
 }
 
+function parse_json(json) {
+    try {
+        var data = $.parseJSON(json);
+    } catch(err) {
+        throw "JSON parse error: " + json;
+    }
+
+    return data;
+}
+/**
+ * Created by Alex on 4/23/2016.
+ */
+function PipePlay(sel) {
+
+    this.initialize(sel);
+};
+
+
+PipePlay.prototype.initialize = function(sel){
+
+    var that = this;
+
+    ///Gets the game
+    var game = $(".game");
+
+    ///Gets all of the rows
+    var rows = game.find(".row");
+
+    ///Iterates to get each individual row
+    for (var r=0; r<rows.length; r++){
+
+        ///Singles rows
+        var row = $(rows.get(r));
+
+        ///All the cells in a row
+        var cells = row.find(".cell");
+
+        ///Iterates to get each indvidual cell
+        for(var j=0; j<cells.length; j++) {
+
+            var cell = $(cells.get(j));
+
+            var cell = $(cells.get(j));
+
+            var grid = $(cell.find("#grid"));
+
+            if(grid.val() === undefined){
+                console.log('null');
+            }
+            else{
+                value = grid.val().split("-",2);
+                that.installListenerTiles(value[0], value[1], grid, sel);
+            }
+
+        }
+    }
+
+
+    ///The radio button and option buttons
+    var controls = $(".player-controls");
+
+    ///All the pipe selections
+    var pipes = controls.find(".pipe");
+
+    ///Iterates to get each pipe
+    for(var i=0; i<pipes.length; i++){
+
+        ///Single pipe buttons
+        var pipe = $(pipes.get(i));
+
+        ///Value of each pipe button
+        var idb = pipe.find('input[name="pipe"]').val();
+
+    }
+
+    ///Control buttons
+    var buttons = controls.find(".buttons");
+
+    ///Each button value
+    for(var i=0; i<buttons.length; i++){
+
+        var button = $(buttons.get(i));
+
+        ///Value example(Rotate, Discard, etc.)
+        that.installListenerButtons(button.val(), button);
+
+    }
+    var form=$(sel);
+    form.submit(function(event){
+       event.preventDefault();
+    });
+
+
+
+
+};
+
+
+PipePlay.prototype.installListenerTiles = function (row, col,cell, sel) {
+
+    var that = this;
+    //console.log(tile);
+
+    cell.click(function () {
+        var pipe = $('input[name=pipe]:checked', '#myForm').val();
+        $.ajax({
+            url: "game-post.php",
+            data: {row: row, col: col, pipe: pipe, grid: true, ajax: true},
+            method: "POST",
+            success: function (data) {
+                var json = parse_json(data);
+                console.log(json);
+                if (json.ok) {
+                    that.update(json.grid);
+                    that.initialize(sel);
+                } else {
+                    // Update failed
+                }
+            },
+            error: function (xhr, status, error) {
+                // Error
+                that.message("<p>Error: " + error + "</p>");
+            }
+        });
+    });
+}
+
+
+PipePlay.prototype.installListenerButtons = function (buttonVal, button, sel) {
+
+    var that = this;
+
+    button.click(function () {
+        var pipe = $('input[name=pipe]:checked', '#myForm').val();
+
+        $.ajax({
+            url: "game-post.php",
+            data: {button: buttonVal, pipe:pipe, gird:true, ajax:true},
+            method: "POST",
+            success: function (data) {
+                var json = parse_json(data);
+                if (json.ok) {
+                    // Successfully updated
+                    that.update(json.grid);
+                    that.initialize(sel);
+                } else {
+                    // Update failed
+                }
+            },
+            error: function (xhr, status, error) {
+                // Error
+                that.message("<p>Error: " + error + "</p>");
+            }
+        });
+    });
+
+};
+
+PipePlay.prototype.update = function(grid,checked) {
+    
+
+    $("form").html(grid);
+
+
+}
 /**
  * Created by Alex on 4/23/2016.
  */
 function ProjectDisplay(id) {
-    //this.runajax(sel, title, year);
+    this.initialize(id);
     console.log(id);
-};
+}
 
 
 
-ProjectDisplay.prototype.runajax = function(sel, title, year) {
-    var that=this;
-    $.ajax({
-        url: "https://api.themoviedb.org/3/search/movie",
-        data: {api_key: "f7843293ddf1ba30363b4f128c56e32d", query:title ,rating: year},
-        method: "GET",
-        dataType: "text",
-        success: function(data) {
-            var json = parse_json(data);// Successfully updated
-            console.log("hey");
-            console.log(json.results);
-            if(json.total_results>0){
+ProjectDisplay.prototype.initialize = function(id){
 
-                that.populate(json);
-                $(".B"+1).css("opacity","1.0");
-                $(".B"+2).css("opacity",".3");
-                $(".B"+3).css("opacity",".3");
-
-                for(var s=1; s<=4; s++) {
-                    var id= $(".B"+s);
-                    var area= $("#A"+s);
-                    console.log(s);
-                    // We are at a star
-                    that.installListener(id,s,area);
-                }
-            }
-            else{
-                $(" .paper").html("<p>No information available</p>").show();
-            }
-
-
-
-        },
-        error: function(xhr, status, error) {
-            // Error
-            var json = parse_json(data);// Successfully updated
-            console.log(json);
-            $(" .paper").html("<p>Unable to communicate<br>with themoviedb.org</p>").show();
-        }
-    });
-};
-
-ProjectDisplay.prototype.populate= function(json){
-    Total=json.results[0];
-    console.log(json.results[0]);
-    var overview=Total.overview;
-    var Title= Total.title;
-    var release= Total.release_date;
-    var vote= Total.vote_average;
-    var voteC= Total.vote_count;
-    var poster="http://image.tmdb.org/t/p/w500/" +Total.poster_path;
-    var results="";
-    console.log("#opression");
-    console.log(json.results[0]);
-    results+="<ul>";
-    results+="<li><a class=\"B1\" href=\"\"><img src=\"images/info.png\"></a>";
-    results+="<div id='A1'  class=\"show\">";
-    results+="<p>Title:"+Title+"</p>";
-    results+="<p>Release:"+release+"</p>";
-    results+="<p>Vote:"+vote+"</p>";
-    results+="<p>VoteC:"+voteC+"</p>";
-    results+="</div>";
-    results+="</li>";
-    results+="<li><a class='B2' href=\"\"><img src=\"images/plot.png\"></a>";
-    results+="<div id='A2' class=\"\">";
-    results+="<p>Overview:"+overview+"</p>";
-    results+="</div>";
-    results+="</li>";
-    if(Total.poster_path!=null) {
-        results += "<li><a class='B3' href=\"\"><img src=\"images/poster.png\"></a>";
-        results += "<div id='A3' class=\"\">";
-        results += "<p class=\"poster\"><img src=" + poster + ">";
-        results += "</div>";
-        results += "</li>";
+    var that = this;
+    var idminus=13;
+    if(id!=0){
+        idminus=id-1;
+    }
+    var idplus=0;
+    if(id!=13){
+        idplus=parseInt(id)+1;
     }
 
-    results+="</ul>";
-    console.log(results);
-    $(" .paper").html(results).show();
+    var buttonprevious= $(".previous");
+    console.log(buttonprevious);
+    that.installListener(buttonprevious, idminus);
+    var buttonnext= $(".next");
+    console.log(buttonnext);
+    console.log(idplus);
+    that.installListener(buttonnext, idplus);
+
+
+
 };
 
 
-ProjectDisplay.prototype.installListener = function(id,s,area) {
+ProjectDisplay.prototype.installListener = function (buttonpressed,id) {
+
     var that = this;
+    console.log(id);
 
-    id.click(function(event) {
-        console.log("working2");
+    buttonpressed.click(function (event) {
         event.preventDefault();
-        for(var s=1; s<=4; s++) {
-            $(".B"+s).css("opacity",".3");
-            $("#A"+s).fadeOut(1000);
-            // We are at a star
-        }
-
-        id.css("opacity","1.0");
-        area.fadeIn(1000);
-
+        $.ajax({
+            url: "page-post.php",
+            data: {id: id,ajax: true},
+            method: "POST",
+            success: function (data) {
+                console.log("close");
+                var json = parse_json(data);
+                console.log(json);
+                console.log(json.ok);
+                if (json.ok) {
+                    that.update(json.NewProject,id);
+                } else {
+                    // Update failed
+                }
+            },
+            error: function (xhr, status, error) {
+                // Error
+                that.message("<p>Error: " + error + "</p>");
+            }
+        });
     });
+};
+
+
+ProjectDisplay.prototype.update = function(NewProject,id) {
+    var that=this;
+    console.log("NewProject:");
+    console.log(NewProject);
+    $(".jumbotron").slideUp(500,"swing",
+        function(){
+            $(".jumbotron").html(NewProject);
+        }).delay(500).slideDown(500,"swing");
+    that.initialize(id);
+
+
+
+};
+
+ProjectDisplay.prototype.message = function(html) {
+    $("jumbotron").fadeOut(1000);
+    $("jumbotron").html(html);
+
+
 };

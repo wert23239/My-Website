@@ -1,6 +1,6 @@
 <?php
 
-
+require 'lib/game.inc.php';
 
 $debug=true;
 $debug=false;
@@ -24,6 +24,6 @@ else{
 // - Can't think of anything else...
 //
 
-    header("location: ".$controller->getPage());
+echo $controller->getResult();
 
 }
