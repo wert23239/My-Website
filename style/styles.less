@@ -27,12 +27,20 @@
   font-family: CabinSketch-Boldimport;
 }
 .pager .next>a, .pager .next>span{
-   margin-right: 4em;
   font-size: 2em;
  }
 .pager .previous>a, .pager .previous>span{
-  margin-left: 4em;
   font-size: 2em;
+}
+
+@media (max-width:380px)
+{
+  .pager .next>a, .pager .next>span{
+    font-size: 1.2em;
+  }
+  .pager .previous>a, .pager .previous>span{
+    font-size: 1.2em;
+  }
 }
 
 .neg{
