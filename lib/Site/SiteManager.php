@@ -31,6 +31,23 @@ class SiteManager
     const Compiler="Compiler.php";
     const Processing="Processing.php";
 
+
+    const VisualCityImage="VisualCity.jpg";
+    const VisualTreeImage="Tree.png";
+    const MarkovBrainImage="";
+    const HackerRankImage="HackerRank.png";
+    const EmitterImage="";
+    const DeserializerImage="";
+    const VaniaImage="gallery.jpg";
+    const PythonGraphingImage="";
+    const SteamPunkedImage="";
+    const EmployfaiImage= "";
+    const ResumeImage="";
+    const VirtualAlphaImage="VirtualAlpha.png";
+    const CompilerImage="";
+    const ProcessingImage="";
+
+
     const VisualCityFile="CityGame.zip";
     const VisualTreeFile="Tree.zip";
     const MarkovBrainFile="";
@@ -123,33 +140,33 @@ class SiteManager
     public function initialize(){
          $this->Code=array(
              self::VisualCityNum => new IndividualSite(self::VisualCity,self::VisualCityNum,
-                 self::VisualCityGit, self::VisualCityDisplay,self::VisualCityFile, self::CodeType) ,
+                 self::VisualCityGit, self::VisualCityDisplay,self::VisualCityFile,self::VisualCityImage, self::CodeType) ,
              self::VisualTreeNum => new IndividualSite(self::VisualTree,self::VisualTreeNum,
-                 self::VisualTreeGit,self::VisualTreeDisplay,self::VisualTreeFile,self::CodeType) ,
+                 self::VisualTreeGit,self::VisualTreeDisplay,self::VisualTreeFile,self::VisualTreeImage,self::CodeType) ,
              self::MarkovBrainNum => new IndividualSite(self::MarkovBrain,self::MarkovBrainNum,
-                 self::MarkovBrainGit,self::MarkovBrainDisplay,self::MarkovBrainFile, self::CodeType) ,
+                 self::MarkovBrainGit,self::MarkovBrainDisplay,self::MarkovBrainFile,self::MarkovBrainImage ,self::CodeType) ,
              self::HackerRankNum => new IndividualSite(self::HackerRank,self::HackerRankNum,
-                 self::HackerRankGit,self::HackerRankDisplay,self::HackerRankFile,self::CodeType),
+                 self::HackerRankGit,self::HackerRankDisplay,self::HackerRankFile,self::HackerRankImage,self::CodeType),
              self::EmitterNum => new IndividualSite(self::Emitter,self::EmitterNum,
-                 self::EmitterGit,self::EmitterDisplay,self::EmitterFile,self::CodeType),
+                 self::EmitterGit,self::EmitterDisplay,self::EmitterFile,self::EmitterImage,self::CodeType),
              self::DeserializerNum => new IndividualSite(self::Deserializer,self::DeserializerNum,
-                 self::DeserializerGit,self::DeserializerDisplay,self::DeserializerFile,self::CodeType),
+                 self::DeserializerGit,self::DeserializerDisplay,self::DeserializerFile,self::DeserializerImage,self::CodeType),
              self::VaniaNum=> new IndividualSite(self::Vania,self::VaniaNum,
-                 self::VaniaGit,self::VaniaDisplay,self::VaniaFile ,self::CodeType),
+                 self::VaniaGit,self::VaniaDisplay,self::VaniaFile ,self::VaniaImage,self::CodeType),
              self::PythonGraphingNum=> new IndividualSite(self::PythonGraphing,self::PythonGraphingNum,
-                 self::PythonGraphingGit,self::PythonGraphingDisplay,self::PythonGraphingFile,self::CodeType),
+                 self::PythonGraphingGit,self::PythonGraphingDisplay,self::PythonGraphingFile,self::PythonGraphingImage,self::CodeType),
              self::SteamPunkedNum=> new IndividualSite(self::SteamPunked,self::SteamPunkedNum,
-                 self::SteamPunkedGit,self::SteamPunkedDisplay,self::SteamPunkedFile ,self::CodeType),
+                 self::SteamPunkedGit,self::SteamPunkedDisplay,self::SteamPunkedFile,self::SteamPunkedImage ,self::CodeType),
              self::EmployfaiNum=> new IndividualSite(self::Employfai,self::EmployfaiNum,
-                 self::EmployfaiGit,self::EmployfaiDiplay,self::EmployfaiFile,self::CodeType),
+                 self::EmployfaiGit,self::EmployfaiDiplay,self::EmployfaiFile,self::EmployfaiImage,self::CodeType),
              self::ResumeNum=> new IndividualSite(self::Resume,self::ResumeNum,
-                 self::ResumeGit,self::ResumeDisplay,self::ResumeFile,self::CodeType),
+                 self::ResumeGit,self::ResumeDisplay,self::ResumeFile,self::ResumeImage,self::CodeType),
              self::VirtualAlphaNum=>new IndividualSite(self::VirtualAlpha,self::VirtualAlphaNum,
-                 self::VirtualAlphaGit,self::VirtualAlphaDisplay,self::VirtualAlphaFile,self::CodeType),
+                 self::VirtualAlphaGit,self::VirtualAlphaDisplay,self::VirtualAlphaFile,self::VirtualAlphaImage,self::CodeType),
              self::CompilerNum=>new IndividualSite(self::Compiler,self::CompilerNum,
-                 self::CompilerGit,self::CompilerDisplay,self::CompilerFile,self::CodeType),
+                 self::CompilerGit,self::CompilerDisplay,self::CompilerFile,self::CompilerImage,self::CodeType),
              self::ProcessingNum=>new IndividualSite(self::Processing,self::ProcessingNum,
-                 self::ProcessingGit,self::ProcessingDisplay,self::ProcessingFile,self::CodeType),
+                 self::ProcessingGit,self::ProcessingDisplay,self::ProcessingFile,self::ProcessingImage,self::CodeType),
          );
     }
 

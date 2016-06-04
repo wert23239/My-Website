@@ -26,6 +26,7 @@ class CodeView extends View
         $this->download=$this->current->getDownload();
         $this->gitlink=$this->current->getGit();
         $this->title=$this->current->getDisplay();
+        $this->image=$this->current->getImage();
 
     }
     public function headadditional(){
@@ -95,7 +96,7 @@ HTML;
     </ul>
     </div>
     <h2 class="CodeB">$maintext</h2>
-    <p><img src=$image id="image" height="320px" class="img-responsive center-block"></p>
+    <p><img src=$this->image id="image" height="320px" class="img-responsive center-block"></p>
 HTML;
         return $html;
     }
@@ -108,4 +109,5 @@ private $download="";
     private $title="";
     private $connections;
     private $color="";
+    private $image="";
 }
