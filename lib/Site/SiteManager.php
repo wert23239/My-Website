@@ -125,7 +125,7 @@ class SiteManager
              self::VisualCityNum => new IndividualSite(self::VisualCity,self::VisualCityNum,
                  self::VisualCityGit, self::VisualCityDisplay,self::VisualCityFile, self::CodeType) ,
              self::VisualTreeNum => new IndividualSite(self::VisualTree,self::VisualTreeNum,
-                 self::VisualTreeGit,self::VisualTreeDisplay,self::VisualCityFile,self::CodeType) ,
+                 self::VisualTreeGit,self::VisualTreeDisplay,self::VisualTreeFile,self::CodeType) ,
              self::MarkovBrainNum => new IndividualSite(self::MarkovBrain,self::MarkovBrainNum,
                  self::MarkovBrainGit,self::MarkovBrainDisplay,self::MarkovBrainFile, self::CodeType) ,
              self::HackerRankNum => new IndividualSite(self::HackerRank,self::HackerRankNum,
