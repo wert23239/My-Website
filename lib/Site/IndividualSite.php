@@ -11,19 +11,22 @@ namespace Site;
 
 class IndividualSite
 {
+    const DownloadPath="downloads/";
+    const ImagePath="images/";
+    const NamePath="ProjectDisplay.php?id=";
     public function __construct($name,$number,$git,$display,$download,$image,$desc,$type)
     {
-
-        $this->name=$name;
+        $this->name=self::NamePath;
+        $this->name.=$number;
         $this->number = $number;
         $this->type=$type;
         $this->git=$git;
         $this->displayname=$display;
         if($download!=""){
-            $this->download="downloads/";
+            $this->download=self::DownloadPath;
             $this->download.=$download;
         }
-        $this->image="images/";
+        $this->image=self::ImagePath;
         $this->image.=$image;
         $this->description=$desc;
 

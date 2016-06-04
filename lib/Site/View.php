@@ -71,49 +71,48 @@ HTML;
       <ul>
          <li class='has-sub'><a href='#'><span>C++</span><div class='rank'>6/10</div></a>
             <ul>
-               <li><a href='VisualCity.php'><span>Visual City</span></a></li>
-               <li><a href='VisualTree.php'><span>Visual Tree</span></a></li>
-               <li><a href='MarkovBrain.php'><span>Virtual Evolution Markov</span></a></li>
-               <li class='last'><a href='HackerRank.php'><span>HackerRank</span></a></li>
+               <li><a href='ProjectDisplay.php?id=0'><span>Visual City</span></a></li>
+               <li><a href='ProjectDisplay.php?id=1'><span>Visual Tree</span></a></li>
+               <li><a href='ProjectDisplay.php?id=2'><span>Virtual Evolution Markov</span></a></li>
+               <li class='last'><a href='ProjectDisplay.php?id=3'><span>HackerRank</span></a></li>
             </ul>
          </li>
          <li class='has-sub'><a href='#'><span>C#</span><div class='rank'>6/10</div></a>
             <ul>
-               <li><a href='Emitter.php'><span>SQL Emitter</span></a></li>
-               <li class='last'><a href='Deserializer.php'><span>Deserializer</span></a></li>
+               <li><a href='ProjectDisplay.php?id=4'><span>SQL Emitter</span></a></li>
+               <li class='last'><a href='ProjectDisplay.php?id=5'><span>Deserializer</span></a></li>
             </ul>
          </li>
          <li class='has-sub'><a href='#'><span>Lua</span><div class='rank'>7/10</div></a>
             <ul>
-               <li class='last'><a href='Vania.php'><span>Vania Virtual Evolution</span></a></li>
+               <li class='last'><a href='ProjectDisplay.php?id=6'><span>Vania Virtual Evolution</span></a></li>
             </ul>
          </li>
-         <li class='has-sub'><a href='PythonGraphing.php'><span>Phython</span><div class='rank'>5/10</div></a>
+         <li class='has-sub'><a href='#'><span>Phython</span><div class='rank'>5/10</div></a>
             <ul>
-               <li><a href='#'><span>Phython Notebook Mathlib Graphing</span></a></li>
-               <li class='last'><a href='#'><span>HackerRank</span></a></li>
+               <li><a href='ProjectDisplay.php?id=7'><span>Phython Notebook Mathlib Graphing</span></a></li>
             </ul>
          </li>
          <li class='has-sub'><a href='#'><span>WebApp</span><div class='rank'>7/10</div></a>
             <ul>
-               <li><a href='#'><span>PHP Steampunked</span></a></li>
-               <li><a href='#'><span>API Employfai</span></a></li>
-               <li class='last'><a href='#'><span>Sass Resume Project</span></a></li>
+               <li><a href='ProjectDisplay.php?id=8'><span>PHP Steampunked</span></a></li>
+               <li><a href='ProjectDisplay.php?id=9'><span>API Employfai</span></a></li>
+               <li class='last'><a href='ProjectDisplay.php?id=10'><span>Sass Resume Project</span></a></li>
             </ul>
          </li>
          <li class='has-sub'><a href='#'><span>GameMaker</span><div class='rank'>8/10</div></a>
             <ul>
-               <li class='last'><a href='VirtualAlphabet.php'><span>Virtual Alphabet</span></a></li>
+               <li class='last'><a href='ProjectDisplay.php?id=11'><span>Virtual Alphabet</span></a></li>
             </ul>
          </li>
          <li class='has-sub'><a href='#'><span>Lex/Yacc</span><div class='rank'>5/10</div></a>
             <ul>
-               <li class='last'><a href='#'><span>C++ Compiler</span></a></li>
+               <li class='last'><a href='ProjectDisplay.php?id=12'><span>C++ Compiler</span></a></li>
             </ul>
          </li>
          <li class='has-sub'><a href='#'><span>Java</span><div class='rank'>4/10</div></a>
             <ul>
-               <li class='last'><a href='Processing.php'><span>Processing</span></a></li>
+               <li class='last'><a href='ProjectDisplay.php?id=13'><span>Processing</span></a></li>
             </ul>
          </li>
       </ul>

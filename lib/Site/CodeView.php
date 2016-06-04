@@ -31,6 +31,7 @@ class CodeView extends View
     }
     public function headadditional(){
         $check=$this->Title;
+        $id=$this->id;
         $html=<<<HTML
 <script type="text/javascript" src="style/js/modernizr.custom.79639.js"></script>
 <script src="typed.js"></script>
@@ -38,8 +39,10 @@ class CodeView extends View
 $(document).ready(function() {
     var Title='$check';
     new TypeName(Title);
-
+	new ProjectDisplay('$id');
 });
+
+
 $(function(){
     $('.image img').load(function(){
         var img = $(this);
