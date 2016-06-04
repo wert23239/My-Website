@@ -19,7 +19,10 @@ class IndividualSite
         $this->type=$type;
         $this->git=$git;
         $this->displayname=$display;
-        $this->download=$download;
+        if($download!=""){
+            $this->download="downloads/";
+            $this->download.=$download;
+        }
     }
     private $name;
     private $number;
@@ -28,7 +31,7 @@ class IndividualSite
     private $git;
     private $link;
     private $displayname;
-    private $download;
+    private $download="";
 
     /**
      * @return mixed
@@ -127,5 +130,17 @@ class IndividualSite
     public function setVisited($visited)
     {
         $this->visited = $visited;
+    }
+
+
+
+    public function getDownload()
+    {
+        return $this->download;
+    }
+
+    public function setDownload($download)
+    {
+        $this->download = $download;
     }
 }

@@ -22,9 +22,11 @@ class CodeView extends View
         }
         $this->connections= new SiteManager($id);
         $this->current=$this->connections->getCurrent();
-        $this->download=$download;
-        $this->gitlink=$this->current->getLink();
+
+        $this->download=$this->current->getDownload();
+        $this->gitlink=$this->current->getGit();
         $this->title=$this->current->getDisplay();
+
     }
     public function headadditional(){
         $check=$this->Title;
@@ -58,7 +60,7 @@ HTML;
 <li class='last'><a href="$this->download" download><span>Working Program</span></a></li>
 HTML;
         }
-        if($this->gitlink!="") {
+        if($this->gitlink!="NULL") {
         $html.=<<<HTML
 <li class='last'><a href=$this->gitlink><span>Source Code</span></a></li>
 HTML;
@@ -79,13 +81,13 @@ HTML;
         //var_dump($Prev);
         $NamePre=$Prev->getName();
         $NameAft=$Next->getName();
-        $Title=$this->Title;
+        $Display=$this->title;
         $Second=$this->color."2";
         $html=<<<HTML
 <pre>hey</pre>
 
 <div class="jumbotron CodeA">
-    <h1 class="CodeB"><strong>$Title</strong></h1>
+    <h1 class="CodeB"><strong>$Display</strong></h1>
     <div class="container">
     <ul class="pager">
         <li class="previous"><a href="$NamePre">Previous</a></li>
@@ -102,7 +104,7 @@ HTML;
 private $download="";
     private $gitlink="";
     private $id="";
-    private $current="";
+    private $current;
     private $title="";
     private $connections;
     private $color="";

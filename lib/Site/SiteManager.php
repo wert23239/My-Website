@@ -42,9 +42,9 @@ class SiteManager
     const SteamPunkedFile="http://webdev.cse.msu.edu/~lambe168/project3/";
     const EmployfaiFile= "";
     const ResumeFile="http://www.cse.msu.edu/~lambe168/";
-    const VirtualAlphaFile="VirtualAlphabet.php";
-    const CompilerFile="Compiler.php";
-    const ProcessingFile="Processing.php";
+    const VirtualAlphaFile="Virtual_Alphabet_final.exe";
+    const CompilerFile="";
+    const ProcessingFile="";
 
     const VisualCityGit="https://github.com/wert23239/Visual-City-Game";
     const VisualTreeGit="https://github.com/wert23239/Tree";
@@ -132,15 +132,24 @@ class SiteManager
                  self::HackerRankGit,self::HackerRankDisplay,self::HackerRankFile,self::CodeType),
              self::EmitterNum => new IndividualSite(self::Emitter,self::EmitterNum,
                  self::EmitterGit,self::EmitterDisplay,self::EmitterFile,self::CodeType),
-             self::DeserializerNum => new IndividualSite(self::Deserializer,self::DeserializerNum,self::DeserializerGit,self::DeserializerDisplay,self::CodeType),
-             self::VaniaNum=> new IndividualSite(self::Vania,self::VaniaNum,self::VaniaGit,self::VaniaDisplay,self::CodeType),
-             self::PythonGraphingNum=> new IndividualSite(self::PythonGraphing,self::PythonGraphingNum,self::PythonGraphingGit,self::PythonGraphingDisplay,self::CodeType),
-             self::SteamPunkedNum=> new IndividualSite(self::SteamPunked,self::SteamPunkedNum,self::SteamPunkedGit,self::SteamPunkedDisplay,self::CodeType),
-             self::EmployfaiNum=> new IndividualSite(self::Employfai,self::EmployfaiNum,self::EmployfaiGit,self::EmployfaiDiplay,self::CodeType),
-             self::ResumeNum=> new IndividualSite(self::Resume,self::ResumeNum,self::ResumeGit,self::ResumeDisplay,self::CodeType),
-             self::VirtualAlphaNum=>new IndividualSite(self::VirtualAlpha,self::VirtualAlphaNum,self::VirtualAlphaGit,self::VirtualAlphaDisplay,self::CodeType),
-             self::CompilerNum=>new IndividualSite(self::Compiler,self::CompilerNum,self::VisualCityGit,self::VisualCityDisplay,self::CodeType),
-             self::ProcessingNum=>new IndividualSite(self::Processing,self::ProcessingNum,self::VisualCityGit,self::VisualCityDisplay,self::CodeType),
+             self::DeserializerNum => new IndividualSite(self::Deserializer,self::DeserializerNum,
+                 self::DeserializerGit,self::DeserializerDisplay,self::DeserializerFile,self::CodeType),
+             self::VaniaNum=> new IndividualSite(self::Vania,self::VaniaNum,
+                 self::VaniaGit,self::VaniaDisplay,self::VaniaFile ,self::CodeType),
+             self::PythonGraphingNum=> new IndividualSite(self::PythonGraphing,self::PythonGraphingNum,
+                 self::PythonGraphingGit,self::PythonGraphingDisplay,self::PythonGraphingFile,self::CodeType),
+             self::SteamPunkedNum=> new IndividualSite(self::SteamPunked,self::SteamPunkedNum,
+                 self::SteamPunkedGit,self::SteamPunkedDisplay,self::SteamPunkedFile ,self::CodeType),
+             self::EmployfaiNum=> new IndividualSite(self::Employfai,self::EmployfaiNum,
+                 self::EmployfaiGit,self::EmployfaiDiplay,self::EmployfaiFile,self::CodeType),
+             self::ResumeNum=> new IndividualSite(self::Resume,self::ResumeNum,
+                 self::ResumeGit,self::ResumeDisplay,self::ResumeFile,self::CodeType),
+             self::VirtualAlphaNum=>new IndividualSite(self::VirtualAlpha,self::VirtualAlphaNum,
+                 self::VirtualAlphaGit,self::VirtualAlphaDisplay,self::VirtualAlphaFile,self::CodeType),
+             self::CompilerNum=>new IndividualSite(self::Compiler,self::CompilerNum,
+                 self::CompilerGit,self::CompilerDisplay,self::CompilerFile,self::CodeType),
+             self::ProcessingNum=>new IndividualSite(self::Processing,self::ProcessingNum,
+                 self::ProcessingGit,self::ProcessingDisplay,self::ProcessingFile,self::CodeType),
          );
     }
 
