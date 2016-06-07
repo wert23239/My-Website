@@ -72,16 +72,10 @@ HTML;
         return $html;
     }
 
+
     public function presenthead($Title)
     {
         return parent::presenthead($this->title);
-    }
-
-    public function presentPre()
-    {
-        return <<<HTML
-<pre>hey</pre>;
-HTML;
     }
 
     public function presentDisplay()
@@ -95,7 +89,7 @@ HTML;
         $Display=$this->title;
         $Second=$this->color."2";
         $html=<<<HTML
-<div class="jumbotron CodeA">
+
     <h1 class="CodeB"><strong>$Display</strong></h1>
     <div class="container">
     <ul class="pager">

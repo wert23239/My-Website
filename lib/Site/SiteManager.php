@@ -17,23 +17,23 @@ class SiteManager
     const ArtType="art";
 
 
-    const VisualCityDesc="This is The Visual C++ program called Visual City. It involves some nice XML saving and loading as well
-as a couple cool features like adding a rotating tiles. The city even includes a game if you click the dice.";
-    const VisualTreeDesc="This is Random Visual Tree Generator. It uses seeds and has wind and harvest features. This was created
- in software design class as was part.";
-    const MarkovBrainDesc="UNDER CONSTRUCTION";
+    const VisualCityDesc="This is The Visual C++ program called Visual City. The city even includes a puzzle game.";
+    const VisualTreeDesc="This is Random Visual Tree Generator. It uses seeds and has wind and harvest features.";
+    const MarkovBrainDesc="The research done for MSU. This involves teaching organisms
+    through various simulations using memory.";
     const HackerRankDesc="This is a variety of difficult problems I have finished on HackerRank";
-    const EmitterDesc="UNDER CONSTRUCTION";
-    const DeserializerDesc="UNDER CONSTRUCTION";
+    const EmitterDesc="A SQL compiler used to transfer queries across databases.";
+    const DeserializerDesc="";
     const VaniaDesc="A Virtual Evolution Project made at Mhacks Fall 2016 using
     A Genetic Algorithm";
     const PythonGraphingDesc="UNDER CONSTRUCTION";
-    const SteamPunkedDesc="UNDER CONSTRUCTION";
-    const EmployfaiDesc= "UNDER CONSTRUCTION";
-    const ResumeDesc="UNDER CONSTRUCTION";
-    const VirtualAlphaDesc="This is game we made at my first Hackathon. It involves controlling the mouse using a Myo arm band. The game is meant
-to be played by kids to help they draw the letters the correct way.";
-    const CompilerDesc="UNDER CONSTRUCTION";
+    const SteamPunkedDesc="This is a simple game using javascript and server-side
+    scripting";
+    const EmployfaiDesc= "A winner of Spartahack this simple app goes through your Facebook and finds
+    all the inappropriate images";
+    const ResumeDesc="A simple project made to help out with learning Sass by duplicating my resume formatting";
+    const VirtualAlphaDesc="The Spartahacks 2015 submission. It involves controlling the mouse using a Myo arm band.";
+    const CompilerDesc="A complete object-oriented compiler with recursive functions and optimizations";
     const ProcessingDesc="UNDER CONSTRUCTION";
 
 
@@ -48,7 +48,7 @@ to be played by kids to help they draw the letters the correct way.";
     const DeserializerImage="";
     const VaniaImage="gallery.jpg";
     const PythonGraphingImage="";
-    const SteamPunkedImage="";
+    const SteamPunkedImage="Steampunked.png";
     const EmployfaiImage= "";
     const ResumeImage="";
     const VirtualAlphaImage="VirtualAlpha.png";
@@ -81,7 +81,7 @@ to be played by kids to help they draw the letters the correct way.";
     const PythonGraphingGit="http://www.comingsoon.net/";
     const SteamPunkedGit="http://www.comingsoon.net/";
     const EmployfaiGit= "https://github.com/wert23239/Employifai";
-    const ResumeGit="NULL";
+    const ResumeGit="http://www.cse.msu.edu/~lambe168/";
     const VirtualAlphaGit="https://github.com/jfreedman0/Virtual-Alphabet";
     const CompilerGit="http://www.comingsoon.net/";
     const ProcessingGit="http://www.comingsoon.net/";

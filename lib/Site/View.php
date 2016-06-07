@@ -67,7 +67,7 @@ HTML;
 <div id='cssmenu'>
 <ul>
    <li><a href='index.php'><span>Home</span></a></li>
-   <li class='active has-sub'><a href=''><span>Programming</span></a>
+   <li class='has-sub'><a href=''><span>Programming</span></a>
       <ul>
          <li class='has-sub'><a href='#'><span>C++</span><div class='rank'>6/10</div></a>
             <ul>
@@ -117,29 +117,31 @@ HTML;
          </li>
       </ul>
    </li>
-   <li class='active has-sub'><a href='#'><span>Games</span></a>
+   <li class='has-sub'><a href='#'><span>Other</span></a>
       <ul>
-         <li class='last'><a href='TheScarsofShadowsGame.php'><span>TheScarsofShadows</span></a></li>
-      </ul>
-   </li>
-   <li class='active has-sub'><a href='#'><span>Art</span></a>
-      <ul>
-         <li><a href='#'><span>Ballos</span></a></li>
-         <li><a href='#'><span>Owl</span></a></li>
-         <li><a href='#'><span>Rin</span></a></li>
-         <li class='last'><a href='#'><span>Old</span></a></li>
-      </ul>
-   </li>
-   <li class='active has-sub'><a href='#'><span>Books</span></a>
-      <ul>
-         <li><a href='Books/Book1.html'><span>As Long as The Road Lacks Perspective</span></a></li>
-         <li><a href='Books/Book2.html'><span>The Scars of Shadows</span></a></li>
-         <li><a href='#'><span>Chaoscity</span></a></li>
-         <li><a href='#'><span>On Lighter Side of Things</span></a></li>
-         <li><a href='#'><span>The League of Oddicy</span></a></li>
-         <li><a href='#'><span>Aim's Side</span></a></li>
-         <li class='last'><a href='#'><span>Mutiny of Mutiny</span></a></li>
-      </ul>
+         <li class='has-sub'><a href='#'><span>Games</span></a>
+         <ul>
+            <li class='last'><a href='TheScarsofShadowsGame.php'><span>TheScarsofShadows</span></a></li>
+         </ul>
+         </li>
+         <li class='has-sub'><a href='#'><span>Art</span></a>
+         <ul>
+            <li><a href='#'><span>Ballos</span></a></li>
+            <li><a href='#'><span>Owl</span></a></li>
+            <li class='last'><a href='#'><span>Rin</span></a></li>
+         </ul>
+         <li class='has-sub'><a href='#'><span>Books</span></a>
+         <ul>
+             <li><a href='Books/Book1.html'><span>As Long as The Road Lacks Perspective</span></a></li>
+            <li><a href='Books/Book2.html'><span>The Scars of Shadows</span></a></li>
+            <li><a href='#'><span>Chaoscity</span></a></li>
+            <li><a href='#'><span>On Lighter Side of Things</span></a></li>
+            <li><a href='#'><span>The League of Oddicy</span></a></li>
+            <li><a href='#'><span>Aim's Side</span></a></li>
+            <li class='last'><a href='#'><span>Mutiny of Mutiny</span></a></li>
+        </ul>
+        </li>
+     </ul>
    </li>
    <li class='last'><a href='#'><span>Contact</span></a></li>
    <li class='last'><a href='ResumeComplete.php'><span>Resume</span></a></li>
