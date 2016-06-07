@@ -14,9 +14,11 @@ $view= new Site\CodeView($id);
 
 
 <?php echo $view->presentheader();
-echo $view->presentPre();
-echo $view->presentDisplay();
 ?>
-
+<div class="jumbotron CodeA">
+<?php
+   echo $view->presentDisplay();
+?>
+</div>
 </body>
 </html>

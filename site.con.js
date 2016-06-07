@@ -1,4 +1,4 @@
-/*! DO NOT EDIT mywebsite 2016-06-04 */
+/*! DO NOT EDIT mywebsite 2016-06-06 */
 ( function( $ ) {
 $( document ).ready(function() {
 $('#cssmenu').prepend('<div id="menu-button">Menu</div>');
@@ -259,7 +259,7 @@ PipePlay.prototype.update = function(grid,checked) {
  */
 function ProjectDisplay(id) {
     this.initialize(id);
-    console.log(id);
+    console.log("id",id);
 }
 
 
@@ -269,7 +269,7 @@ ProjectDisplay.prototype.initialize = function(id){
     var that = this;
     var idminus=13;
     if(id!=0){
-        idminus=id-1;
+        idminus=parseInt(id)-1;
     }
     var idplus=0;
     if(id!=13){
@@ -277,11 +277,11 @@ ProjectDisplay.prototype.initialize = function(id){
     }
 
     var buttonprevious= $(".previous");
-    console.log(buttonprevious);
+    console.log("button previous",buttonprevious);
     that.installListener(buttonprevious, idminus);
     var buttonnext= $(".next");
-    console.log(buttonnext);
-    console.log(idplus);
+    console.log("button next",buttonnext);
+    console.log("idplus",idplus);
     that.installListener(buttonnext, idplus);
 
 
@@ -292,7 +292,7 @@ ProjectDisplay.prototype.initialize = function(id){
 ProjectDisplay.prototype.installListener = function (buttonpressed,id) {
 
     var that = this;
-    console.log(id);
+    console.log("listernerid",id);
 
     buttonpressed.click(function (event) {
         event.preventDefault();
@@ -327,10 +327,8 @@ ProjectDisplay.prototype.update = function(NewProject,id) {
     $(".jumbotron").slideUp(500,"swing",
         function(){
             $(".jumbotron").html(NewProject);
+            that.initialize(id);
         }).delay(500).slideDown(500,"swing");
-    that.initialize(id);
-
-
 
 };
 
