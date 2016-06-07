@@ -14,7 +14,7 @@ class ResumeView extends View
     public function headadditional()
     {
        return <<<HTML
-<link rel="stylesheet" href="style/resume.less">
+<link rel="stylesheet" href="style/Resume.less">
 HTML;
 
 

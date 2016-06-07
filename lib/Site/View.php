@@ -145,6 +145,7 @@ HTML;
    </li>
    <li class='last'><a href='#'><span>Contact</span></a></li>
    <li class='last'><a href='ResumeComplete.php'><span>Resume</span></a></li>
+   <!--<li class="last"><span><a style="margin-left:1em;color:black;" href="https://github.com/wert23239" target="_blank"><img style="height:2em;width:2em;" src="images/github.png" alt="Github" ></a></span></li>-->
 HTML;
 $html.=$this->headeradditional();
 
