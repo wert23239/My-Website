@@ -66,7 +66,7 @@ HTML;
         }
         if($this->gitlink!="NULL") {
         $html.=<<<HTML
-<li class='last'><a href=$this->gitlink><span>Source Code</span></a></li>
+<li class='last'><a href=$this->gitlink><span>Source</span></a></li>
 HTML;
         }
         return $html;

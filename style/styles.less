@@ -15,7 +15,9 @@
   font-family: CabinSketch-Regularimport;
   src:url("fonts/CabinSketch-Bold.otf");
 }
-
+.thumbnail{
+  border: none;
+}
 
 .Title{
   font-family: CabinSketch-Regularimport;
@@ -35,6 +37,8 @@ h1.Title{
 
 h2.Title{
   font-size:5em;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .pager .next>a, .pager .next>span{
@@ -44,13 +48,19 @@ h2.Title{
   font-size: 2em;
 }
 
-@media (max-width:380px)
+@media (max-width:400px)
 {
   .pager .next>a, .pager .next>span{
     font-size: 1.2em;
   }
   .pager .previous>a, .pager .previous>span{
     font-size: 1.2em;
+  }
+  h2.Title{
+    font-size:3em;
+  }
+  h1.Title{
+    font-size: 5em;
   }
 }
 

@@ -21,6 +21,8 @@ class View
 <script>
 $(document).ready(function() {
     new KonamiComputer();
+    new TypeName("Hey");
+    console.log("Hey");
 });
 </script>
 <script>
@@ -46,9 +48,11 @@ $html="";
  <link href="node_modules/Bootstrap/css/bootstrap.min.css" rel="stylesheet">
 <script src="node_modules/jquery/dist/jquery.min.js" type="text/javascript"></script>
 <script src="site.min.js"></script>
+<script src="typed.js"></script>
 <script>
 $(document).ready(function() {
     new MissYou();
+    new TypeName("Hey");
 });
 </script>
 <title>$Title</title>
@@ -143,9 +147,8 @@ HTML;
         </li>
      </ul>
    </li>
-   <li class='last'><a href='#'><span>Contact</span></a></li>
    <li class='last'><a href='ResumeComplete.php'><span>Resume</span></a></li>
-   <!--<li class="last"><span><a style="margin-left:1em;color:black;" href="https://github.com/wert23239" target="_blank"><img style="height:2em;width:2em;" src="images/github.png" alt="Github" ></a></span></li>-->
+   <!--<li class="last"><span><a style="margin-left:1em;color:black;" href="https://github.com/wert23239" target="_blank"><img style="height:2em;width:2em;" src="images/github2.png" alt="Github" ></a></span></li>-->
 HTML;
 $html.=$this->headeradditional();
 
