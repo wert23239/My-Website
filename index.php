@@ -48,14 +48,12 @@ $view= new Site\View();
 <?php echo $view->presenthead("Home") ?>
 <body>
 <?php echo $view->presentheader() ?>
-<pre>hey
-sdf
-fd</pre>
-<div class="container">
-<div class="hvr-float-shadow">
+
+<div class="container Main">
+<!--<div class="hvr-float-shadow">-->
    <h1 class="Title">Hi I'm Alex,</h1>
-</div>
-<h2 class="Title">Programmer, Artist, and Author</h2>
+<!--</div>-->
+<h2 class="Title">I'm a <span class="Typed"></span></h2>
 
 <p>Born in Michigan. Senior at Michigan State University Studying Computer Science with a Cognitive in Psychology. </p>
 <p>I'm been doing Research for <a href="http://hintzelab.msu.edu/">Arends Hintze Lab</a>

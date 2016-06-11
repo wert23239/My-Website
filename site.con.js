@@ -1,4 +1,4 @@
-/*! DO NOT EDIT mywebsite 2016-06-06 */
+/*! DO NOT EDIT mywebsite 2016-06-11 */
 ( function( $ ) {
 $( document ).ready(function() {
 $('#cssmenu').prepend('<div id="menu-button">Menu</div>');
@@ -34,8 +34,11 @@ TypeName.prototype.TypeOut = function() {
     var that=this;
     $(function () {
         $(".Typed").typed({
-            strings: [that.Name],
-            typeSpeed: 50
+            strings: ["Programmer","Artist","Author"],
+            typeSpeed: 100,
+            backDelay: 800,
+            backSpeed: 50,
+            loop: true
         });
     });
 };
@@ -97,162 +100,6 @@ function parse_json(json) {
     }
 
     return data;
-}
-/**
- * Created by Alex on 4/23/2016.
- */
-function PipePlay(sel) {
-
-    this.initialize(sel);
-};
-
-
-PipePlay.prototype.initialize = function(sel){
-
-    var that = this;
-
-    ///Gets the game
-    var game = $(".game");
-
-    ///Gets all of the rows
-    var rows = game.find(".row");
-
-    ///Iterates to get each individual row
-    for (var r=0; r<rows.length; r++){
-
-        ///Singles rows
-        var row = $(rows.get(r));
-
-        ///All the cells in a row
-        var cells = row.find(".cell");
-
-        ///Iterates to get each indvidual cell
-        for(var j=0; j<cells.length; j++) {
-
-            var cell = $(cells.get(j));
-
-            var cell = $(cells.get(j));
-
-            var grid = $(cell.find("#grid"));
-
-            if(grid.val() === undefined){
-                console.log('null');
-            }
-            else{
-                value = grid.val().split("-",2);
-                that.installListenerTiles(value[0], value[1], grid, sel);
-            }
-
-        }
-    }
-
-
-    ///The radio button and option buttons
-    var controls = $(".player-controls");
-
-    ///All the pipe selections
-    var pipes = controls.find(".pipe");
-
-    ///Iterates to get each pipe
-    for(var i=0; i<pipes.length; i++){
-
-        ///Single pipe buttons
-        var pipe = $(pipes.get(i));
-
-        ///Value of each pipe button
-        var idb = pipe.find('input[name="pipe"]').val();
-
-    }
-
-    ///Control buttons
-    var buttons = controls.find(".buttons");
-
-    ///Each button value
-    for(var i=0; i<buttons.length; i++){
-
-        var button = $(buttons.get(i));
-
-        ///Value example(Rotate, Discard, etc.)
-        that.installListenerButtons(button.val(), button);
-
-    }
-    var form=$(sel);
-    form.submit(function(event){
-       event.preventDefault();
-    });
-
-
-
-
-};
-
-
-PipePlay.prototype.installListenerTiles = function (row, col,cell, sel) {
-
-    var that = this;
-    //console.log(tile);
-
-    cell.click(function () {
-        var pipe = $('input[name=pipe]:checked', '#myForm').val();
-        $.ajax({
-            url: "game-post.php",
-            data: {row: row, col: col, pipe: pipe, grid: true, ajax: true},
-            method: "POST",
-            success: function (data) {
-                var json = parse_json(data);
-                console.log(json);
-                if (json.ok) {
-                    that.update(json.grid);
-                    that.initialize(sel);
-                } else {
-                    // Update failed
-                }
-            },
-            error: function (xhr, status, error) {
-                // Error
-                that.message("<p>Error: " + error + "</p>");
-            }
-        });
-    });
-}
-
-
-PipePlay.prototype.installListenerButtons = function (buttonVal, button, sel) {
-
-    var that = this;
-
-    button.click(function () {
-        var pipe = $('input[name=pipe]:checked', '#myForm').val();
-
-        $.ajax({
-            url: "game-post.php",
-            data: {button: buttonVal, pipe:pipe, gird:true, ajax:true},
-            method: "POST",
-            success: function (data) {
-                var json = parse_json(data);
-                if (json.ok) {
-                    // Successfully updated
-                    that.update(json.grid);
-                    that.initialize(sel);
-                } else {
-                    // Update failed
-                }
-            },
-            error: function (xhr, status, error) {
-                // Error
-                that.message("<p>Error: " + error + "</p>");
-            }
-        });
-    });
-
-};
-
-PipePlay.prototype.update = function(grid,checked) {
-    
-
-    $("form").html(grid);
-
-
 }
 /**
  * Created by Alex on 4/23/2016.

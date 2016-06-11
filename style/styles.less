@@ -4,6 +4,7 @@
 @import url('demo');
 @import url('menu');
 @import url('normalize');
+@import url('cursor');
 @font-face{
   font-family: CabinSketch-Boldimport;
   src:url("fonts/CabinSketch-Regular.otf");
@@ -15,17 +16,27 @@
   src:url("fonts/CabinSketch-Bold.otf");
 }
 
+
 .Title{
   font-family: CabinSketch-Regularimport;
 
 }
-.Title{
+h1.Title{
   margin-left: .1em;
   margin-top: 1em;
-  font-size:5em;
+  margin-left: 0em;
+  font-size:10em;
   text-align: center;
   font-family: CabinSketch-Boldimport;
 }
+h1.Title{
+  margin-top: 1em;
+}
+
+h2.Title{
+  font-size:5em;
+}
+
 .pager .next>a, .pager .next>span{
   font-size: 2em;
  }
@@ -50,7 +61,9 @@
   font-size: 3%;
   top: 0;
 }
-
+.body{
+  margin-top: 2em;
+}
 footer{
   text-align: right;
 

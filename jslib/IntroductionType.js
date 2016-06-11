@@ -9,8 +9,11 @@ TypeName.prototype.TypeOut = function() {
     var that=this;
     $(function () {
         $(".Typed").typed({
-            strings: [that.Name],
-            typeSpeed: 50
+            strings: ["Programmer","Artist","Author"],
+            typeSpeed: 100,
+            backDelay: 800,
+            backSpeed: 50,
+            loop: true
         });
     });
 };
