@@ -138,11 +138,6 @@ HTML;
          <ul>
              <li><a href='Books/Book1.html'><span>As Long as The Road Lacks Perspective</span></a></li>
             <li><a href='Books/Book2.html'><span>The Scars of Shadows</span></a></li>
-            <li><a href='#'><span>Chaoscity</span></a></li>
-            <li><a href='#'><span>On Lighter Side of Things</span></a></li>
-            <li><a href='#'><span>The League of Oddicy</span></a></li>
-            <li><a href='#'><span>Aim's Side</span></a></li>
-            <li class='last'><a href='#'><span>Mutiny of Mutiny</span></a></li>
         </ul>
         </li>
      </ul>
