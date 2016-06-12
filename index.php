@@ -51,7 +51,7 @@ $view= new Site\View();
 
 <div class="container Main">
 <!--<div class="hvr-float-shadow">-->
-   <h1 class="Title">Hi I'm Alex,</h1>
+   <h1 class="Title">Hello, I'm Alex</h1>
 <!--</div>-->
 <h2 class="Title"> <span class="Typed"></span></h2>
 
