@@ -60,10 +60,10 @@ $view= new Site\View();
 <!--    and work for <a href="https://www.phpmichigan.com/">Sparrow Health Insurance</a> in the IT Department.</p>-->
 
 <div class="row Main">
-    <div class="col-xs-3 col-md-3"><a href="http://www.linkedin.com/in/alexlambert52" class="thumbnail" target="_blank"><img class="img-responsive" src="images/in.png"/></a></div>
-    <div class="col-xs-3 col-md-3"><a href="http://devpost.com/wert23239" class="thumbnail" target="_blank"><img class="img-responsive" src="images/devpost.jpg"/></a></div>
-    <div class="col-xs-3 col-md-3"><a href="http://github.com/wert23239" class="thumbnail" target="_blank"><img class="img-responsive" src="images/github.png"/></a></div>
-    <div class="col-xs-3 col-md-3"><a href="mailto:lambe168@msu.edu"  class="thumbnail" target="_top"><img class="img-responsive" src="images/gmail.png"/></a></div>
+    <div class="col-xs-3 col-md-3"><a href="http://www.linkedin.com/in/alexlambert52" class="thumbnail" target="_blank"><img class="img-responsive box"  src="images/in.png"/></a></div>
+    <div class="col-xs-3 col-md-3"><a href="http://devpost.com/wert23239" class="thumbnail" target="_blank"><img class="img-responsive box"  src="images/devpost.jpg"/></a></div>
+    <div class="col-xs-3 col-md-3"><a href="http://github.com/wert23239" class="thumbnail" target="_blank"><img class="img-responsive box" src="images/github.png"/></a></div>
+    <div class="col-xs-3 col-md-3"><a href="mailto:lambe168@msu.edu"  class="thumbnail" target="_top"><img class="img-responsive box"  src="images/gmail.png"/></a></div>
 </div>
 </div>
 
