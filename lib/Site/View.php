@@ -66,6 +66,18 @@ HTML;
 
 
     public function presentheader(){
+
+        define('VISUALCITYNUM', SiteManager::VisualCityNum);
+        define('VISUALTREENUM', SiteManager::VisualTreeNum);
+        define('VIRTUALEVOLUTIONNUM', SiteManager::MarkovBrainNum);
+        define('EMITTERNUM', SiteManager::EmitterNum);
+        define('VANIAVIRTUALEVOLUTIONUM', SiteManager::VaniaNum);
+        define('STEAMPUNKEDNUM', SiteManager::SteamPunkedNum);
+        define('EMPLOYFAINUM', SiteManager::EmployfaiNum);
+        define('RESUMENUM', SiteManager::ResumeNum);
+        define('COMPILERNUM', SiteManager::CompilerNum);
+        $cname = 'constant'; // if you want to use a function in heredoc, you must save function name in variable
+
         $html=<<<HTML
 <header>
 <div id='cssmenu'>
@@ -75,15 +87,15 @@ HTML;
       <ul>
          <li class='has-sub'><a href='#'><span>C++</span><div class='rank'>6/10</div></a>
             <ul>
-               <li><a href='ProjectDisplay.php?id=0'><span>Visual City</span></a></li>
-               <li><a href='ProjectDisplay.php?id=1'><span>Visual Tree</span></a></li>
-               <li><a href='ProjectDisplay.php?id=2'><span>Virtual Evolution Markov</span></a></li>
-               <li class='last'><a href='ProjectDisplay.php?id=3'><span>HackerRank</span></a></li>
+               <li><a href='ProjectDisplay.php?id={$cname("VISUALCITYNUM")}'><span>Visual City</span></a></li>
+               <li><a href='ProjectDisplay.php?id={$cname("VISUALTREENUM")}'><span>Visual Tree</span></a></li>
+               <li><a href='ProjectDisplay.php?id={$cname("VIRTUALEVOLUTIONNUM")}'><span>Virtual Evolution Markov</span></a></li>
+               <li class='last'><a href='ProjectDisplay.php?id={$cname("COMPILERNUM")}'><span>HackerRank</span></a></li>
             </ul>
          </li>
          <li class='has-sub'><a href='#'><span>C#</span><div class='rank'>6/10</div></a>
             <ul>
-               <li><a href='ProjectDisplay.php?id=4'><span>SQL Emitter</span></a></li>
+               <li><a href='ProjectDisplay.php?id={$cname("EMITTERNUM")}'><span>SQL Emitter</span></a></li>
                <li class='last'><a href='ProjectDisplay.php?id=5'><span>Deserializer</span></a></li>
             </ul>
          </li>

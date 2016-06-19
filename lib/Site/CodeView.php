@@ -98,7 +98,9 @@ HTML;
     </ul>
     </div>
     <h2 class="CodeB">$this->description</h2>
+    <div class="containerCustom">
     <p><img src=$this->image id="image" height="320px" class="img-responsive center-block"></p>
+    </div>
 HTML;
         return $html;
     }

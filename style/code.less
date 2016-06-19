@@ -8,6 +8,12 @@
 body{
   overflow: scroll;
 }
+
+h1.codeB{
+  font-size: 7em;
+}
+
+
 @font-face{
   font-family: CabinSketch-Boldimport;
   src:url("fonts/CabinSketch-Regular.otf");
@@ -21,6 +27,29 @@ body{
   font-family: Skybird;
   src:url("fonts/Skybird-Regular.ttf");
 
+}
+
+
+.containerCustom {
+  padding-right: 30px;
+  padding-left: 30px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 768px) {
+  .containerCustom {
+    width: 740px;
+  }
+}
+@media (min-width: 992px) {
+  .containerCustom {
+    width: 900px;
+  }
+}
+@media (min-width: 1200px) {
+  .containerCustom {
+    width: 900px;
+  }
 }
 
 .CodeA h1{
@@ -119,6 +148,7 @@ margin-top: 0;
   z-index: 9;
   bottom: 0;
 }
+
 
 #st-control-1, #st-control-1 + a {
   left: 0;
