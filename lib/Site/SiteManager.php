@@ -17,24 +17,20 @@ class SiteManager
     const ArtType="art";
 
 
-    const VisualCityDesc="This is The Visual C++ program called Visual City. The city even includes a puzzle game.";
+    const VisualCityDesc="This allows you to make your own virtual city and turn it into a puzzle";
     const VisualTreeDesc="This is Random Visual Tree Generator. It uses seeds and has wind and harvest features.";
-    const MarkovBrainDesc="The research done for MSU. This involves teaching organisms
-    through various simulations using memory.";
-    const HackerRankDesc="This is a variety of difficult problems I have finished on HackerRank";
+    const MarkovBrainDesc="A virtually simulated world using a genetic algoritm, that is used for Bilogical Research.";
     const EmitterDesc="A SQL compiler used to transfer queries across databases.";
     const DeserializerDesc="";
     const VaniaDesc="A Virtual Evolution Project made at Mhacks Fall 2016 using
     A Genetic Algorithm";
-    const PythonGraphingDesc="UNDER CONSTRUCTION";
-    const SteamPunkedDesc="This is a simple game using javascript and server-side
+    const SteamPunkedDesc="This is a server-side game using javascript and server-side
     scripting";
     const EmployfaiDesc= "A winner of Spartahack this simple app goes through your Facebook and finds
-    all the inappropriate images";
+    all the inappropriate images.";
     const ResumeDesc="A simple project made to help out with learning Sass by duplicating my resume formatting";
     const VirtualAlphaDesc="The Spartahacks 2015 submission. It involves controlling the mouse using a Myo arm band.";
     const CompilerDesc="A complete object-oriented compiler with recursive functions and optimizations";
-    const ProcessingDesc="UNDER CONSTRUCTION";
 
 
 
@@ -43,81 +39,64 @@ class SiteManager
     const VisualCityImage="VisualCity.jpg";
     const VisualTreeImage="Tree.png";
     const MarkovBrainImage="";
-    const HackerRankImage="HackerRank.png";
     const EmitterImage="";
-    const DeserializerImage="";
     const VaniaImage="gallery.jpg";
-    const PythonGraphingImage="";
     const SteamPunkedImage="Steampunked.png";
     const EmployfaiImage= "";
     const ResumeImage="";
     const VirtualAlphaImage="VirtualAlpha.png";
     const CompilerImage="";
-    const ProcessingImage="";
 
 
     const VisualCityFile="CityGame.zip";
     const VisualTreeFile="Tree.zip";
     const MarkovBrainFile="";
-    const HackerRankFile="";
     const EmitterFile="";
-    const DeserializerFile="";
     const VaniaFile="VaniaVirtualEvolution.zip";
-    const PythonGraphingFile="";
     const SteamPunkedFile="http://webdev.cse.msu.edu/~lambe168/project3/";
     const EmployfaiFile= "";
     const ResumeFile="http://www.cse.msu.edu/~lambe168/";
     const VirtualAlphaFile="Virtual_Alphabet_final.exe";
     const CompilerFile="";
-    const ProcessingFile="";
 
     const VisualCityGit="https://github.com/wert23239/Visual-City-Game";
     const VisualTreeGit="https://github.com/wert23239/Tree";
     const MarkovBrainGit="NULL";
-    const HackerRankGit="http://www.comingsoon.net/";
     const EmitterGit="NULL";
-    const DeserializerGit="NULL";
     const VaniaGit="https://github.com/wert23239/VaniaVirtualEvolution";
-    const PythonGraphingGit="http://www.comingsoon.net/";
     const SteamPunkedGit="http://www.comingsoon.net/";
     const EmployfaiGit= "https://github.com/wert23239/Employifai";
     const ResumeGit="http://www.cse.msu.edu/~lambe168/";
     const VirtualAlphaGit="https://github.com/jfreedman0/Virtual-Alphabet";
     const CompilerGit="http://www.comingsoon.net/";
-    const ProcessingGit="http://www.comingsoon.net/";
 
     const VisualCityDisplay="Visual City";
     const VisualTreeDisplay="Visual Tree";
     const MarkovBrainDisplay="Markov Brain";
     const HackerRankDisplay="Hacker Rank";
     const EmitterDisplay="SQL Emitter";
-    const DeserializerDisplay="XML Deserializer";
     const VaniaDisplay="Vania Virtual Evolution";
-    const PythonGraphingDisplay="Python Graphing";
     const SteamPunkedDisplay="Steampunked";
     const EmployfaiDiplay= "Employifai";
-    const ResumeDisplay="Sass Resume Project";
+    const ResumeDisplay="Sass Resume";
     const VirtualAlphaDisplay="Virtual Alphabet";
     const CompilerDisplay="C++ Compiler";
-    const ProcessingDisplay="Evolutionary Processing Display";
+
+
 
     const VisualCityNum=0;
     const VisualTreeNum=1;
     const MarkovBrainNum=2;
-    const HackerRankNum=3;
-    const EmitterNum=4;
-    const DeserializerNum=5;
-    const VaniaNum=6;
-    const PythonGraphingNum=7;
-    const SteamPunkedNum=8;
-    const EmployfaiNum= 9;
+    const EmitterNum=3;
+    const VaniaNum=4;
+    const CompilerNum=5;
+    const ShadowsNum=6;
+    const VirtualAlphaNum=7;
+    const EmployfaiNum=8;
+    const SteamPunkedNum=9;
     const ResumeNum=10;
-    const VirtualAlphaNum=11;
-    const CompilerNum=12;
-    const ProcessingNum=13;
 
 
-    const TheScarsofShadows="TheScarsofShadows.php";
     public function __construct($id)
     {
         $this->id=$id;
@@ -134,9 +113,9 @@ class SiteManager
                 $this->previous=$this->Code[$this->id-1];
             }
             else{
-                $this->previous=$this->Code[13];
+                $this->previous=$this->Code[self::CompilerNum];
             }
-            if($this->id!=13){
+            if($this->id!=self::CompilerNum){
                 $this->next=$this->Code[$this->id+1];
             }
             else{
@@ -153,16 +132,10 @@ class SiteManager
                  self::VisualTreeFile,self::VisualTreeImage,self::VisualTreeDesc,self::CodeType) ,
              self::MarkovBrainNum => new IndividualSite(self::MarkovBrainNum, self::MarkovBrainGit, self::MarkovBrainDisplay,
                  self::MarkovBrainFile,self::MarkovBrainImage,self::MarkovBrainDesc ,self::CodeType) ,
-             self::HackerRankNum => new IndividualSite(self::HackerRankNum, self::HackerRankGit,self::HackerRankDisplay,
-                 self::HackerRankFile,self::HackerRankImage,self::HackerRankDesc,self::CodeType),
              self::EmitterNum => new IndividualSite(self::EmitterNum, self::EmitterGit,self::EmitterDisplay,
                  self::EmitterFile,self::EmitterImage,self::EmitterDesc,self::CodeType),
-             self::DeserializerNum => new IndividualSite(self::DeserializerNum, self::DeserializerGit,self::DeserializerDisplay,
-                 self::DeserializerFile,self::DeserializerImage,self::DeserializerDesc,self::CodeType),
              self::VaniaNum=> new IndividualSite(self::VaniaNum, self::VaniaGit,self::VaniaDisplay,
                  self::VaniaFile ,self::VaniaImage,self::VaniaDesc,self::CodeType),
-             self::PythonGraphingNum=> new IndividualSite(self::PythonGraphingNum, self::PythonGraphingGit,self::PythonGraphingDisplay,
-                 self::PythonGraphingFile,self::PythonGraphingImage,self::PythonGraphingDesc,self::CodeType),
              self::SteamPunkedNum=> new IndividualSite(self::SteamPunkedNum, self::SteamPunkedGit,self::SteamPunkedDisplay,
                  self::SteamPunkedFile,self::SteamPunkedImage,self::SteamPunkedDesc ,self::CodeType),
              self::EmployfaiNum=> new IndividualSite(self::EmployfaiNum, self::EmployfaiGit,self::EmployfaiDiplay,
@@ -173,8 +146,6 @@ class SiteManager
                  self::VirtualAlphaFile,self::VirtualAlphaImage,self::VirtualAlphaDesc,self::CodeType),
              self::CompilerNum=>new IndividualSite(self::CompilerNum, self::CompilerGit,self::CompilerDisplay,
                  self::CompilerFile,self::CompilerImage,self::CompilerDesc,self::CodeType),
-             self::ProcessingNum=>new IndividualSite(self::ProcessingNum, self::ProcessingGit,self::ProcessingDisplay,
-                 self::ProcessingFile,self::ProcessingImage,self::ProcessingDesc,self::CodeType),
          );
     }
 
