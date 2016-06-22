@@ -4,15 +4,10 @@
 @MainColor: #9966cc;
 @AlternativeColor: white;
 
-
-body{
-  overflow: scroll;
+.project{
+  overflow: default;
+  background: #EEEEEE;
 }
-
-h1.codeB{
-  font-size: 7em;
-}
-
 
 @font-face{
   font-family: CabinSketch-Boldimport;
@@ -29,6 +24,33 @@ h1.codeB{
 
 }
 
+//.containerCustom {
+//  padding-right: 30px;
+//  padding-left: 30px;
+//  margin-right: auto;
+//  margin-left: auto;
+//}
+//@media (min-width: 768px) {
+//  .containerCustom {
+//    width: 740px;
+//  }
+//}
+//@media (min-width: 992px) {
+//  .containerCustom {
+//    width: 900px;
+//  }
+//}
+//@media (min-width: 1200px) {
+//  .containerCustom {
+//    width: 900px;
+//  }
+//}
+.jumbotron{
+  margin-bottom: 0;
+
+}
+
+
 
 .containerCustom {
   padding-right: 30px;
@@ -43,7 +65,7 @@ h1.codeB{
 }
 @media (min-width: 992px) {
   .containerCustom {
-    width: 900px;
+    width: 800px;
   }
 }
 @media (min-width: 1200px) {
@@ -54,25 +76,110 @@ h1.codeB{
 
 .CodeA h1{
   font-family: Skybird,'Myriad Pro', Arial, sans-serif;
-  font-size: 5em;
+  font-size: 4em;
+  margin-top: .5em;
+  margin-bottom: 0em;
 }
+
 
 .CodeA h2{
   font-family: Skybird,'Myriad Pro', Arial, sans-serif;
   font-size: 2em;
 }
-@media (max-width:380px)
-{
-  .CodeA h1{
-    font-family: Skybird,'Myriad Pro', Arial, sans-serif;
-    font-size: 3em;
-    color: red;
-  }
 
-  .CodeA h2{
-    font-size: 1.5em;
+
+//@media (min-width: 768px) {
+//  .CodeA h1{
+//    margin-top: .5em;
+//    margin-bottom: 0em;
+//    font-size: 5em;
+//  }
+//
+//
+//  .CodeA h2{
+//    font-size: 2em;
+//  }
+//}
+//@media (min-width: 992px) {
+//  .CodeA h1{
+//    margin-top: .25em;
+//    margin-bottom: 0em;
+//    font-size: 5.5em;
+//  }
+//
+//  .pager{
+//    margin-top: 0em;
+//  }
+//
+//  .CodeA h2{
+//    font-size: 2em;
+//  }
+//}
+//@media (min-width: 1200px) {
+//  .CodeA h1{
+//    margin-top: .25em;
+//    margin-bottom: 0em;
+//    font-size: 6em;
+//  }
+//
+//  .pager{
+//    margin-top: -5em;
+//  }
+//
+//  .CodeA h2{
+//    font-size: 2em;
+//  }
+//}
+.CodeA h1 {
+  margin-top: 1em;
+  margin-bottom: 0;
+  font-size: 6em;
+}
+
+
+
+.CodeA h2{
+  font-size: 2.2em;
+}
+
+.jumbotron{
+  margin-top: 0;
+  font-size: 8px;
+}
+@media (min-width: 768px) {
+  .jumbotron{
+    font-size: 10px;
+  }
+  .pager{
+        margin-top: 0;
+     }
+}
+@media (min-width: 992px) {
+  .jumbotron{
+    font-size: 13px;
+  }
+  .pager{
+    margin-top: -5em;
+  }
+  .CodeA h1 {
+    margin-top: 8vh;
   }
 }
+@media (min-width: 1200px) {
+ .jumbotron{
+   font-size: 15px;
+ }
+  .pager{
+    margin-top: -5em;
+  }
+  .CodeA h1 {
+    margin-top: 8vh;
+  }
+
+}
+
+
+
 .va{
   height:320px;
   vertical-align: middle;
@@ -80,9 +187,7 @@ h1.codeB{
 
 }
 
-.jumbotron{
-  margin-bottom: 0;
-}
+
 .next{
   padding-right:20px;
 }
@@ -92,121 +197,9 @@ h1.codeB{
 margin-top: 0;
 }
 
-.img{
-}
-
-.st-container {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-}
-
-.st-container > input,
-.st-container > a {
-  position: fixed;
-  bottom: 0px;
-  width: 34%;
-  cursor: pointer;
-  font-size: 16px;
-  height: 34px;
-  line-height: 34px;
-}
-
-.st-container > input {
-  opacity: 0;
-  z-index: 1000;
-}
-
-.st-container > a {
-  z-index: 10;
-  font-weight: 700;
-  background: #890711;
-  color: #000;
-  text-align: center;
-  text-shadow: 1px 1px 1px rgba(151,24,64,0.2);
-}
-
-/* "Fix" for percentage rounding: add a background bar pseudo element with the same color like the labels */
-.st-container:before {
-  content: '';
-  position: fixed;
-  width: 100%;
-  height: 34px;
-  background: #890711;
-  z-index: 9;
-  bottom: 0;
-}
-
-.containerrep {
-  content: '';
-  position: fixed;
-  width: 100%;
-  height: 34px;
-  background: #890711;
-  z-index: 9;
-  bottom: 0;
-}
 
 
-#st-control-1, #st-control-1 + a {
-  left: 0;
-}
 
-#st-control-2, #st-control-2 + a {
-  left: 34%;
-}
-
-#st-control-3, #st-control-3 + a {
-  left: 67%;
-}
-
-
-.st-container > input:checked + a,
-.st-container > input:checked:hover + a{
-  background: #821134;
-}
-
-.st-container > input:checked + a:after,
-.st-container > input:checked:hover + a:after{
-  bottom: 100%;
-  border: solid transparent;
-  content: '';
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
-  border-bottom-color: #821134;
-  border-width: 20px;
-  left: 50%;
-  margin-left: -20px;
-}
-
-.st-container > input:hover + a{
-  background: #AD244F;
-}
-
-.st-container > input:hover + a:after {
-  border-bottom-color: #AD244F;
-}
-
-.st-scroll,
-.st-panel {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-
-.a{
-  color: blue;
-  background: black;
-}
-
-.b{
-  &:extend(.a);
-  color: red;
-}
 
 .st-scroll {
   top: 0;
@@ -266,20 +259,7 @@ margin-top: 0;
 
 /* Content elements */
 
-.st-deco{
-  width: 200px;
-  height: 200px;
-  position: absolute;
-  top: 0px;
-  left: 50%;
-  margin-left: -100px;
-  background: saturate(@MainColor, 5%);
-  -webkit-transform: translateY(-50%) rotate(45deg);
-  -moz-transform: translateY(-50%) rotate(45deg);
-  -o-transform: translateY(-50%) rotate(45deg);
-  -ms-transform: translateY(-50%) rotate(45deg);
-  transform: translateY(-50%) rotate(45deg);
-}
+
 
 [data-icon]:after {
   content: attr(data-icon);
@@ -482,35 +462,8 @@ margin-top: 0;
 
 /* Colored sections */
 
-.CodeA2 h2 {
-  text-shadow: 3px 3px #301934;
-}
-
-.CodeA2,
-.CodeA{
-  background: #9966cc; //main
-}
-.CodeA2 [data-icon]:after {
-  color: #9966cc; //main
-}
 
 
-.CodeB2 h2 {
-  color: #9966cc;
-  text-shadow: 2px 2px #C0C0C0;
-}
-
-
-
-
-.CodeB2 .CodeB {
-  background: #9966cc;
-}
-
-.CodeB2 p {
-  color: #9966cc;
-  color: rgba(255,255,255,0.8);
-}
 
 @media screen and (max-width: 520px) {
   .st-panel h2 {
@@ -525,26 +478,6 @@ margin-top: 0;
 
   .st-container > a {
     font-size: 13px;
-  }
-}
-@media screen and (max-width: 360px) {
-  .st-container > a {
-    font-size: 10px;
-  }
-
-  .st-deco{
-    width: 120px;
-    height: 120px;
-    margin-left: -60px;
-  }
-
-  [data-icon]:after {
-    font-size: 60px;
-    -webkit-transform: rotate(-45deg) translateY(15%);
-    -moz-transform: rotate(-45deg) translateY(15%);
-    -o-transform: rotate(-45deg) translateY(15%);
-    -ms-transform: rotate(-45deg) translateY(15%);
-    transform: rotate(-45deg) translateY(15%);
   }
 }
 

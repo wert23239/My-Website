@@ -10,7 +10,7 @@ $view= new Site\CodeView($id);
 <html lang="en">
 <?php echo $view->presenthead("") ?>
 
-<body>
+<body class="project">
 
 
 <?php echo $view->presentheader();
