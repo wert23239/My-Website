@@ -15,7 +15,7 @@ class ChangeSiteController{
      * @param SteampunkedGame $game, game instance we are controlling.
      * @param $request, _POST request.
      */
-    public function __construct($request) {
+    public function __construct($request,SiteManager $site) {
         //
         // Handle request.
         //
@@ -23,12 +23,16 @@ class ChangeSiteController{
         $this->id = 0;
         if(isset($request['id'])){
             $this->id=$request['id'];
+            $site->setId($this->id);
         }
 
 
         if(isset($request['ajax'])){
-            $view = new CodeView($this->id);
+            $view = new CodeView($site);
             $this->result = json_encode(array('ok' => true,'NewProject'=> $view->presentDisplay()));
+        }
+        else{
+            $this->page="ProjectDisplay.php";
         }
         
 
@@ -67,7 +71,7 @@ class ChangeSiteController{
     private $game;                  // The game model we're using.
     private $reset = false;         // Do we need to start a new game
     private $rotate = false;
-    private $page  = "ProjectDisplay.php";
+    private $page  = "";
     private $result;
 
 

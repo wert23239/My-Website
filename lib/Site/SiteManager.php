@@ -19,33 +19,31 @@ class SiteManager
 
     const VisualCityDesc="This allows you to make your own virtual city and turn it into a puzzle";
     const VisualTreeDesc="This is Random Visual Tree Generator. It uses seeds and has wind and harvest features.";
-    const MarkovBrainDesc="A virtually simulated world using a genetic algoritm, that is used for Bilogical Research.";
+    const MarkovBrainDesc="A virtually simulated world using evolutionary programming that is for Biological Research.";
     const EmitterDesc="A SQL compiler used to transfer queries across databases.";
-    const DeserializerDesc="";
-    const VaniaDesc="A Virtual Evolution Project made at Mhacks Fall 2016 using
-    A Genetic Algorithm";
-    const SteamPunkedDesc="This is a server-side game using javascript and server-side
+    const VaniaDesc="A genetic algorithm created to beat CastleVania made at Mhacks.";
+    const SteamPunkedDesc="This is a game using javascript and server-side
     scripting";
-    const EmployfaiDesc= "A winner of Spartahack this simple app goes through your Facebook and finds
+    const EmployfaiDesc= "A winner of Spartahack this app goes through your Facebook and finds
     all the inappropriate images.";
     const ResumeDesc="A simple project made to help out with learning Sass by duplicating my resume formatting";
     const VirtualAlphaDesc="The Spartahacks 2015 submission. It involves controlling the mouse using a Myo arm band.";
     const CompilerDesc="A complete object-oriented compiler with recursive functions and optimizations";
-
-
+    const ShadowDesc="A mod of the game CaveStory. This includes custom animation and level design.";
 
 
 
     const VisualCityImage="VisualCity.jpg";
     const VisualTreeImage="Tree.png";
     const MarkovBrainImage="";
-    const EmitterImage="";
+    const EmitterImage="EmitterExample2.PNG";
     const VaniaImage="gallery.jpg";
     const SteamPunkedImage="Steampunked.png";
     const EmployfaiImage= "";
     const ResumeImage="";
     const VirtualAlphaImage="VirtualAlpha.png";
     const CompilerImage="";
+    const ShadowImage="TheScarsofShadows.png";
 
 
     const VisualCityFile="CityGame.zip";
@@ -58,6 +56,7 @@ class SiteManager
     const ResumeFile="http://www.cse.msu.edu/~lambe168/";
     const VirtualAlphaFile="Virtual_Alphabet_final.exe";
     const CompilerFile="";
+    const ShadowFile="";
 
     const VisualCityGit="https://github.com/wert23239/Visual-City-Game";
     const VisualTreeGit="https://github.com/wert23239/Tree";
@@ -69,32 +68,35 @@ class SiteManager
     const ResumeGit="http://www.cse.msu.edu/~lambe168/";
     const VirtualAlphaGit="https://github.com/jfreedman0/Virtual-Alphabet";
     const CompilerGit="http://www.comingsoon.net/";
+    const ShadowGit="https://github.com/wert23239/ScarsofShadows";
 
     const VisualCityDisplay="Visual City";
     const VisualTreeDisplay="Visual Tree";
     const MarkovBrainDisplay="Markov Brain";
     const HackerRankDisplay="Hacker Rank";
     const EmitterDisplay="SQL Emitter";
-    const VaniaDisplay="Vania Virtual Evolution";
+    const VaniaDisplay="Vania Evolution";
     const SteamPunkedDisplay="Steampunked";
     const EmployfaiDiplay= "Employifai";
     const ResumeDisplay="Sass Resume";
     const VirtualAlphaDisplay="Virtual Alphabet";
     const CompilerDisplay="C++ Compiler";
+    const ShadowDisplay="Sonu's Story";
 
 
-
-    const VisualCityNum=0;
-    const VisualTreeNum=1;
-    const MarkovBrainNum=2;
-    const EmitterNum=3;
+    const EmployfaiNum=0;
+    const SteamPunkedNum=1;
+    const ResumeNum=2;
+    const MarkovBrainNum=3;
     const VaniaNum=4;
-    const CompilerNum=5;
-    const ShadowsNum=6;
-    const VirtualAlphaNum=7;
-    const EmployfaiNum=8;
-    const SteamPunkedNum=9;
-    const ResumeNum=10;
+    const VisualCityNum=5;
+    const VisualTreeNum=6;
+    const CompilerNum=7;
+    const EmitterNum=8;
+    const ShadowsNum=9;
+    const VirtualAlphaNum=10;
+
+
 
 
     public function __construct($id)
@@ -113,9 +115,9 @@ class SiteManager
                 $this->previous=$this->Code[$this->id-1];
             }
             else{
-                $this->previous=$this->Code[self::CompilerNum];
+                $this->previous=$this->Code[10];
             }
-            if($this->id!=self::CompilerNum){
+            if($this->id!=10){
                 $this->next=$this->Code[$this->id+1];
             }
             else{
@@ -144,6 +146,8 @@ class SiteManager
                  self::ResumeFile,self::ResumeImage,self::ResumeDesc,self::CodeType),
              self::VirtualAlphaNum=>new IndividualSite(self::VirtualAlphaNum, self::VirtualAlphaGit,self::VirtualAlphaDisplay,
                  self::VirtualAlphaFile,self::VirtualAlphaImage,self::VirtualAlphaDesc,self::CodeType),
+             self::ShadowsNum=>new IndividualSite(self::ShadowsNum,self::ShadowGit,self::ShadowDisplay,
+             self::ShadowFile,self::ShadowImage,self::ShadowDesc,self::CodeType),
              self::CompilerNum=>new IndividualSite(self::CompilerNum, self::CompilerGit,self::CompilerDisplay,
                  self::CompilerFile,self::CompilerImage,self::CompilerDesc,self::CodeType),
          );
@@ -167,8 +171,21 @@ class SiteManager
         return $this->current;
     }
 
+    public function setId($id)
+    {
+        $this->id = $id;
+        $this->current=$this->Code[$id];
+        $this->find();
 
-    private $id;
+    }
+
+    public function getId()
+    {
+        return $this->id;
+    }
+
+
+    private $id=0;
     private $type;
     private $next;
     private $previous;

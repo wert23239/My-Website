@@ -16,7 +16,10 @@ class View
 }
     public function headadditional(){
        return <<<HTML
-<link rel="stylesheet" href="style/styles.less">
+<!--[if IE 11]>
+	<link rel="stylesheet" href="style/styles.css" content="text/css">
+<![endif]-->
+<link rel="stylesheet" href="style/styles.less" content="text/less">
 <link href="node_modules/Bootstrap/css/bootstrap.min.css" rel="stylesheet">
 <script src="konami.js"></script>
 <script>
@@ -44,6 +47,7 @@ HTML;
 <script src="node_modules/jquery/dist/jquery.min.js" type="text/javascript"></script>
 <script src="site.min.js"></script>
 <script src="typed.js"></script>
+
 <script>
 $(document).ready(function() {
     new MissYou();
@@ -80,41 +84,37 @@ HTML;
 <div id='cssmenu'>
 <ul>
    <li><a href='index.php'><span>Home</span></a></li>
-   <li class='has-sub'><a href=''><span>Programming</span></a>
+   <li class='has-sub'><a href=''><span>Experience</span></a>
       <ul>
-         <li class='has-sub'><a href='#'><span>C++</span><div class='rank'>7/10</div></a>
-            <ul>
-               <li><a href='ProjectDisplay.php?id={$cname("VISUALCITYNUM")}'><span>Visual City</span></a></li>
-               <li><a href='ProjectDisplay.php?id={$cname("VISUALTREENUM")}'><span>Visual Tree</span></a></li>
-               <li class="last"><a href='ProjectDisplay.php?id={$cname("VIRTUALEVOLUTIONNUM")}'><span>Markov Brain</span></a></li>
-            </ul>
-         </li>
-         <li class='has-sub'><a href='#'><span>C#</span><div class='rank'>6/10</div></a>
-            <ul>
-               <li class='last'><a href='ProjectDisplay.php?id={$cname("EMITTERNUM")}'><span>SQL Emitter</span></a></li>
-            </ul>
-         </li>
-         <li class='has-sub'><a href='#'><span>Lua</span><div class='rank'>4/10</div></a>
-            <ul>
-               <li class='last'><a href='ProjectDisplay.php?id={$cname("VANIANUM")}'><span>Vania Virtual Evolution</span></a></li>
-            </ul>
-         </li>
-         <li class='has-sub last'><a href='#'><span>Lex/Yacc</span><div class='rank'>5/10</div></a>
-            <ul>
-               <li class='last'><a href='ProjectDisplay.php?id={$cname("COMPILENUM")}'><span>C++ Compiler</span></a></li>
-            </ul>
-         </li>
          <li class='has-sub'><a href='#'><span>Web Development</span></a>
             <ul>
-               <li><a href='ProjectDisplay.php?id={$cname("EMPLOYFAINUM")}'><span>Employfai</span></a></li>
-               <li><a href='ProjectDisplay.php?id={$cname("STEAMPUNKEDNUM")}'><span>Steampunked</span></a></li>
-               <li class='last'><a href='ProjectDisplay.php?id={$cname("RESUMENUM")}'><span>Sass Resume</span></a></li>
+               <li><a href='page-get.php?id={$cname("EMPLOYFAINUM")}'><span>Employfai</span></a></li>
+               <li><a href='page-get.php?id={$cname("STEAMPUNKEDNUM")}'><span>Steampunked</span></a></li>
+               <li class='last'><a href='page-get.php?id={$cname("RESUMENUM")}'><span>Sass Resume</span></a></li>
+            </ul>
+         </li>
+         <li class='has-sub'><a href='#'><span>Neural Networks</span></a>
+            <ul>
+               <li><a href='page-get.php?id={$cname("VIRTUALEVOLUTIONNUM")}'><span>MABE</span></a></li>
+               <li class='last'><a href='page-get.php?id={$cname("VANIANUM")}'><span>Vania Virtual Evolution</span></a></li>
+            </ul>
+         </li>
+         <li class='has-sub'><a href='#'><span>App Development</span></a>
+            <ul>
+               <li><a href='page-get.php?id={$cname("VISUALCITYNUM")}'><span>Visual City</span></a></li>
+               <li class='last'><a href='page-get.php?id={$cname("VISUALTREENUM")}'><span>Visual Tree</span></a></li>
+            </ul>
+         </li>
+         <li class='has-sub'><a href='#'><span>Compilers</span></a>
+            <ul>
+               <li><a href='page-get.php?id={$cname("COMPILENUM")}'><span>Object-Oriented Compiler</span></a></li>
+               <li class='last'><a href='page-get.php?id={$cname("EMITTERNUM")}'><span>SQL-to-SQL Translator</span></a></li>
             </ul>
          </li>
          <li class='has-sub'><a href='#'><span>Game Design</span></a>
             <ul>
-               <li class='last'><a href='ProjectDisplay.php?id={$cname("SHADOWSNUM")}'><span>The Scars of Shadows</span></a></li>
-               <li class='last'><a href='ProjectDisplay.php?id={$cname("ALPHABETNUM")}'><span>Virtual Alphabet</span></a></li>
+               <li class='last'><a href='page-get.php?id={$cname("SHADOWSNUM")}'><span>The Scars of Shadows</span></a></li>
+               <li class='last'><a href='page-get.php?id={$cname("ALPHABETNUM")}'><span>Virtual Alphabet</span></a></li>
             </ul>
          </li>
       </ul>

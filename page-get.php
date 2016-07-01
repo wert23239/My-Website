@@ -9,13 +9,13 @@ if($debug) {
 
     echo "<pre>";
 
-    var_dump($_POST);
+    var_dump($_GET);
 }
 
 else{
 
 
-    $controller = new \Site\ChangeSiteController($_POST,$site);
+    $controller = new \Site\ChangeSiteController($_GET,$site);
 
 //
 // Handle controller cases...

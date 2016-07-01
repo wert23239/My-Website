@@ -1,4 +1,4 @@
-/*! DO NOT EDIT mywebsite 2016-06-11 */
+/*! DO NOT EDIT mywebsite 2016-06-25 */
 ( function( $ ) {
 $( document ).ready(function() {
 $('#cssmenu').prepend('<div id="menu-button">Menu</div>');
@@ -114,12 +114,12 @@ function ProjectDisplay(id) {
 ProjectDisplay.prototype.initialize = function(id){
 
     var that = this;
-    var idminus=13;
+    var idminus=10;
     if(id!=0){
         idminus=parseInt(id)-1;
     }
     var idplus=0;
-    if(id!=13){
+    if(id!=10){
         idplus=parseInt(id)+1;
     }
 
