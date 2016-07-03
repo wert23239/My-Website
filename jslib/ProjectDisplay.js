@@ -11,12 +11,12 @@ function ProjectDisplay(id) {
 ProjectDisplay.prototype.initialize = function(id){
 
     var that = this;
-    var idminus=13;
+    var idminus=10;
     if(id!=0){
         idminus=parseInt(id)-1;
     }
     var idplus=0;
-    if(id!=13){
+    if(id!=10){
         idplus=parseInt(id)+1;
     }
 
@@ -27,7 +27,6 @@ ProjectDisplay.prototype.initialize = function(id){
     console.log("button next",buttonnext);
     console.log("idplus",idplus);
     that.installListener(buttonnext, idplus);
-
 
 
 };

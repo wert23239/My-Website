@@ -36,10 +36,10 @@ class SiteManager
     const VisualCityImage="VisualCity.jpg";
     const VisualTreeImage="Tree.png";
     const MarkovBrainImage="";
-    const EmitterImage="EmitterExample2.PNG";
+    const EmitterImage="Emitter.png";
     const VaniaImage="gallery.jpg";
     const SteamPunkedImage="Steampunked.png";
-    const EmployfaiImage= "";
+    const EmployfaiImage= "Employfai.png";
     const ResumeImage="";
     const VirtualAlphaImage="VirtualAlpha.png";
     const CompilerImage="";
