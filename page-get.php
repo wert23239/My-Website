@@ -17,12 +17,7 @@ else{
 
     $controller = new \Site\ChangeSiteController($_GET,$site);
 
-//
-// Handle controller cases...
-// - Someone gave up
-// - Someone won
-// - Can't think of anything else...
-//
+
 if($controller->getPage()=="") {
     echo $controller->getResult();
 }

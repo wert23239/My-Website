@@ -11,12 +11,12 @@ function ProjectDisplay(id) {
 ProjectDisplay.prototype.initialize = function(id){
 
     var that = this;
-    var idminus=10;
+    var idminus=9;
     if(id!=0){
         idminus=parseInt(id)-1;
     }
     var idplus=0;
-    if(id!=10){
+    if(id!=9){
         idplus=parseInt(id)+1;
     }
 

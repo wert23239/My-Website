@@ -26,7 +26,6 @@ class SiteManager
     scripting";
     const EmployfaiDesc= "A winner of Spartahack this app goes through your Facebook and finds
     all the inappropriate images.";
-    const ResumeDesc="A simple project made to help out with learning Sass by duplicating my resume formatting";
     const VirtualAlphaDesc="The Spartahacks 2015 submission. It involves controlling the mouse using a Myo arm band.";
     const CompilerDesc="A complete object-oriented compiler with recursive functions and optimizations";
     const ShadowDesc="A mod of the game CaveStory. This includes custom animation and level design.";
@@ -40,7 +39,6 @@ class SiteManager
     const VaniaImage="gallery.jpg";
     const SteamPunkedImage="Steampunked.png";
     const EmployfaiImage= "Employfai.png";
-    const ResumeImage="";
     const VirtualAlphaImage="VirtualAlpha.png";
     const CompilerImage="";
     const ShadowImage="TheScarsofShadows.png";
@@ -53,7 +51,6 @@ class SiteManager
     const VaniaFile="VaniaVirtualEvolution.zip";
     const SteamPunkedFile="http://webdev.cse.msu.edu/~lambe168/project3/";
     const EmployfaiFile= "";
-    const ResumeFile="http://www.cse.msu.edu/~lambe168/";
     const VirtualAlphaFile="Virtual_Alphabet_final.exe";
     const CompilerFile="";
     const ShadowFile="";
@@ -65,7 +62,6 @@ class SiteManager
     const VaniaGit="https://github.com/wert23239/VaniaVirtualEvolution";
     const SteamPunkedGit="http://www.comingsoon.net/";
     const EmployfaiGit= "https://github.com/wert23239/Employifai";
-    const ResumeGit="http://www.cse.msu.edu/~lambe168/";
     const VirtualAlphaGit="https://github.com/jfreedman0/Virtual-Alphabet";
     const CompilerGit="http://www.comingsoon.net/";
     const ShadowGit="https://github.com/wert23239/ScarsofShadows";
@@ -78,7 +74,6 @@ class SiteManager
     const VaniaDisplay="Vania Evolution";
     const SteamPunkedDisplay="Steampunked";
     const EmployfaiDiplay= "Employifai";
-    const ResumeDisplay="Sass Resume";
     const VirtualAlphaDisplay="Virtual Alphabet";
     const CompilerDisplay="C++ Compiler";
     const ShadowDisplay="Sonu's Story";
@@ -86,15 +81,14 @@ class SiteManager
 
     const EmployfaiNum=0;
     const SteamPunkedNum=1;
-    const ResumeNum=2;
-    const MarkovBrainNum=3;
-    const VaniaNum=4;
-    const VisualCityNum=5;
-    const VisualTreeNum=6;
-    const CompilerNum=7;
-    const EmitterNum=8;
-    const ShadowsNum=9;
-    const VirtualAlphaNum=10;
+    const MarkovBrainNum=2;
+    const VaniaNum=3;
+    const VisualCityNum=4;
+    const VisualTreeNum=5;
+    const CompilerNum=6;
+    const EmitterNum=7;
+    const ShadowsNum=8;
+    const VirtualAlphaNum=9;
 
 
 
@@ -115,9 +109,9 @@ class SiteManager
                 $this->previous=$this->Code[$this->id-1];
             }
             else{
-                $this->previous=$this->Code[10];
+                $this->previous=$this->Code[9];
             }
-            if($this->id!=10){
+            if($this->id!=9){
                 $this->next=$this->Code[$this->id+1];
             }
             else{
@@ -142,8 +136,6 @@ class SiteManager
                  self::SteamPunkedFile,self::SteamPunkedImage,self::SteamPunkedDesc ,self::CodeType),
              self::EmployfaiNum=> new IndividualSite(self::EmployfaiNum, self::EmployfaiGit,self::EmployfaiDiplay,
                  self::EmployfaiFile,self::EmployfaiImage,self::EmployfaiDesc,self::CodeType),
-             self::ResumeNum=> new IndividualSite(self::ResumeNum, self::ResumeGit,self::ResumeDisplay,
-                 self::ResumeFile,self::ResumeImage,self::ResumeDesc,self::CodeType),
              self::VirtualAlphaNum=>new IndividualSite(self::VirtualAlphaNum, self::VirtualAlphaGit,self::VirtualAlphaDisplay,
                  self::VirtualAlphaFile,self::VirtualAlphaImage,self::VirtualAlphaDesc,self::CodeType),
              self::ShadowsNum=>new IndividualSite(self::ShadowsNum,self::ShadowGit,self::ShadowDisplay,

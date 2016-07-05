@@ -53,11 +53,6 @@ HTML;
 
     public function headeradditional(){
       $html="";
-        if($this->download!="") {
-            $html .= <<<HTML
-<li class='last'><a href="$this->download" download><span>Working Program</span></a></li>
-HTML;
-        }
         if($this->gitlink!="NULL") {
         $html.=<<<HTML
 <li class='last'><a href=$this->gitlink><span>Source</span></a></li>

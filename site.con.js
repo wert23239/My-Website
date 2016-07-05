@@ -1,4 +1,4 @@
-/*! DO NOT EDIT mywebsite 2016-06-25 */
+/*! DO NOT EDIT mywebsite 2016-07-05 */
 ( function( $ ) {
 $( document ).ready(function() {
 $('#cssmenu').prepend('<div id="menu-button">Menu</div>');
@@ -114,12 +114,12 @@ function ProjectDisplay(id) {
 ProjectDisplay.prototype.initialize = function(id){
 
     var that = this;
-    var idminus=10;
+    var idminus=9;
     if(id!=0){
         idminus=parseInt(id)-1;
     }
     var idplus=0;
-    if(id!=10){
+    if(id!=9){
         idplus=parseInt(id)+1;
     }
 
@@ -130,7 +130,6 @@ ProjectDisplay.prototype.initialize = function(id){
     console.log("button next",buttonnext);
     console.log("idplus",idplus);
     that.installListener(buttonnext, idplus);
-
 
 
 };

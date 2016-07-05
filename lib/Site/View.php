@@ -73,7 +73,6 @@ HTML;
         define('VANIANUM', SiteManager::VaniaNum);
         define('STEAMPUNKEDNUM', SiteManager::SteamPunkedNum);
         define('EMPLOYFAINUM', SiteManager::EmployfaiNum);
-        define('RESUMENUM', SiteManager::ResumeNum);
         define('SHADOWSNUM', SiteManager::ShadowsNum);
         define('ALPHABETNUM', SiteManager::VirtualAlphaNum);
         define('COMPILENUM', SiteManager::CompilerNum);
@@ -89,8 +88,7 @@ HTML;
          <li class='has-sub'><a href='#'><span>Web Development</span></a>
             <ul>
                <li><a href='page-get.php?id={$cname("EMPLOYFAINUM")}'><span>Employfai</span></a></li>
-               <li><a href='page-get.php?id={$cname("STEAMPUNKEDNUM")}'><span>Steampunked</span></a></li>
-               <li class='last'><a href='page-get.php?id={$cname("RESUMENUM")}'><span>Sass Resume</span></a></li>
+               <li class='last'><a href='page-get.php?id={$cname("STEAMPUNKEDNUM")}'><span>Steampunked</span></a></li>
             </ul>
          </li>
          <li class='has-sub'><a href='#'><span>Neural Networks</span></a>
