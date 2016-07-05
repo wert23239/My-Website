@@ -13,9 +13,12 @@ if($debug) {
 }
 
 else{
-
-
-    $controller = new \Site\ChangeSiteController($_POST,$site);
+    if(isset($_POST['id'])) {
+        $controller = new \Site\ChangeSiteController($_POST, $site);
+    }
+    else{
+        $controller = new \Site\ChangeSiteController($_GET, $site);
+    }
 
 //
 // Handle controller cases...

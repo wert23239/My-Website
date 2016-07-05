@@ -14,7 +14,6 @@ class CodeView extends View
         $this->connections= $site;
         $this->id=$site->getId();
         $this->current=$this->connections->getCurrent();
-        $this->download=$this->current->getDownload();
         $this->gitlink=$this->current->getGit();
         $this->title=$this->current->getDisplay();
         $this->image=$this->current->getImage();

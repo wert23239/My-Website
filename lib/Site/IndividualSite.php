@@ -14,7 +14,7 @@ class IndividualSite
     const DownloadPath="downloads/";
     const ImagePath="images/";
     const NamePath="ProjectDisplay.php?id=";
-    public function __construct($number,$git,$display,$download,$image,$desc,$type)
+    public function __construct($number, $git, $display, $image, $desc, $type)
     {
         $this->name=self::NamePath;
         $this->name.=$number;
@@ -22,10 +22,6 @@ class IndividualSite
         $this->type=$type;
         $this->git=$git;
         $this->displayname=$display;
-        if($download!=""){
-            $this->download=self::DownloadPath;
-            $this->download.=$download;
-        }
         $this->image=self::ImagePath;
         $this->image.=$image;
         $this->description=$desc;
@@ -38,7 +34,6 @@ class IndividualSite
     private $git;
     private $link;
     private $displayname;
-    private $download="";
     private $image;
     private $description;
 
@@ -142,16 +137,6 @@ class IndividualSite
     }
 
 
-
-    public function getDownload()
-    {
-        return $this->download;
-    }
-
-    public function setDownload($download)
-    {
-        $this->download = $download;
-    }
 
     public function getImage()
     {

@@ -44,16 +44,6 @@ class SiteManager
     const ShadowImage="TheScarsofShadows.png";
 
 
-    const VisualCityFile="CityGame.zip";
-    const VisualTreeFile="Tree.zip";
-    const MarkovBrainFile="";
-    const EmitterFile="";
-    const VaniaFile="VaniaVirtualEvolution.zip";
-    const SteamPunkedFile="http://webdev.cse.msu.edu/~lambe168/project3/";
-    const EmployfaiFile= "";
-    const VirtualAlphaFile="Virtual_Alphabet_final.exe";
-    const CompilerFile="";
-    const ShadowFile="";
 
     const VisualCityGit="https://github.com/wert23239/Visual-City-Game";
     const VisualTreeGit="https://github.com/wert23239/Tree";
@@ -122,26 +112,16 @@ class SiteManager
 
     public function initialize(){
          $this->Code=array(
-             self::VisualCityNum => new IndividualSite(self::VisualCityNum, self::VisualCityGit, self::VisualCityDisplay,
-                 self::VisualCityFile,self::VisualCityImage,self::VisualCityDesc ,self::CodeType) ,
-             self::VisualTreeNum => new IndividualSite(self::VisualTreeNum,self::VisualTreeGit,self::VisualTreeDisplay,
-                 self::VisualTreeFile,self::VisualTreeImage,self::VisualTreeDesc,self::CodeType) ,
-             self::MarkovBrainNum => new IndividualSite(self::MarkovBrainNum, self::MarkovBrainGit, self::MarkovBrainDisplay,
-                 self::MarkovBrainFile,self::MarkovBrainImage,self::MarkovBrainDesc ,self::CodeType) ,
-             self::EmitterNum => new IndividualSite(self::EmitterNum, self::EmitterGit,self::EmitterDisplay,
-                 self::EmitterFile,self::EmitterImage,self::EmitterDesc,self::CodeType),
-             self::VaniaNum=> new IndividualSite(self::VaniaNum, self::VaniaGit,self::VaniaDisplay,
-                 self::VaniaFile ,self::VaniaImage,self::VaniaDesc,self::CodeType),
-             self::SteamPunkedNum=> new IndividualSite(self::SteamPunkedNum, self::SteamPunkedGit,self::SteamPunkedDisplay,
-                 self::SteamPunkedFile,self::SteamPunkedImage,self::SteamPunkedDesc ,self::CodeType),
-             self::EmployfaiNum=> new IndividualSite(self::EmployfaiNum, self::EmployfaiGit,self::EmployfaiDiplay,
-                 self::EmployfaiFile,self::EmployfaiImage,self::EmployfaiDesc,self::CodeType),
-             self::VirtualAlphaNum=>new IndividualSite(self::VirtualAlphaNum, self::VirtualAlphaGit,self::VirtualAlphaDisplay,
-                 self::VirtualAlphaFile,self::VirtualAlphaImage,self::VirtualAlphaDesc,self::CodeType),
-             self::ShadowsNum=>new IndividualSite(self::ShadowsNum,self::ShadowGit,self::ShadowDisplay,
-             self::ShadowFile,self::ShadowImage,self::ShadowDesc,self::CodeType),
-             self::CompilerNum=>new IndividualSite(self::CompilerNum, self::CompilerGit,self::CompilerDisplay,
-                 self::CompilerFile,self::CompilerImage,self::CompilerDesc,self::CodeType),
+             self::VisualCityNum => new IndividualSite(self::VisualCityNum, self::VisualCityGit, self::VisualCityDisplay, self::VisualCityImage, self::VisualCityDesc, self::CodeType) ,
+             self::VisualTreeNum => new IndividualSite(self::VisualTreeNum, self::VisualTreeGit, self::VisualTreeDisplay, self::VisualTreeImage, self::VisualTreeDesc, self::CodeType) ,
+             self::MarkovBrainNum => new IndividualSite(self::MarkovBrainNum, self::MarkovBrainGit, self::MarkovBrainDisplay, self::MarkovBrainImage, self::MarkovBrainDesc, self::CodeType) ,
+             self::EmitterNum => new IndividualSite(self::EmitterNum, self::EmitterGit, self::EmitterDisplay, self::EmitterImage, self::EmitterDesc, self::CodeType),
+             self::VaniaNum=> new IndividualSite(self::VaniaNum, self::VaniaGit, self::VaniaDisplay, self::VaniaImage, self::VaniaDesc, self::CodeType),
+             self::SteamPunkedNum=> new IndividualSite(self::SteamPunkedNum, self::SteamPunkedGit, self::SteamPunkedDisplay, self::SteamPunkedImage, self::SteamPunkedDesc, self::CodeType),
+             self::EmployfaiNum=> new IndividualSite(self::EmployfaiNum, self::EmployfaiGit, self::EmployfaiDiplay, self::EmployfaiImage, self::EmployfaiDesc, self::CodeType),
+             self::VirtualAlphaNum=>new IndividualSite(self::VirtualAlphaNum, self::VirtualAlphaGit, self::VirtualAlphaDisplay, self::VirtualAlphaImage, self::VirtualAlphaDesc, self::CodeType),
+             self::ShadowsNum=>new IndividualSite(self::ShadowsNum, self::ShadowGit, self::ShadowDisplay, self::ShadowImage, self::ShadowDesc, self::CodeType),
+             self::CompilerNum=>new IndividualSite(self::CompilerNum, self::CompilerGit, self::CompilerDisplay, self::CompilerImage, self::CompilerDesc, self::CodeType),
          );
     }
 

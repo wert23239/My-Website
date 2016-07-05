@@ -87,32 +87,32 @@ HTML;
       <ul>
          <li class='has-sub'><a href='#'><span>Web Development</span></a>
             <ul>
-               <li><a href='page-get.php?id={$cname("EMPLOYFAINUM")}'><span>Employfai</span></a></li>
-               <li class='last'><a href='page-get.php?id={$cname("STEAMPUNKEDNUM")}'><span>Steampunked</span></a></li>
+               <li><a href='page-post.php?id={$cname("EMPLOYFAINUM")}'><span>Employfai</span></a></li>
+               <li class='last'><a href='page-post.php?id={$cname("STEAMPUNKEDNUM")}'><span>Steampunked</span></a></li>
             </ul>
          </li>
          <li class='has-sub'><a href='#'><span>Neural Networks</span></a>
             <ul>
-               <li><a href='page-get.php?id={$cname("VIRTUALEVOLUTIONNUM")}'><span>MABE</span></a></li>
-               <li class='last'><a href='page-get.php?id={$cname("VANIANUM")}'><span>Vania Virtual Evolution</span></a></li>
+               <li><a href='page-post.php?id={$cname("VIRTUALEVOLUTIONNUM")}'><span>MABE</span></a></li>
+               <li class='last'><a href='page-post.php?id={$cname("VANIANUM")}'><span>Vania Virtual Evolution</span></a></li>
             </ul>
          </li>
          <li class='has-sub'><a href='#'><span>App Development</span></a>
             <ul>
-               <li><a href='page-get.php?id={$cname("VISUALCITYNUM")}'><span>Visual City</span></a></li>
-               <li class='last'><a href='page-get.php?id={$cname("VISUALTREENUM")}'><span>Visual Tree</span></a></li>
+               <li><a href='page-post.php?id={$cname("VISUALCITYNUM")}'><span>Visual City</span></a></li>
+               <li class='last'><a href='page-post.php?id={$cname("VISUALTREENUM")}'><span>Visual Tree</span></a></li>
             </ul>
          </li>
          <li class='has-sub'><a href='#'><span>Compilers</span></a>
             <ul>
-               <li><a href='page-get.php?id={$cname("COMPILENUM")}'><span>Object-Oriented Compiler</span></a></li>
-               <li class='last'><a href='page-get.php?id={$cname("EMITTERNUM")}'><span>SQL-to-SQL Translator</span></a></li>
+               <li><a href='page-post.php?id={$cname("COMPILENUM")}'><span>Object-Oriented Compiler</span></a></li>
+               <li class='last'><a href='page-post.php?id={$cname("EMITTERNUM")}'><span>SQL-to-SQL Translator</span></a></li>
             </ul>
          </li>
          <li class='has-sub'><a href='#'><span>Game Design</span></a>
             <ul>
-               <li class='last'><a href='page-get.php?id={$cname("SHADOWSNUM")}'><span>The Scars of Shadows</span></a></li>
-               <li class='last'><a href='page-get.php?id={$cname("ALPHABETNUM")}'><span>Virtual Alphabet</span></a></li>
+               <li class='last'><a href='page-post.php?id={$cname("SHADOWSNUM")}'><span>The Scars of Shadows</span></a></li>
+               <li class='last'><a href='page-post.php?id={$cname("ALPHABETNUM")}'><span>Virtual Alphabet</span></a></li>
             </ul>
          </li>
       </ul>
