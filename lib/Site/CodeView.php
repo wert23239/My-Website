@@ -49,14 +49,22 @@ HTML;
         return $html;
     }
 
+    public function getSource()
+    {
+        if($this->gitlink=="NULL") {
+            return "<a href=$this->gitlink><span>Proprietary</span></a>";
+        }
+        else{
+            return "<a href=$this->gitlink><span>See Source</span></a>";
+        }
+    }
 
     public function headeradditional(){
-      $html="";
-        if($this->gitlink!="NULL") {
-        $html.=<<<HTML
-<li class='last'><a href=$this->gitlink><span>Source</span></a></li>
+        $source=$this->getSource();
+        $html=<<<HTML
+<li class='last alert'>$source</li>
 HTML;
-        }
+
         return $html;
     }
 

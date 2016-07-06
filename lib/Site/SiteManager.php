@@ -50,10 +50,10 @@ class SiteManager
     const MarkovBrainGit="NULL";
     const EmitterGit="NULL";
     const VaniaGit="https://github.com/wert23239/VaniaVirtualEvolution";
-    const SteamPunkedGit="http://www.comingsoon.net/";
+    const SteamPunkedGit="https://github.com";
     const EmployfaiGit= "https://github.com/wert23239/Employifai";
     const VirtualAlphaGit="https://github.com/jfreedman0/Virtual-Alphabet";
-    const CompilerGit="http://www.comingsoon.net/";
+    const CompilerGit="https://github.com";
     const ShadowGit="https://github.com/wert23239/ScarsofShadows";
 
     const VisualCityDisplay="Visual City";

@@ -152,7 +152,7 @@ ProjectDisplay.prototype.installListener = function (buttonpressed,id) {
                 console.log(json);
                 console.log(json.ok);
                 if (json.ok) {
-                    that.update(json.NewProject,id);
+                    that.update(json.NewProject,id,json.Source);
                 } else {
                     // Update failed
                 }
@@ -166,13 +166,14 @@ ProjectDisplay.prototype.installListener = function (buttonpressed,id) {
 };
 
 
-ProjectDisplay.prototype.update = function(NewProject,id) {
+ProjectDisplay.prototype.update = function(NewProject,id,Source) {
     var that=this;
     console.log("NewProject:");
     console.log(NewProject);
     $(".jumbotron").slideUp(500,"swing",
         function(){
             $(".jumbotron").html(NewProject);
+            $(".alert").html(Source);
             that.initialize(id);
         }).delay(500).slideDown(500,"swing");
 
