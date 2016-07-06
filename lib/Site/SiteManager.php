@@ -34,7 +34,7 @@ class SiteManager
 
     const VisualCityImage="VisualCity.jpg";
     const VisualTreeImage="Tree.png";
-    const MarkovBrainImage="";
+    const MarkovBrainImage="MABE.png";
     const EmitterImage="Emitter.png";
     const VaniaImage="gallery.jpg";
     const SteamPunkedImage="Steampunked.png";
