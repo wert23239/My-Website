@@ -11,6 +11,6 @@ $view= new Site\ResumeView();
 <div id="example1">
     <script src="node_modules/PDFViewer/pdfobject.min.js"></script>
     <script>
-        PDFObject.embed("downloads/CurrentResume.pdf", "#example1");
+        PDFObject.embed("images/CurrentResume.pdf", "#example1");
     </script>
 </div>
