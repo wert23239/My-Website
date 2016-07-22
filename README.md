@@ -1,4 +1,4 @@
 
-# [MyWebsite](http://webdev.cse.msu.edu/~lambe168/AlexWebsite/ "# MyWebsite")
+# [MyWebsite](http://webdev.cse.msu.edu/~lambe168/AlexWebsite/ "# My Website")
 
-This is the repo for my website
+##PHP Javascript and Bootstrap
