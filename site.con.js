@@ -1,4 +1,4 @@
-/*! DO NOT EDIT mywebsite 2016-07-05 */
+/*! DO NOT EDIT mywebsite 2016-07-20 */
 ( function( $ ) {
 $( document ).ready(function() {
 $('#cssmenu').prepend('<div id="menu-button">Menu</div>');
@@ -34,7 +34,7 @@ TypeName.prototype.TypeOut = function() {
     var that=this;
     $(function () {
         $(".Typed").typed({
-            strings: ["Programmer","Artist","Author"],
+            strings: ["Programmer","Artist","Puzzle Solver"],
             typeSpeed: 100,
             backDelay: 800,
             backSpeed: 50,

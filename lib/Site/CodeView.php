@@ -30,9 +30,9 @@ class CodeView extends View
 <script src="typed.js"></script>
 <script>
 $(document).ready(function() {
-    var Title='$check';
+    var Title="$check";
     new TypeName(Title);
-	new ProjectDisplay('$id');
+	new ProjectDisplay("$id");
 });
 
 
@@ -52,10 +52,10 @@ HTML;
     public function getSource()
     {
         if($this->gitlink=="NULL") {
-            return "<a href=$this->gitlink><span>Proprietary</span></a>";
+            return "<a href=#><span>Proprietary</span></a>";
         }
         else{
-            return "<a href=$this->gitlink><span>See Source</span></a>";
+            return "<a href=$this->gitlink target='_blank'><span>See Source</span></a>";
         }
     }
 

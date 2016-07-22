@@ -111,27 +111,16 @@ HTML;
          </li>
          <li class='has-sub'><a href='#'><span>Game Design</span></a>
             <ul>
-               <li class='last'><a href='page-post.php?id={$cname("SHADOWSNUM")}'><span>The Scars of Shadows</span></a></li>
+               <li><a href='page-post.php?id={$cname("SHADOWSNUM")}'><span>Sonu's Story</span></a></li>
                <li class='last'><a href='page-post.php?id={$cname("ALPHABETNUM")}'><span>Virtual Alphabet</span></a></li>
             </ul>
          </li>
-      </ul>
-   </li>
-   <li class='has-sub'><a href='#'><span>Other</span></a>
-      <ul>
-         <li class='has-sub'><a href='#'><span>Art</span></a>
+         <li class='has-sub last'><a href='#'><span>Art</span></a>
          <ul>
             <li><a href='#'><span>Ballos</span></a></li>
-            <li><a href='#'><span>Owl</span></a></li>
-            <li class='last'><a href='#'><span>Rin</span></a></li>
+            <li class='last'><a href='#'><span>Owl</span></a></li>
          </ul>
-         <li class='has-sub'><a href='#'><span>Books</span></a>
-         <ul>
-             <li><a href='Books/Book1.html'><span>As Long as The Road Lacks Perspective</span></a></li>
-            <li><a href='Books/Book2.html'><span>The Scars of Shadows</span></a></li>
-        </ul>
-        </li>
-     </ul>
+      </ul>
    </li>
    <li class='last'><a href='ResumeComplete.php'><span>Resume</span></a></li>
    <!--<li class="last"><span><a style="margin-left:1em;color:black;" href="https://github.com/wert23239" target="_blank"><img style="height:2em;width:2em;" src="images/github2.png" alt="Github" ></a></span></li>-->
