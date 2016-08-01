@@ -1,13 +1,14 @@
 /**
  * Created by Alex on 4/20/2016.
  */
-function MissYou(){
+function MissYou(Title){
     $(function() {
         // Get page title
-        var pageTitle = $("title").text();
+        var pageTitle = Title;
 
         // Change page title on blur
         $(window).blur(function() {
+            pageTitle=$("title").text();
             $("title").text(":( come back");
         });
 

@@ -1,4 +1,4 @@
-/*! DO NOT EDIT mywebsite 2016-07-20 */
+/*! DO NOT EDIT mywebsite 2016-08-01 */
 ( function( $ ) {
 $( document ).ready(function() {
 $('#cssmenu').prepend('<div id="menu-button">Menu</div>');
@@ -75,13 +75,14 @@ function  KonamiComputer(){
 /**
  * Created by Alex on 4/20/2016.
  */
-function MissYou(){
+function MissYou(Title){
     $(function() {
         // Get page title
-        var pageTitle = $("title").text();
+        var pageTitle = Title;
 
         // Change page title on blur
         $(window).blur(function() {
+            pageTitle=$("title").text();
             $("title").text(":( come back");
         });
 
@@ -151,8 +152,10 @@ ProjectDisplay.prototype.installListener = function (buttonpressed,id) {
                 var json = parse_json(data);
                 console.log(json);
                 console.log(json.ok);
+                console.log("Title");
+                console.log(json.Title);
                 if (json.ok) {
-                    that.update(json.NewProject,id,json.Source);
+                    that.update(json.NewProject,id,json.Source,json.Title);
                 } else {
                     // Update failed
                 }
@@ -166,7 +169,7 @@ ProjectDisplay.prototype.installListener = function (buttonpressed,id) {
 };
 
 
-ProjectDisplay.prototype.update = function(NewProject,id,Source) {
+ProjectDisplay.prototype.update = function(NewProject,id,Source,Title) {
     var that=this;
     console.log("NewProject:");
     console.log(NewProject);
@@ -174,6 +177,7 @@ ProjectDisplay.prototype.update = function(NewProject,id,Source) {
         function(){
             $(".jumbotron").html(NewProject);
             $(".alert").html(Source);
+            $("title").html(Title);
             that.initialize(id);
         }).delay(500).slideDown(500,"swing");
 
