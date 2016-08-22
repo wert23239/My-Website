@@ -8,7 +8,7 @@ class View
      */
     public function __construct()
     {
-
+        $this->title="Home";
     }
 
     public function headeradditional(){
@@ -37,7 +37,7 @@ HTML;
     }
 
     public function presenthead($Title){
-        $this->Title=$Title;
+      $PageTitle=$this->title;
         $html="";
         $html.=<<<HTML
 <head>
@@ -50,18 +50,24 @@ HTML;
 
 <script>
 $(document).ready(function() {
-    new MissYou();
+    var Title = "$PageTitle" ;
+    new MissYou(Title);
     new TypeName("Hey");
 });
 </script>
-<title>$Title</title>
+<title>
 HTML;
+        $html.=$this->getTitle();
+        $html.="</title>";
         $html.=$this->headadditional();
         $html.="</head>";
         return $html;
     }
 
-
+    public function getTitle()
+    {
+        return $this->title;
+    }
 
 
     public function presentheader(){
@@ -76,6 +82,8 @@ HTML;
         define('SHADOWSNUM', SiteManager::ShadowsNum);
         define('ALPHABETNUM', SiteManager::VirtualAlphaNum);
         define('COMPILENUM', SiteManager::CompilerNum);
+        define('BALLOSNUM', SiteManager::BallosNum);
+        define('SKETCHNUM', SiteManager::SketchNum);
         $cname = 'constant'; // if you want to use a function in heredoc, you must save function name in variable
 
         $html=<<<HTML
@@ -83,6 +91,7 @@ HTML;
 <div id='cssmenu'>
 <ul>
    <li><a href='index.php'><span>Home</span></a></li>
+   <li><a href='ResumeComplete.php'><span>Resume</span></a></li>
    <li class='has-sub'><a href=''><span>Experience</span></a>
       <ul>
          <li class='has-sub'><a href='#'><span>Web Development</span></a>
@@ -117,12 +126,11 @@ HTML;
          </li>
          <li class='has-sub last'><a href='#'><span>Art</span></a>
          <ul>
-            <li><a href='#'><span>Ballos</span></a></li>
-            <li class='last'><a href='#'><span>Owl</span></a></li>
+            <li><a href='page-post.php?id={$cname("BALLOSNUM")}'><span>Ballos</span></a></li>
+            <li class='last'><a href='page-post.php?id={$cname("SKETCHNUM")}'><span>Sketch book</span></a></li>
          </ul>
       </ul>
    </li>
-   <li class='last'><a href='ResumeComplete.php'><span>Resume</span></a></li>
    <!--<li class="last"><span><a style="margin-left:1em;color:black;" href="https://github.com/wert23239" target="_blank"><img style="height:2em;width:2em;" src="images/github2.png" alt="Github" ></a></span></li>-->
 HTML;
 $html.=$this->headeradditional();
@@ -139,6 +147,8 @@ HTML;
 
     return $html;
     }
- protected $Title;
+
+
+ public $title;
 }
 

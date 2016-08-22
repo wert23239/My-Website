@@ -29,6 +29,8 @@ class SiteManager
     const VirtualAlphaDesc="The Spartahacks 2015 submission. It involves controlling the mouse using a Myo arm band.";
     const CompilerDesc="A complete object-oriented compiler with recursive functions and optimizations";
     const ShadowDesc="A mod of the game CaveStory. This includes custom animation and level design.";
+    const BallosDesc="";
+    const SketchDesc="";
 
 
 
@@ -42,12 +44,13 @@ class SiteManager
     const VirtualAlphaImage="VirtualAlpha.png";
     const CompilerImage="";
     const ShadowImage="TheScarsofShadows.png";
-
+    const BallosImage="Ballos.png";
+    const SketchImage="SketchBookArt.png";
 
 
     const VisualCityGit="https://github.com/wert23239/Visual-City-Game";
     const VisualTreeGit="https://github.com/wert23239/Tree";
-    const MarkovBrainGit="NULL";
+    const MarkovBrainGit="https://github.com/ahnt/MABE/tree/Lambe168WIP";
     const EmitterGit="NULL";
     const VaniaGit="https://github.com/wert23239/VaniaVirtualEvolution";
     const SteamPunkedGit="https://github.com/wert23239/Project1";
@@ -55,6 +58,8 @@ class SiteManager
     const VirtualAlphaGit="https://github.com/jfreedman0/Virtual-Alphabet";
     const CompilerGit="NULL";
     const ShadowGit="https://github.com/wert23239/TheScarsofShadows";
+    const BallosGit="ART";
+    const SketchGit="ART";
 
     const VisualCityDisplay="Visual City";
     const VisualTreeDisplay="Visual Tree";
@@ -67,7 +72,8 @@ class SiteManager
     const VirtualAlphaDisplay="Virtual Alphabet";
     const CompilerDisplay="C++ Compiler";
     const ShadowDisplay="Sonu's Story";
-
+    const BallosDisplay="Ballos";
+    const SketchDisplay="Sketch Book";
 
     const EmployfaiNum=0;
     const SteamPunkedNum=1;
@@ -79,7 +85,8 @@ class SiteManager
     const EmitterNum=7;
     const ShadowsNum=8;
     const VirtualAlphaNum=9;
-
+    const BallosNum=10;
+    const SketchNum=11;
 
 
 
@@ -99,9 +106,9 @@ class SiteManager
                 $this->previous=$this->Code[$this->id-1];
             }
             else{
-                $this->previous=$this->Code[9];
+                $this->previous=$this->Code[11];
             }
-            if($this->id!=9){
+            if($this->id!=11){
                 $this->next=$this->Code[$this->id+1];
             }
             else{
@@ -122,7 +129,9 @@ class SiteManager
              self::VirtualAlphaNum=>new IndividualSite(self::VirtualAlphaNum, self::VirtualAlphaGit, self::VirtualAlphaDisplay, self::VirtualAlphaImage, self::VirtualAlphaDesc, self::CodeType),
              self::ShadowsNum=>new IndividualSite(self::ShadowsNum, self::ShadowGit, self::ShadowDisplay, self::ShadowImage, self::ShadowDesc, self::CodeType),
              self::CompilerNum=>new IndividualSite(self::CompilerNum, self::CompilerGit, self::CompilerDisplay, self::CompilerImage, self::CompilerDesc, self::CodeType),
-         );
+             self::BallosNum=>new IndividualSite(self::BallosNum, self::BallosGit, self::BallosDisplay, self::BallosImage, self::BallosDesc, self::CodeType),
+             self::SketchNum=>new IndividualSite(self::SketchNum, self::SketchGit, self::SketchDisplay, self::SketchImage, self::SketchDesc, self::CodeType),
+             );
     }
 
     /**

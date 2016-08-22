@@ -29,7 +29,8 @@ class ChangeSiteController{
 
         if(isset($request['ajax'])){
             $view = new CodeView($site);
-            $this->result = json_encode(array('ok' => true,'NewProject'=> $view->presentDisplay(),'Source'=> $view->getSource()));
+            $this->result = json_encode(array('ok' => true,'NewProject'=> $view->presentDisplay(),'Source'=> $view->getSource(),
+                'Title'=> $view->getTitle()));
         }
         else{
             $this->page="ProjectDisplay.php";

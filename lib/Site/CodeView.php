@@ -20,7 +20,7 @@ class CodeView extends View
         $this->description=$this->current->getDescription();
     }
     public function headadditional(){
-        $check=$this->Title;
+        $check=$this->title;
         $id=$this->id;
         $html=<<<HTML
 
@@ -53,6 +53,9 @@ HTML;
     {
         if($this->gitlink=="NULL") {
             return "<a href=#><span>Proprietary</span></a>";
+        }
+        else if($this->gitlink=="ART") {
+            return "";
         }
         else{
             return "<a href=$this->gitlink target='_blank'><span>See Source</span></a>";
@@ -106,7 +109,6 @@ private $download="";
     private $gitlink="";
     private $id="";
     private $current;
-    private $title="";
     private $connections;
     private $color="";
     private $image="";
